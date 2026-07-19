@@ -1,0 +1,1991 @@
+[
+    {
+        "id": "COLHEDORA-001",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "milho",
+            "tipo_forragem": "*",
+            "altura_material": "*",
+            "potencia_tdp": "*",
+            "hectares": "*"
+        },
+        "resultado": {
+            "tipo": "consultor",
+            "valor": "A Casale terá um lançamento para essa aplicação. Fale com nosso consultor para saber mais."
+        }
+    },
+    {
+        "id": "COLHEDORA-002",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "outros",
+            "altura_material": "*",
+            "potencia_tdp": "*",
+            "hectares": "*"
+        },
+        "resultado": {
+            "tipo": "consultor",
+            "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada."
+        }
+    },
+    {
+        "id": "COLHEDORA-003",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "outros",
+            "altura_material": "*",
+            "potencia_tdp": "*",
+            "hectares": "*"
+        },
+        "resultado": {
+            "tipo": "consultor",
+            "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada."
+        }
+    },
+    {
+        "id": "COLHEDORA-004",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "outros",
+            "altura_material": "*",
+            "potencia_tdp": "*",
+            "hectares": "*"
+        },
+        "resultado": {
+            "tipo": "consultor",
+            "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada."
+        }
+    },
+    {
+        "id": "COLHEDORA-005",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "feno_presecada",
+            "tipo_forragem": "*",
+            "altura_material": "*",
+            "potencia_tdp": "*",
+            "hectares": "*"
+        },
+        "resultado": {
+            "tipo": "consultor",
+            "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada."
+        }
+    },
+    {
+        "id": "COLHEDORA-006",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_silagem_e_feno_presecada",
+            "tipo_forragem": "*",
+            "altura_material": "*",
+            "potencia_tdp": "*",
+            "hectares": "*"
+        },
+        "resultado": {
+            "tipo": "consultor",
+            "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada."
+        }
+    },
+    {
+        "id": "COLHEDORA-007",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "acima_de_160_cm",
+            "potencia_tdp": "*",
+            "hectares": "*"
+        },
+        "resultado": {
+            "tipo": "consultor",
+            "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada."
+        }
+    },
+    {
+        "id": "COLHEDORA-008",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "acima_de_160_cm",
+            "potencia_tdp": "*",
+            "hectares": "*"
+        },
+        "resultado": {
+            "tipo": "consultor",
+            "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada."
+        }
+    },
+    {
+        "id": "COLHEDORA-009",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "acima_de_160_cm",
+            "potencia_tdp": "*",
+            "hectares": "*"
+        },
+        "resultado": {
+            "tipo": "consultor",
+            "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada."
+        }
+    },
+    {
+        "id": "COLHEDORA-010",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "ate_40_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "A potência disponível não é a mais indicada para essa aplicação. Fale com nosso consultor."
+        }
+    },
+    {
+        "id": "COLHEDORA-011",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "ate_40_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "A potência disponível não é a mais indicada para essa aplicação. Fale com nosso consultor."
+        }
+    },
+    {
+        "id": "COLHEDORA-012",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "ate_40_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "A potência disponível não é a mais indicada para essa aplicação. Fale com nosso consultor."
+        }
+    },
+    {
+        "id": "COLHEDORA-013",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "ate_40_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "A potência disponível não é a mais indicada para essa aplicação. Fale com nosso consultor."
+        }
+    },
+    {
+        "id": "COLHEDORA-014",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "ate_40_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "A potência disponível não é a mais indicada para essa aplicação. Fale com nosso consultor."
+        }
+    },
+    {
+        "id": "COLHEDORA-015",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "ate_40_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "A potência disponível não é a mais indicada para essa aplicação. Fale com nosso consultor."
+        }
+    },
+    {
+        "id": "COLHEDORA-016",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "41_a_50_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1300"
+        }
+    },
+    {
+        "id": "COLHEDORA-017",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "41_a_50_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1300"
+        }
+    },
+    {
+        "id": "COLHEDORA-018",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "41_a_50_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1300"
+        }
+    },
+    {
+        "id": "COLHEDORA-019",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "41_a_50_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1300"
+        }
+    },
+    {
+        "id": "COLHEDORA-020",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "41_a_50_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1300"
+        }
+    },
+    {
+        "id": "COLHEDORA-021",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "41_a_50_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1300"
+        }
+    },
+    {
+        "id": "COLHEDORA-022",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "51_a_60_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1300"
+        }
+    },
+    {
+        "id": "COLHEDORA-023",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "51_a_60_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1800"
+        }
+    },
+    {
+        "id": "COLHEDORA-024",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "51_a_60_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1800"
+        }
+    },
+    {
+        "id": "COLHEDORA-025",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "51_a_60_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1300"
+        }
+    },
+    {
+        "id": "COLHEDORA-026",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "51_a_60_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1800"
+        }
+    },
+    {
+        "id": "COLHEDORA-027",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "51_a_60_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1800"
+        }
+    },
+    {
+        "id": "COLHEDORA-028",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "61_a_75_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1800"
+        }
+    },
+    {
+        "id": "COLHEDORA-029",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "61_a_75_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1800"
+        }
+    },
+    {
+        "id": "COLHEDORA-030",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "61_a_75_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1800"
+        }
+    },
+    {
+        "id": "COLHEDORA-031",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "61_a_75_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1800"
+        }
+    },
+    {
+        "id": "COLHEDORA-032",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "61_a_75_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1800"
+        }
+    },
+    {
+        "id": "COLHEDORA-033",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "61_a_75_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1800"
+        }
+    },
+    {
+        "id": "COLHEDORA-034",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "76_a_85_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1800"
+        }
+    },
+    {
+        "id": "COLHEDORA-035",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "76_a_85_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1800"
+        }
+    },
+    {
+        "id": "COLHEDORA-036",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "76_a_85_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1800"
+        }
+    },
+    {
+        "id": "COLHEDORA-037",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "76_a_85_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1800"
+        }
+    },
+    {
+        "id": "COLHEDORA-038",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "76_a_85_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1800"
+        }
+    },
+    {
+        "id": "COLHEDORA-039",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "76_a_85_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1800"
+        }
+    },
+    {
+        "id": "COLHEDORA-040",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40cm",
+            "potencia_tdp": "acima_de_85_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1800"
+        }
+    },
+    {
+        "id": "COLHEDORA-041",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "acima_de_85_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1800"
+        }
+    },
+    {
+        "id": "COLHEDORA-042",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "acima_de_85_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1800"
+        }
+    },
+    {
+        "id": "COLHEDORA-043",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "acima_de_85_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1800"
+        }
+    },
+    {
+        "id": "COLHEDORA-044",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "acima_de_85_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1800"
+        }
+    },
+    {
+        "id": "COLHEDORA-045",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "acima_de_85_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CFC-1800"
+        }
+    },
+    {
+        "id": "COLHEDORA-046",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "ate_40_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "A potência disponível não é a mais indicada para essa aplicação. Fale com nosso consultor."
+        }
+    },
+    {
+        "id": "COLHEDORA-047",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "ate_40_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "A potência disponível não é a mais indicada para essa aplicação. Fale com nosso consultor."
+        }
+    },
+    {
+        "id": "COLHEDORA-048",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "ate_40_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "A potência disponível não é a mais indicada para essa aplicação. Fale com nosso consultor."
+        }
+    },
+    {
+        "id": "COLHEDORA-049",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "ate_40_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "A potência disponível não é a mais indicada para essa aplicação. Fale com nosso consultor."
+        }
+    },
+    {
+        "id": "COLHEDORA-050",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "ate_40_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "A potência disponível não é a mais indicada para essa aplicação. Fale com nosso consultor."
+        }
+    },
+    {
+        "id": "COLHEDORA-051",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "ate_40_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "A potência disponível não é a mais indicada para essa aplicação. Fale com nosso consultor."
+        }
+    },
+    {
+        "id": "COLHEDORA-052",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "41_a_50_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-150"
+        }
+    },
+    {
+        "id": "COLHEDORA-053",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "41_a_50_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-150"
+        }
+    },
+    {
+        "id": "COLHEDORA-054",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "41_a_50_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-150"
+        }
+    },
+    {
+        "id": "COLHEDORA-055",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "41_a_50_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-150"
+        }
+    },
+    {
+        "id": "COLHEDORA-056",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "41_a_50_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-150"
+        }
+    },
+    {
+        "id": "COLHEDORA-057",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "41_a_50_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-150"
+        }
+    },
+    {
+        "id": "COLHEDORA-058",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "51_a_60_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-150"
+        }
+    },
+    {
+        "id": "COLHEDORA-059",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "51_a_60_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-060",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "51_a_60_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-061",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "51_a_60_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-150"
+        }
+    },
+    {
+        "id": "COLHEDORA-062",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "51_a_60_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-063",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "51_a_60_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-064",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "61_a_75_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-065",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "61_a_75_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-066",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "61_a_75_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-067",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "61_a_75_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-068",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "61_a_75_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-069",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "qualquier",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "61_a_75_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-070",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "76_a_85_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-071",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "76_a_85_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-072",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "76_a_85_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-073",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "76_a_85_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-074",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "76_a_85_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-075",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "76_a_85_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-076",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "acima_de_85_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-077",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "acima_de_85_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-078",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "acima_de_85_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-079",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "acima_de_85_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-080",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "acima_de_85_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-081",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "acima_de_85_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-082",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "ate_40_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "A potência disponível não é a mais indicada para essa aplicação. Fale com nosso consultor."
+        }
+    },
+    {
+        "id": "COLHEDORA-083",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "ate_40_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "A potência disponível não é a mais indicada para essa aplicação. Fale com nosso consultor."
+        }
+    },
+    {
+        "id": "COLHEDORA-084",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "ate_40_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "A potência disponível não é a mais indicada para essa aplicação. Fale com nosso consultor."
+        }
+    },
+    {
+        "id": "COLHEDORA-085",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "ate_40_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "A potência disponível não é a mais indicada para essa aplicação. Fale com nosso consultor."
+        }
+    },
+    {
+        "id": "COLHEDORA-086",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "ate_40_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "A potência disponível não é a mais indicada para essa aplicação. Fale com nosso consultor."
+        }
+    },
+    {
+        "id": "COLHEDORA-087",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "ate_40_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "A potência disponível não é a mais indicada para essa aplicação. Fale com nosso consultor."
+        }
+    },
+    {
+        "id": "COLHEDORA-088",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "41_a_50_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-150"
+        }
+    },
+    {
+        "id": "COLHEDORA-089",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "41_a_50_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-150"
+        }
+    },
+    {
+        "id": "COLHEDORA-090",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "41_a_50_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-150"
+        }
+    },
+    {
+        "id": "COLHEDORA-091",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "41_a_50_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-150"
+        }
+    },
+    {
+        "id": "COLHEDORA-092",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "41_a_50_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-150"
+        }
+    },
+    {
+        "id": "COLHEDORA-093",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "41_a_50_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-150"
+        }
+    },
+    {
+        "id": "COLHEDORA-094",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "51_a_60_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-150"
+        }
+    },
+    {
+        "id": "COLHEDORA-095",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "51_a_60_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-096",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "51_a_60_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-097",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "51_a_60_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-150"
+        }
+    },
+    {
+        "id": "COLHEDORA-098",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "51_a_60_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-099",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "51_a_60_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-100",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "61_a_75_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-101",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "61_a_75_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-102",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "61_a_75_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-103",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "61_a_75_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-104",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "61_a_75_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-105",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "61_a_75_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-106",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "76_a_85_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-107",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "76_a_85_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-108",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "76_a_85_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-109",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "76_a_85_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-110",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "76_a_85_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-111",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "76_a_85_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-112",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "acima_de_85_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-113",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "acima_de_85_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-114",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "ate_40_cm",
+            "potencia_tdp": "acima_de_85_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-115",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "acima_de_85_cv_na_tdp",
+            "hectares": "ate_30_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-116",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "acima_de_85_cv_na_tdp",
+            "hectares": "31_a_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    },
+    {
+        "id": "COLHEDORA-117",
+        "equipamento": "colhedora",
+        "criterios": {
+            "tipo_gado": "*",
+            "equipamento": "colhedoras_de_forragem",
+            "uso_material": "trato_verde_e_silagem",
+            "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+            "altura_material": "41_a_160_cm",
+            "potencia_tdp": "acima_de_85_cv_na_tdp",
+            "hectares": "acima_de_60_hectares"
+        },
+        "resultado": {
+            "tipo": "produto",
+            "valor": "CRC-180"
+        }
+    }
+]
