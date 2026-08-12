@@ -1,0 +1,131 @@
+{
+  "equipamento": "colhedora",
+  "perguntas": [
+    {
+      "id": "principal_uso_material",
+      "pergunta": "Qual o principal uso do material colhido?",
+      "opcoes": [
+        {
+          "valor": "trato_verde",
+          "texto": "Trato verde",
+          "proxima": "tipo_forragem"
+        },
+        {
+          "valor": "silagem",
+          "texto": "Silagem",
+          "proxima": "tipo_forragem"
+        },
+        {
+          "valor": "trato_verde_silagem",
+          "texto": "Trato verde e Silagem",
+          "proxima": "tipo_forragem"
+        },
+        {
+          "valor": "feno_pre_secada",
+          "texto": "Feno/Pré-secada",
+          "proxima": "tipo_forragem"
+        },
+        {
+          "valor": "trato_verde_silagem_feno_pre_secada",
+          "texto": "Trato verde, silagem e feno/pré-secada",
+          "proxima": "tipo_forragem"
+        },
+        {
+          "valor": "milho",
+          "texto": "Milho",
+          "proxima": "tipo_forragem"
+        }
+      ]
+    },
+    {
+      "id": "tipo_forragem",
+      "pergunta": "Qual o tipo de forragem será colhida?",
+      "opcoes": [
+        {
+          "valor": "mombaca_braquiaria_tifton_elefante",
+          "texto": "Mombaça, Braquiárias, Tifton, Elefante",
+          "proxima": "altura_material"
+        },
+        {
+          "valor": "outros",
+          "texto": "Outros",
+          "proxima": "altura_material"
+        }
+      ]
+    },
+    {
+      "id": "altura_material",
+      "pergunta": "Qual a altura do material que será colhido?",
+      "opcoes": [
+        {
+          "valor": "ate_40cm",
+          "texto": "Até 40 cm",
+          "proxima": "potencia_tdp"
+        },
+        {
+          "valor": "41_160cm",
+          "texto": "41 a 160 cm",
+          "proxima": "potencia_tdp"
+        },
+        {
+          "valor": "acima_160cm",
+          "texto": "Acima de 160 cm",
+          "proxima": "potencia_tdp"
+        }
+      ]
+    },
+    {
+      "id": "potencia_tdp",
+      "pergunta": "Qual a potência na transmissão (TDP) do trator disponível?",
+      "opcoes": [
+        {
+          "valor": "ate_40cv",
+          "texto": "Até 40 cv na TDP",
+          "proxima": "hectares"
+        },
+        {
+          "valor": "41_50cv",
+          "texto": "41 a 50 cv na TDP",
+          "proxima": "hectares"
+        },
+        {
+          "valor": "51_60cv",
+          "texto": "51 a 60 cv na TDP",
+          "proxima": "hectares"
+        },
+        {
+          "valor": "61_75cv",
+          "texto": "61 a 75 cv na TDP",
+          "proxima": "hectares"
+        }
+      ]
+    },
+    {
+      "id": "hectares",
+      "pergunta": "Quantos hectares serão colhidos?",
+      "opcoes": [
+        {
+          "valor": "ate_30ha",
+          "texto": "Até 30 hectares",
+          "acao": {
+            "tipo": "resultado"
+          }
+        },
+        {
+          "valor": "30_60ha",
+          "texto": "30 a 60 hectares",
+          "acao": {
+            "tipo": "resultado"
+          }
+        },
+        {
+          "valor": "acima_60ha",
+          "texto": "Acima de 60 hectares",
+          "acao": {
+            "tipo": "resultado"
+          }
+        }
+      ]
+    }
+  ]
+}

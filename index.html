@@ -2,7 +2,6 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Simulador Casale</title>
@@ -12,7 +11,9 @@
 
   <body>
     <div class="casale-page onboarding-state">
-      <!-- HERO -->
+      <!-- =====================================================
+           HERO
+      ====================================================== -->
 
       <section class="casale-hero">
         <div class="hero-content">
@@ -25,27 +26,26 @@
 
           <ul class="hero-benefits">
             <li>
-              <span class="benefit-icon"> ✓ </span>
-
+              <span class="benefit-icon">✓</span>
               Leva menos de 2 minutos
             </li>
 
             <li>
-              <span class="benefit-icon"> ✓ </span>
-
+              <span class="benefit-icon">✓</span>
               Recomendação personalizada
             </li>
 
             <li>
-              <span class="benefit-icon"> ✓ </span>
-
+              <span class="benefit-icon">✓</span>
               Atendimento via WhatsApp
             </li>
           </ul>
         </div>
       </section>
 
-      <!-- SIMULADOR -->
+      <!-- =====================================================
+           SIMULADOR
+      ====================================================== -->
 
       <section class="simulator-area">
         <div class="simulator-card">
@@ -54,7 +54,13 @@
           <header class="simulator-header">
             <div class="simulator-title">
               <div class="simulator-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
                   <path
                     d="M7 3H17C18.1 3 19 3.9 19 5V21H5V5C5 3.9 5.9 3 7 3Z"
                     stroke="currentColor"
@@ -69,18 +75,19 @@
 
               <div>
                 <h2>Simulador Casale</h2>
-
-                <span> Leva menos de 2 minutos </span>
+                <span>Leva menos de 2 minutos</span>
               </div>
             </div>
           </header>
 
-          <!-- STEPPER -->
+          <!-- =================================================
+               STEPPER
+          ================================================== -->
 
-          <nav class="stepper">
+          <nav class="stepper" aria-label="Progresso da simulação">
             <div class="step-item active" data-step="1">
               <div class="step-circle">
-                <span> 1 </span>
+                <span>1</span>
               </div>
 
               <p>Identificação</p>
@@ -90,7 +97,7 @@
 
             <div class="step-item" data-step="2">
               <div class="step-circle">
-                <span> 2 </span>
+                <span>2</span>
               </div>
 
               <p>Produção</p>
@@ -100,7 +107,7 @@
 
             <div class="step-item" data-step="3">
               <div class="step-circle">
-                <span> 3 </span>
+                <span>3</span>
               </div>
 
               <p>Equipamento</p>
@@ -110,17 +117,21 @@
 
             <div class="step-item" data-step="4">
               <div class="step-circle">
-                <span> 4 </span>
+                <span>4</span>
               </div>
 
               <p>Recomendação</p>
             </div>
           </nav>
 
-          <!-- CONTEÚDO -->
+          <!-- =================================================
+               CONTEÚDO
+          ================================================== -->
 
           <main class="simulator-content">
-            <!-- STEP 1 -->
+            <!-- =================================================
+                 STEP 1 — IDENTIFICAÇÃO
+            ================================================== -->
 
             <section class="form-step active" id="step-1">
               <div class="step-header">
@@ -129,76 +140,181 @@
                 <p>Preencha seus dados para iniciar a simulação.</p>
               </div>
 
-              <div class="fields-grid">
-                <div class="field">
-                  <label> Nome </label>
+              <!--
+                PRIMEIRA VISUALIZAÇÃO
 
-                  <input id="nome" type="text" placeholder="Digite seu nome" />
+                Apenas nome e função aparecem inicialmente.
+              -->
+
+              <div class="fields-grid onboarding-fields">
+                <div class="field">
+                  <label for="nome"> Nome </label>
+
+                  <input
+                    id="nome"
+                    type="text"
+                    autocomplete="name"
+                    placeholder="Digite seu nome"
+                  />
                 </div>
 
                 <div class="field">
-                  <label> Função </label>
+                  <label for="funcao-inicial"> Função </label>
 
                   <input
-                    id="funcao"
+                    id="funcao-inicial"
                     type="text"
+                    autocomplete="organization-title"
                     placeholder="Ex: Proprietário"
                   />
                 </div>
               </div>
 
+              <!-- =================================================
+                   CAMPOS COMPLETOS
+
+                   São exibidos após o primeiro Continuar.
+              ================================================== -->
+
               <div class="extra-fields" id="extra-fields">
                 <div class="fields-grid">
-                  <div class="field">
-                    <label> Telefone </label>
+                  <!-- TELEFONE -->
 
-                    <input type="tel" placeholder="(00) 00000-0000" />
+                  <div class="field">
+                    <label for="telefone"> Telefone </label>
+
+                    <input
+                      id="telefone"
+                      type="tel"
+                      autocomplete="tel"
+                      placeholder="(00) 00000-0000"
+                    />
                   </div>
 
-                  <div class="field">
-                    <label> Cidade </label>
+                  <!-- PROPRIEDADE -->
 
-                    <input />
+                  <div class="field">
+                    <label for="propriedade"> Propriedade / Empresa </label>
+
+                    <input
+                      id="propriedade"
+                      type="text"
+                      autocomplete="organization"
+                      placeholder="Nome da propriedade ou empresa"
+                    />
                   </div>
 
-                  <div class="field">
-                    <label> Estado </label>
+                  <!-- FUNÇÃO -->
 
-                    <input />
+                  <div class="field">
+                    <label for="funcao-completa"> Função </label>
+
+                    <input
+                      id="funcao-completa"
+                      type="text"
+                      autocomplete="organization-title"
+                      placeholder="Ex: Proprietário"
+                      readonly
+                    />
                   </div>
 
-                  <div class="field">
-                    <label> Propriedade / Empresa </label>
+                  <!-- PAÍS -->
 
-                    <input />
+                  <div class="field">
+                    <label for="pais"> País </label>
+
+                    <input
+                      id="pais"
+                      type="text"
+                      autocomplete="country-name"
+                      value="Brasil"
+                      placeholder="Ex: Brasil"
+                    />
                   </div>
 
-                  <div class="field">
-                    <label> Email </label>
+                  <!-- CIDADE -->
 
-                    <input type="email" />
+                  <div class="field">
+                    <label for="cidade"> Cidade </label>
+
+                    <input
+                      id="cidade"
+                      type="text"
+                      autocomplete="address-level2"
+                      placeholder="Digite sua cidade"
+                    />
+                  </div>
+
+                  <!-- ESTADO -->
+
+                  <div class="field">
+                    <label for="estado"> Estado </label>
+
+                    <input
+                      id="estado"
+                      type="text"
+                      autocomplete="address-level1"
+                      placeholder="Ex: SP"
+                    />
+                  </div>
+
+                  <!-- EMAIL -->
+
+                  <div class="field">
+                    <label for="email"> Email </label>
+
+                    <input
+                      id="email"
+                      type="email"
+                      autocomplete="email"
+                      placeholder="seu@email.com"
+                    />
                   </div>
                 </div>
+
+                <!-- =================================================
+                     EQUIPAMENTO CASALE
+                ================================================== -->
 
                 <div class="question-block">
                   <label> Já possui equipamento Casale? </label>
 
                   <div class="option-grid">
-                    <button class="answer-option">Sim</button>
+                    <button
+                      type="button"
+                      class="answer-option"
+                      data-identification-answer="sim"
+                    >
+                      Sim
+                    </button>
 
-                    <button class="answer-option">Não</button>
+                    <button
+                      type="button"
+                      class="answer-option"
+                      data-identification-answer="nao"
+                    >
+                      Não
+                    </button>
                   </div>
                 </div>
               </div>
 
+              <!-- AÇÃO -->
+
               <footer class="actions">
-                <button class="btn-primary" id="continue-identification">
+                <button
+                  type="button"
+                  class="btn-primary"
+                  id="continue-identification"
+                >
                   Continuar
                 </button>
               </footer>
             </section>
 
-            <!-- STEP 2 -->
+            <!-- =================================================
+                 STEP 2 — PRODUÇÃO
+            ================================================== -->
 
             <section class="form-step" id="step-2">
               <div class="step-header">
@@ -207,104 +323,196 @@
                 <p>Qual é o tipo de produção da sua fazenda?</p>
               </div>
 
-              <div class="option-list">
-                <button class="answer-option selectable">
+              <div class="option-list" id="production-options">
+                <button
+                  type="button"
+                  class="answer-option selectable"
+                  data-value="apenas_gado_de_corte"
+                >
                   <span class="radio"></span>
 
-                  Apenas gado de corte
+                  <span> Apenas gado de corte </span>
                 </button>
 
-                <button class="answer-option selectable">
+                <button
+                  type="button"
+                  class="answer-option selectable"
+                  data-value="apenas_gado_de_leite"
+                >
                   <span class="radio"></span>
 
-                  Apenas gado de leite
+                  <span> Apenas gado de leite </span>
                 </button>
 
-                <button class="answer-option selectable">
+                <button
+                  type="button"
+                  class="answer-option selectable"
+                  data-value="gado_de_corte_e_leite"
+                >
                   <span class="radio"></span>
 
-                  Gado de corte e leite
+                  <span> Gado de corte e leite </span>
                 </button>
               </div>
 
               <footer class="actions">
-                <button class="btn-secondary">Voltar</button>
+                <button type="button" class="btn-secondary" data-action="back">
+                  Voltar
+                </button>
 
-                <button class="btn-primary">Continuar</button>
+                <button
+                  type="button"
+                  class="btn-primary"
+                  data-action="continue-production"
+                >
+                  Continuar
+                </button>
               </footer>
             </section>
 
-            <!-- STEP 3 -->
+            <!-- =================================================
+                 STEP 3 — EQUIPAMENTO + PERGUNTAS DINÂMICAS
+            ================================================== -->
 
             <section class="form-step" id="step-3">
+              <!--
+                A primeira pergunta do equipamento é sempre
+                qual equipamento o usuário procura.
+              -->
+
               <div class="step-header">
                 <h3>Equipamento</h3>
 
                 <p>Qual equipamento você procura?</p>
               </div>
 
-              <div class="option-list">
-                <button class="answer-option selectable">
+              <!-- EQUIPAMENTOS -->
+
+              <div class="option-list" id="equipment-options">
+                <button
+                  type="button"
+                  class="answer-option selectable equipment-option"
+                  data-equipment="colhedoras_de_forragem"
+                  data-value="colhedoras_de_forragem"
+                >
                   <span class="radio"></span>
 
-                  Colhedoras de forragem
+                  <span> Colhedoras de forragem </span>
                 </button>
 
-                <button class="answer-option selectable">
+                <button
+                  type="button"
+                  class="answer-option selectable equipment-option"
+                  data-equipment="distribuidores_de_esterco"
+                  data-value="distribuidores_de_esterco"
+                >
                   <span class="radio"></span>
 
-                  Moedores
+                  <span> Distribuidores de esterco </span>
                 </button>
 
-                <button class="answer-option selectable">
+                <button
+                  type="button"
+                  class="answer-option selectable equipment-option"
+                  data-equipment="distribuidores_de_racao"
+                  data-value="distribuidores_de_racao"
+                >
                   <span class="radio"></span>
 
-                  Distribuidores de esterco
+                  <span> Distribuidores de ração </span>
                 </button>
 
-                <button class="answer-option selectable">
+                <button
+                  type="button"
+                  class="answer-option selectable equipment-option"
+                  data-equipment="misturadores_de_racao_total"
+                  data-value="misturadores_de_racao_total"
+                >
                   <span class="radio"></span>
 
-                  Distribuidores de ração
+                  <span> Misturadores de ração total </span>
                 </button>
 
-                <button class="answer-option selectable">
+                <button
+                  type="button"
+                  class="answer-option selectable equipment-option"
+                  data-equipment="moedores"
+                  data-value="moedores"
+                >
                   <span class="radio"></span>
 
-                  Misturadores de ração total
+                  <span> Moedores </span>
                 </button>
               </div>
 
-              <footer class="actions">
-                <button class="btn-secondary">Voltar</button>
+              <!-- =================================================
+                   PERGUNTAS DINÂMICAS
+              ================================================== -->
 
-                <button class="btn-primary">Continuar</button>
+              <div id="dynamic-equipment-questions" class="dynamic-questions">
+                <!-- O JavaScript insere as perguntas aqui -->
+              </div>
+
+              <!-- AÇÕES -->
+
+              <footer class="actions">
+                <button type="button" class="btn-secondary" data-action="back">
+                  Voltar
+                </button>
+
+                <button
+                  type="button"
+                  class="btn-primary"
+                  data-action="continue-equipment"
+                >
+                  Continuar
+                </button>
               </footer>
             </section>
 
-            <!-- STEP 4 -->
+            <!-- =================================================
+                 STEP 4 — RECOMENDAÇÃO
+            ================================================== -->
 
             <section class="form-step" id="step-4">
               <div class="step-header">
                 <h3>Recomendação</h3>
 
-                <p>Encontramos a melhor solução para sua operação.</p>
-              </div>
-
-              <div class="recommendation-card">
-                <div class="machine-placeholder">🚜</div>
-
-                <h4>Feeder 20 SC</h4>
-
-                <p>
-                  Distribuidor de ração indicado para operações de suplementação a pasto, oferecendo praticidade no trato e bom desempenho para demandas de menor porte.
+                <p id="recommendation-subtitle">
+                  Encontramos a melhor solução para sua operação.
                 </p>
               </div>
 
+              <!--
+                O conteúdo abaixo é preenchido pelo JavaScript
+                de acordo com o JSON de recomendações.
+              -->
+
+              <div class="recommendation-card" id="recommendation-card">
+                <div class="machine-placeholder" id="recommendation-icon">
+                  🚜
+                </div>
+
+                <h4 id="recommendation-title">Analisando sua operação...</h4>
+
+                <p id="recommendation-description">
+                  Estamos cruzando suas respostas com as soluções disponíveis da
+                  Casale.
+                </p>
+              </div>
+
+              <!-- AÇÕES DA RECOMENDAÇÃO -->
+
               <footer class="result-actions">
-                <button class="whatsapp-button">
+                <!-- WHATSAPP -->
+
+                <button
+                  type="button"
+                  class="whatsapp-button"
+                  id="whatsapp-button"
+                >
                   <span class="button-icon">
-                    <svg viewBox="0 0 24 24" fill="none">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                       <path
                         d="M20 11.5C20 16.2 16.2 20 11.5 20C10.2 20 9 19.7 7.9 19.2L4 20L4.8 16.3C4.2 15.1 4 13.8 4 12.5C4 7.8 7.8 4 12.5 4C17.2 4 20 7.8 20 11.5Z"
                         stroke="currentColor"
@@ -322,7 +530,13 @@
                   <span class="arrow"> → </span>
                 </button>
 
-                <button class="restart-button" onclick="resetSimulation()">
+                <!-- RESET -->
+
+                <button
+                  type="button"
+                  class="restart-button"
+                  id="restart-simulation"
+                >
                   <span> ↻ </span>
 
                   Refazer simulação
@@ -333,6 +547,10 @@
         </div>
       </section>
     </div>
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
 
     <script src="script.js"></script>
   </body>
