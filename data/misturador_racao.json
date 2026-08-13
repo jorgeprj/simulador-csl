@@ -1,0 +1,158 @@
+{
+  "equipamento": "misturador_racao",
+  "perguntas": [
+    {
+      "id": "sistema_producao",
+      "pergunta": "Qual o sistema de produção predominante da fazenda?",
+      "opcoes": [
+        {
+          "valor": "pasto_com_suplementacao",
+          "texto": "Pasto com suplementação",
+          "proxima": "principal_volumoso"
+        },
+        {
+          "valor": "semi_confinamento",
+          "texto": "Semi-confinamento",
+          "proxima": "principal_volumoso"
+        },
+        {
+          "valor": "confinamento",
+          "texto": "Confinamento",
+          "proxima": "principal_volumoso"
+        }
+      ]
+    },
+    {
+      "id": "principal_volumoso",
+      "pergunta": "Qual é o principal volumoso utilizado no trato?",
+      "opcoes": [
+        {
+          "valor": "silagem",
+          "texto": "Silagem",
+          "proxima": "animais_trato_corte"
+        },
+        {
+          "valor": "feno_rolo_pre_secado",
+          "texto": "Feno, rolo ou pré-secado",
+          "proxima": "animais_trato_corte"
+        },
+        {
+          "valor": "mistura_silagem_feno_rolo_pre_secado",
+          "texto": "Mistura dos dois (silagem + feno, rolo ou pré-secado)",
+          "proxima": "animais_trato_corte"
+        },
+        {
+          "valor": "outros",
+          "texto": "Outros",
+          "proxima": "animais_trato_corte"
+        }
+      ]
+    },
+    {
+      "id": "animais_trato_corte",
+      "pergunta": "Quantos animais recebem trato diariamente? (Corte)",
+      "opcoes": [
+        {
+          "valor": "nao_se_aplica",
+          "texto": "Não se aplica",
+          "proxima": "animais_trato_leite"
+        },
+        {
+          "valor": "ate_100",
+          "texto": "Até 100",
+          "proxima": "animais_trato_leite"
+        },
+        {
+          "valor": "101_500",
+          "texto": "101 a 500",
+          "proxima": "animais_trato_leite"
+        },
+        {
+          "valor": "501_1500",
+          "texto": "501 a 1500",
+          "proxima": "animais_trato_leite"
+        },
+        {
+          "valor": "1501_3000",
+          "texto": "1501 a 3000",
+          "proxima": "animais_trato_leite"
+        },
+        {
+          "valor": "acima_3000",
+          "texto": "Acima de 3000",
+          "proxima": "animais_trato_leite"
+        }
+      ]
+    },
+    {
+      "id": "animais_trato_leite",
+      "pergunta": "Quantos animais recebem trato diariamente? (Leite)",
+      "opcoes": [
+        {
+          "valor": "nao_se_aplica",
+          "texto": "Não se aplica",
+          "proxima": "categoria_animal_corte"
+        },
+        {
+          "valor": "ate_30",
+          "texto": "Até 30",
+          "proxima": "categoria_animal_corte"
+        },
+        {
+          "valor": "31_100",
+          "texto": "31 a 100",
+          "proxima": "categoria_animal_corte"
+        },
+        {
+          "valor": "101_300",
+          "texto": "101 a 300",
+          "proxima": "categoria_animal_corte"
+        },
+        {
+          "valor": "301_500",
+          "texto": "301 a 500",
+          "proxima": "categoria_animal_corte"
+        },
+        {
+          "valor": "acima_500",
+          "texto": "Acima de 500",
+          "proxima": "categoria_animal_corte"
+        }
+      ]
+    },
+    {
+      "id": "categoria_animal_corte",
+      "pergunta": "Qual a categoria animal? (Corte)",
+      "opcoes": [
+        {
+          "valor": "nao_se_aplica",
+          "texto": "Não se aplica",
+          "acao": {
+            "tipo": "resultado"
+          }
+        },
+        {
+          "valor": "recria",
+          "texto": "Recria",
+          "acao": {
+            "tipo": "resultado"
+          }
+        },
+        {
+          "valor": "terminacao",
+          "texto": "Terminação",
+          "acao": {
+            "tipo": "resultado"
+          }
+        },
+        {
+          "valor": "recria_e_terminacao",
+          "texto": "Recria e Terminação",
+          "acao": {
+            "tipo": "resultado"
+          }
+        }
+      ]
+    }
+  ]
+}

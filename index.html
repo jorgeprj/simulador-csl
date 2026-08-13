@@ -7,6 +7,10 @@
     <title>Simulador Casale</title>
 
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/css/intlTelInput.css"
+    />
   </head>
 
   <body>
@@ -181,14 +185,18 @@
                   <!-- TELEFONE -->
 
                   <div class="field">
-                    <label for="telefone"> Telefone </label>
+                    <label for="telefone">Telefone</label>
 
                     <input
                       id="telefone"
                       type="tel"
                       autocomplete="tel"
-                      placeholder="(00) 00000-0000"
+                      placeholder="Digite seu telefone"
                     />
+
+                    <small class="field-help">
+                      Selecione o país e informe o número.
+                    </small>
                   </div>
 
                   <!-- PROPRIEDADE -->
@@ -327,7 +335,7 @@
                 <button
                   type="button"
                   class="answer-option selectable"
-                  data-value="apenas_gado_de_corte"
+                  data-value="apenas_gado_corte"
                 >
                   <span class="radio"></span>
 
@@ -337,7 +345,7 @@
                 <button
                   type="button"
                   class="answer-option selectable"
-                  data-value="apenas_gado_de_leite"
+                  data-value="apenas_gado_leite"
                 >
                   <span class="radio"></span>
 
@@ -347,7 +355,7 @@
                 <button
                   type="button"
                   class="answer-option selectable"
-                  data-value="gado_de_corte_e_leite"
+                  data-value="gado_corte_leite"
                 >
                   <span class="radio"></span>
 
@@ -552,6 +560,8 @@
          JAVASCRIPT
     ====================================================== -->
 
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/intlTelInput.min.js"></script>
+    <script src="validation.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

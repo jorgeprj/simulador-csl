@@ -1,0 +1,322 @@
+[
+  {
+    "id": "MISTURADOR-001",
+    "equipamento": "misturador_racao",
+    "criterios": {
+      "tipo_gado": "*",
+      "sistema_producao": "*",
+      "principal_volumoso": "outros",
+      "animais_trato_corte": "*",
+      "animais_trato_leite": "*",
+      "categoria_animal_corte": "*"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "MISTURADOR-002",
+    "equipamento": "misturador_racao",
+    "criterios": {
+      "tipo_gado": "apenas_gado_leite",
+      "sistema_producao": "*",
+      "principal_volumoso": "silagem",
+      "animais_trato_corte": "*",
+      "animais_trato_leite": "*",
+      "categoria_animal_corte": "*"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Vertimix"
+    }
+  },
+  {
+    "id": "MISTURADOR-003",
+    "equipamento": "misturador_racao",
+    "criterios": {
+      "tipo_gado": "apenas_gado_leite",
+      "sistema_producao": "*",
+      "principal_volumoso": "feno_rolo_pre_secado",
+      "animais_trato_corte": "*",
+      "animais_trato_leite": "*",
+      "categoria_animal_corte": "*"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Vertimix"
+    }
+  },
+  {
+    "id": "MISTURADOR-004",
+    "equipamento": "misturador_racao",
+    "criterios": {
+      "tipo_gado": "apenas_gado_leite",
+      "sistema_producao": "*",
+      "principal_volumoso": "mistura_silagem_feno_rolo_pre_secado",
+      "animais_trato_corte": "*",
+      "animais_trato_leite": "*",
+      "categoria_animal_corte": "*"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Vertimix"
+    }
+  },
+  {
+    "id": "MISTURADOR-005",
+    "equipamento": "misturador_racao",
+    "criterios": {
+      "tipo_gado": "gado_corte_leite",
+      "sistema_producao": "*",
+      "principal_volumoso": "silagem",
+      "animais_trato_corte": "*",
+      "animais_trato_leite": "*",
+      "categoria_animal_corte": "*"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Vertimix"
+    }
+  },
+  {
+    "id": "MISTURADOR-006",
+    "equipamento": "misturador_racao",
+    "criterios": {
+      "tipo_gado": "gado_corte_leite",
+      "sistema_producao": "*",
+      "principal_volumoso": "feno_rolo_pre_secado",
+      "animais_trato_corte": "*",
+      "animais_trato_leite": "*",
+      "categoria_animal_corte": "*"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Vertimix"
+    }
+  },
+  {
+    "id": "MISTURADOR-007",
+    "equipamento": "misturador_racao",
+    "criterios": {
+      "tipo_gado": "gado_corte_leite",
+      "sistema_producao": "*",
+      "principal_volumoso": "mistura_silagem_feno_rolo_pre_secado",
+      "animais_trato_corte": "*",
+      "animais_trato_leite": "*",
+      "categoria_animal_corte": "*"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Vertimix"
+    }
+  },
+  {
+    "id": "MISTURADOR-008",
+    "equipamento": "misturador_racao",
+    "criterios": {
+      "tipo_gado": "apenas_gado_corte",
+      "sistema_producao": "pasto_com_suplementacao",
+      "principal_volumoso": "silagem",
+      "animais_trato_corte": "*",
+      "animais_trato_leite": "*",
+      "categoria_animal_corte": "*"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Rotormix"
+    }
+  },
+  {
+    "id": "MISTURADOR-009",
+    "equipamento": "misturador_racao",
+    "criterios": {
+      "tipo_gado": "apenas_gado_corte",
+      "sistema_producao": "pasto_com_suplementacao",
+      "principal_volumoso": "feno_rolo_pre_secado",
+      "animais_trato_corte": "*",
+      "animais_trato_leite": "*",
+      "categoria_animal_corte": "*"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Totalmix"
+    }
+  },
+  {
+    "id": "MISTURADOR-010",
+    "equipamento": "misturador_racao",
+    "criterios": {
+      "tipo_gado": "apenas_gado_corte",
+      "sistema_producao": "pasto_com_suplementacao",
+      "principal_volumoso": "mistura_silagem_feno_rolo_pre_secado",
+      "animais_trato_corte": "*",
+      "animais_trato_leite": "*",
+      "categoria_animal_corte": "*"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Totalmix"
+    }
+  },
+  {
+    "id": "MISTURADOR-011",
+    "equipamento": "misturador_racao",
+    "criterios": {
+      "tipo_gado": "apenas_gado_corte",
+      "sistema_producao": "semi_confinamento",
+      "principal_volumoso": "silagem",
+      "animais_trato_corte": "*",
+      "animais_trato_leite": "*",
+      "categoria_animal_corte": "*"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Rotormix"
+    }
+  },
+  {
+    "id": "MISTURADOR-012",
+    "equipamento": "misturador_racao",
+    "criterios": {
+      "tipo_gado": "apenas_gado_corte",
+      "sistema_producao": "semi_confinamento",
+      "principal_volumoso": "feno_rolo_pre_secado",
+      "animais_trato_corte": "*",
+      "animais_trato_leite": "*",
+      "categoria_animal_corte": "*"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Totalmix"
+    }
+  },
+  {
+    "id": "MISTURADOR-013",
+    "equipamento": "misturador_racao",
+    "criterios": {
+      "tipo_gado": "apenas_gado_corte",
+      "sistema_producao": "semi_confinamento",
+      "principal_volumoso": "mistura_silagem_feno_rolo_pre_secado",
+      "animais_trato_corte": "*",
+      "animais_trato_leite": "*",
+      "categoria_animal_corte": "*"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Totalmix"
+    }
+  },
+  {
+    "id": "MISTURADOR-014",
+    "equipamento": "misturador_racao",
+    "criterios": {
+      "tipo_gado": "apenas_gado_corte",
+      "sistema_producao": "confinamento",
+      "principal_volumoso": "silagem",
+      "animais_trato_corte": "ate_100",
+      "animais_trato_leite": "*",
+      "categoria_animal_corte": "*"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Rotormix"
+    }
+  },
+  {
+    "id": "MISTURADOR-015",
+    "equipamento": "misturador_racao",
+    "criterios": {
+      "tipo_gado": "apenas_gado_corte",
+      "sistema_producao": "confinamento",
+      "principal_volumoso": "silagem",
+      "animais_trato_corte": "101_500",
+      "animais_trato_leite": "*",
+      "categoria_animal_corte": "*"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Rotormix"
+    }
+  },
+  {
+    "id": "MISTURADOR-016",
+    "equipamento": "misturador_racao",
+    "criterios": {
+      "tipo_gado": "apenas_gado_corte",
+      "sistema_producao": "confinamento",
+      "principal_volumoso": "silagem",
+      "animais_trato_corte": "501_1500",
+      "animais_trato_leite": "*",
+      "categoria_animal_corte": "*"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Rotormix"
+    }
+  },
+  {
+    "id": "MISTURADOR-017",
+    "equipamento": "misturador_racao",
+    "criterios": {
+      "tipo_gado": "apenas_gado_corte",
+      "sistema_producao": "confinamento",
+      "principal_volumoso": "silagem",
+      "animais_trato_corte": "1501_3000",
+      "animais_trato_leite": "*",
+      "categoria_animal_corte": "*"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Tech Bull"
+    }
+  },
+  {
+    "id": "MISTURADOR-018",
+    "equipamento": "misturador_racao",
+    "criterios": {
+      "tipo_gado": "apenas_gado_corte",
+      "sistema_producao": "confinamento",
+      "principal_volumoso": "silagem",
+      "animais_trato_corte": "acima_3000",
+      "animais_trato_leite": "*",
+      "categoria_animal_corte": "*"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Tech Bull"
+    }
+  },
+  {
+    "id": "MISTURADOR-019",
+    "equipamento": "misturador_racao",
+    "criterios": {
+      "tipo_gado": "apenas_gado_corte",
+      "sistema_producao": "confinamento",
+      "principal_volumoso": "feno_rolo_pre_secado",
+      "animais_trato_corte": "*",
+      "animais_trato_leite": "*",
+      "categoria_animal_corte": "*"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Totalmix"
+    }
+  },
+  {
+    "id": "MISTURADOR-020",
+    "equipamento": "misturador_racao",
+    "criterios": {
+      "tipo_gado": "apenas_gado_corte",
+      "sistema_producao": "confinamento",
+      "principal_volumoso": "mistura_silagem_feno_rolo_pre_secado",
+      "animais_trato_corte": "*",
+      "animais_trato_leite": "*",
+      "categoria_animal_corte": "*"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Totalmix"
+    }
+  }
+]

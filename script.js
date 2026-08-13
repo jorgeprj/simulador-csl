@@ -1,8 +1,8 @@
+import { validarIdentificacao } from "./validation";
 
 const DATA_PATH = "./data";
 
 const RECOMMENDATIONS_PATH = "./data/recomendacoes";
-
 
 let currentStep = 1;
 
@@ -16,14 +16,11 @@ let userAnswers = {
   perguntasEquipamento: {},
 };
 
-
 let currentEquipmentQuestions = [];
 
 let currentEquipmentQuestionIndex = -1;
 
-
 let currentEquipmentConfig = null;
-
 
 let currentRecommendations = [];
 
@@ -40,7 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateStepper(1);
 });
-
 
 function setupIdentification() {
   const button = document.querySelector("#continue-identification");
@@ -113,12 +109,16 @@ function setupIdentification() {
 }
 
 function salvarIdentificacao() {
+  if (!validarIdentificacao()) {
+    return false;
+  }
+
   userAnswers.identificacao = {
     nome: getInputValue("nome-completo") || getInputValue("nome"),
 
     funcao: getInputValue("funcao-completa") || getInputValue("funcao-inicial"),
 
-    telefone: getInputValue("telefone"),
+    telefone: obterTelefoneInternacional(),
 
     propriedade: getInputValue("propriedade"),
 
@@ -132,8 +132,9 @@ function salvarIdentificacao() {
 
     equipamentoCasale: obterEquipamentoCasaleSelecionado(),
   };
-}
 
+  return true;
+}
 function getInputValue(id) {
   const element = document.querySelector(`#${id}`);
 
@@ -164,7 +165,6 @@ function obterEquipamentoCasaleSelecionado() {
   return selected.dataset.identificationAnswer || null;
 }
 
-
 function setupSimpleOptions() {
   const buttons = document.querySelectorAll(".question-block .answer-option");
 
@@ -184,7 +184,6 @@ function setupSimpleOptions() {
     });
   });
 }
-
 
 function setupProductionOptions() {
   const options = document.querySelectorAll("#step-2 .selectable");
@@ -210,7 +209,6 @@ function setupProductionOptions() {
     });
   });
 }
-
 
 function obterValorOpcao(option) {
   if (!option) {
@@ -240,7 +238,6 @@ function obterValorOpcao(option) {
 
   return option.innerText.trim();
 }
-
 
 function setupNavigation() {
   /*
@@ -300,7 +297,6 @@ function setupNavigation() {
     });
   });
 }
-
 
 function continuarProducao() {
   const selected = document.querySelector("#step-2 .selectable.selected");
@@ -378,12 +374,6 @@ function renderEquipmentSelection() {
       )}
 
       ${criarOpcaoEquipamento(
-        "distribuidor_racao",
-        "Distribuidores de ração",
-        "distribuidor_racao",
-      )}
-
-      ${criarOpcaoEquipamento(
         "misturador_racao",
         "Misturadores de ração total",
         "misturador_racao",
@@ -438,7 +428,6 @@ function criarOpcaoEquipamento(value, text, key) {
   `;
 }
 
-
 function setupDynamicEquipmentSelection() {
   const options = document.querySelectorAll("#step-3 .equipment-option");
 
@@ -482,7 +471,6 @@ function setupDynamicEquipmentSelection() {
     });
   }
 }
-
 
 async function carregarPerguntasEquipamento() {
   /*
@@ -545,13 +533,10 @@ async function carregarPerguntasEquipamento() {
   }
 }
 
-
 async function carregarRecomendacoes(equipmentKey) {
   const url = `${RECOMMENDATIONS_PATH}/${equipmentKey}.json`;
 
   const data = await carregarJSON(url);
-
- 
 
   if (Array.isArray(data)) {
     currentRecommendations = data;
@@ -711,7 +696,6 @@ function mostrarErroCarregamento(mensagem) {
   }
 }
 
-
 function renderEquipmentQuestion() {
   const section = document.querySelector("#step-3");
 
@@ -822,7 +806,6 @@ function renderEquipmentQuestion() {
   setupDynamicQuestionEvents();
 }
 
-
 function setupDynamicQuestionEvents() {
   const options = document.querySelectorAll("#step-3 .dynamic-option");
 
@@ -862,8 +845,6 @@ function setupDynamicQuestionEvents() {
     });
   }
 }
-
-
 
 function salvarRespostaPergunta(selected) {
   const question = currentEquipmentQuestions[currentEquipmentQuestionIndex];
@@ -943,8 +924,6 @@ function salvarRespostaPergunta(selected) {
   renderEquipmentQuestion();
 }
 
-
-
 function voltarPerguntaEquipamento() {
   /*
    * Se estamos na primeira pergunta,
@@ -986,7 +965,6 @@ function voltarPerguntaEquipamento() {
   renderEquipmentQuestion();
 }
 
-
 function encontrarPerguntaAnterior(currentQuestionId) {
   /*
    * Procura uma pergunta cuja
@@ -1011,8 +989,6 @@ function encontrarPerguntaAnterior(currentQuestionId) {
 
   return -1;
 }
-
-
 
 function finalizarEquipamento() {
   console.log("=== FINALIZANDO SIMULAÇÃO ===");
@@ -1110,10 +1086,7 @@ function buscarRecomendacao() {
    */
   for (const regra of currentRecommendations) {
     const criterios =
-      regra.criterios ||
-      regra.criterio ||
-      regra.condicoes ||
-      {};
+      regra.criterios || regra.criterio || regra.condicoes || {};
 
     if (regraCombina(criterios, dados)) {
       console.log("✅ RECOMENDAÇÃO ENCONTRADA:", regra);
@@ -1126,7 +1099,6 @@ function buscarRecomendacao() {
 
   return null;
 }
-
 
 function regraCombina(criterios, respostas) {
   for (const campoOriginal in criterios) {
@@ -1183,7 +1155,6 @@ function regraCombina(criterios, respostas) {
   return true;
 }
 
-
 function normalizarNomeCampo(campo) {
   const aliases = {
     uso_material: "principal_uso_material",
@@ -1195,7 +1166,6 @@ function normalizarNomeCampo(campo) {
 
   return aliases[campo] || campo;
 }
-
 
 function normalizarValor(valor) {
   if (valor === null || valor === undefined) {
@@ -1209,7 +1179,6 @@ function normalizarValor(valor) {
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/\s+/g, "_");
 }
-
 
 function mostrarResultado(regra) {
   const resultado = regra?.resultado;
@@ -1302,7 +1271,6 @@ function renderConsultorResult(section, mensagem) {
   configurarResultadoAcoes();
 }
 
-
 function renderProductResult(section, produto) {
   section.innerHTML = `
 
@@ -1348,7 +1316,6 @@ function renderProductResult(section, produto) {
 
   configurarResultadoAcoes();
 }
-
 
 function criarResultadoAcoes() {
   return `
@@ -1418,7 +1385,6 @@ function criarResultadoAcoes() {
   `;
 }
 
-
 function configurarResultadoAcoes() {
   const restart = document.querySelector("#restart-simulation");
 
@@ -1432,7 +1398,6 @@ function configurarResultadoAcoes() {
     whatsapp.addEventListener("click", abrirWhatsApp);
   }
 }
-
 
 function abrirWhatsApp() {
   /*
@@ -1449,7 +1414,6 @@ function abrirWhatsApp() {
   window.open(`https://wa.me/${numero}?text=${mensagem}`, "_blank");
 }
 
-
 function continuarPerguntaEquipamento() {
   const selected = document.querySelector("#step-3 .dynamic-option.selected");
 
@@ -1461,7 +1425,6 @@ function continuarPerguntaEquipamento() {
 
   salvarRespostaPergunta(selected);
 }
-
 
 function voltarEtapa() {
   /*
@@ -1495,7 +1458,6 @@ function voltarEtapa() {
   }
 }
 
-
 function goToStep(step) {
   currentStep = step;
 
@@ -1517,7 +1479,6 @@ function goToStep(step) {
     behavior: "smooth",
   });
 }
-
 
 function updateStepper(step) {
   const steps = document.querySelectorAll(".step-item");
@@ -1548,7 +1509,6 @@ function updateStepper(step) {
     }
   });
 }
-
 
 function resetSimulation() {
   currentStep = 1;
@@ -1626,7 +1586,6 @@ function resetSimulation() {
   goToStep(1);
 }
 
-
 function restaurarStep3Original() {
   const section = document.querySelector("#step-3");
 
@@ -1665,22 +1624,12 @@ function restaurarStep3Original() {
       )}
 
       ${criarOpcaoEquipamento(
-        "distribuidor_racao",
-        "Distribuidores de ração",
-        "distribuidor_racao",
-      )}
-
-      ${criarOpcaoEquipamento(
         "misturador_racao",
         "Misturadores de ração total",
         "misturador_racao",
       )}
 
-      ${criarOpcaoEquipamento(
-        "moedor", 
-        "Moedores", 
-        "moedor"
-      )}
+      ${criarOpcaoEquipamento("moedor", "Moedores", "moedor")}
 
     </div>
 
@@ -1711,7 +1660,6 @@ function restaurarStep3Original() {
   setupDynamicEquipmentSelection();
 }
 
-
 function escapeHTML(value) {
   if (value === null || value === undefined) {
     return "";
@@ -1725,11 +1673,9 @@ function escapeHTML(value) {
     .replace(/'/g, "&#039;");
 }
 
-
 function escapeAttribute(value) {
   return escapeHTML(value);
 }
-
 
 function debugAnswers() {
   console.group("========== CASALE ==========");
