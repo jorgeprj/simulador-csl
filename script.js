@@ -366,30 +366,30 @@ function renderEquipmentSelection() {
     <div class="option-list">
 
       ${criarOpcaoEquipamento(
-        "colhedoras_de_forragem",
+        "colhedora",
         "Colhedoras de forragem",
         "colhedora",
       )}
 
       ${criarOpcaoEquipamento(
-        "distribuidores_de_esterco",
+        "distribuidor_esterco",
         "Distribuidores de esterco",
         "distribuidor_esterco",
       )}
 
       ${criarOpcaoEquipamento(
-        "distribuidores_de_racao",
+        "distribuidor_racao",
         "Distribuidores de ração",
         "distribuidor_racao",
       )}
 
       ${criarOpcaoEquipamento(
-        "misturadores_de_racao_total",
+        "misturador_racao",
         "Misturadores de ração total",
         "misturador_racao",
       )}
 
-      ${criarOpcaoEquipamento("moedores", "Moedores", "moedor")}
+      ${criarOpcaoEquipamento("moedor", "Moedores", "moedor")}
 
     </div>
 
@@ -576,8 +576,6 @@ async function carregarRecomendacoes(equipmentKey) {
   );
 }
 
-
-
 async function carregarJSON(url) {
   /*
    * Se já carregamos esse arquivo,
@@ -602,8 +600,6 @@ async function carregarJSON(url) {
 
   return data;
 }
-
-
 
 function mostrarLoadingStep3(mensagem) {
   const section = document.querySelector("#step-3");
@@ -1657,30 +1653,34 @@ function restaurarStep3Original() {
     <div class="option-list">
 
       ${criarOpcaoEquipamento(
-        "colhedoras_de_forragem",
+        "colhedora",
         "Colhedoras de forragem",
         "colhedora",
       )}
 
       ${criarOpcaoEquipamento(
-        "distribuidores_de_esterco",
+        "distribuidor_esterco",
         "Distribuidores de esterco",
         "distribuidor_esterco",
       )}
 
       ${criarOpcaoEquipamento(
-        "distribuidores_de_racao",
+        "distribuidor_racao",
         "Distribuidores de ração",
         "distribuidor_racao",
       )}
 
       ${criarOpcaoEquipamento(
-        "misturadores_de_racao_total",
+        "misturador_racao",
         "Misturadores de ração total",
         "misturador_racao",
       )}
 
-      ${criarOpcaoEquipamento("moedores", "Moedores", "moedor")}
+      ${criarOpcaoEquipamento(
+        "moedor", 
+        "Moedores", 
+        "moedor"
+      )}
 
     </div>
 

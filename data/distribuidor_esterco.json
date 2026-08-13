@@ -1,0 +1,137 @@
+{
+  "equipamento": "distribuidor_esterco",
+  "perguntas": [
+    {
+      "id": "sistema_predominante",
+      "pergunta": "Qual é o sistema predominante da fazenda?",
+      "opcoes": [
+        {
+          "valor": "compostagem",
+          "texto": "Compostagem",
+          "proxima": "tamanho_rebanho_confinado"
+        },
+        {
+          "valor": "confinamento",
+          "texto": "Confinamento",
+          "proxima": "tamanho_rebanho_confinado"
+        },
+        {
+          "valor": "compostagem_e_confinamento",
+          "texto": "Compostagem e confinamento",
+          "proxima": "tamanho_rebanho_confinado"
+        }
+      ]
+    },
+    {
+      "id": "tamanho_rebanho_confinado",
+      "pergunta": "Qual o tamanho do rebanho confinado?",
+      "opcoes": [
+        {
+          "valor": "ate_200_animais",
+          "texto": "Até 200 animais",
+          "proxima": "potencia_tdp"
+        },
+        {
+          "valor": "201_600_animais",
+          "texto": "201 a 600 animais",
+          "proxima": "potencia_tdp"
+        },
+        {
+          "valor": "acima_600_animais",
+          "texto": "Acima de 600 animais",
+          "proxima": "potencia_tdp"
+        }
+      ]
+    },
+    {
+      "id": "potencia_tdp",
+      "pergunta": "Qual a potência na transmissão (TDP) do trator disponível?",
+      "opcoes": [
+        {
+          "valor": "ate_70cv",
+          "texto": "Até 70 cv",
+          "proxima": "sistema_pesagem"
+        },
+        {
+          "valor": "70_85cv",
+          "texto": "70 a 85 cv",
+          "proxima": "sistema_pesagem"
+        },
+        {
+          "valor": "86_200cv",
+          "texto": "86 a 200 cv",
+          "proxima": "sistema_pesagem"
+        },
+        {
+          "valor": "acima_200cv",
+          "texto": "Acima de 200 cv",
+          "proxima": "sistema_pesagem"
+        }
+      ]
+    },
+    {
+      "id": "sistema_pesagem",
+      "pergunta": "Você gostaria de uma máquina com sistema de pesagem (balança)?",
+      "opcoes": [
+        {
+          "valor": "sim",
+          "texto": "Sim",
+          "proxima": "area_coberta"
+        },
+        {
+          "valor": "nao",
+          "texto": "Não",
+          "proxima": "area_coberta"
+        }
+      ]
+    },
+    {
+      "id": "area_coberta",
+      "pergunta": "Qual o tamanho da área que será coberta?",
+      "opcoes": [
+        {
+          "valor": "ate_50ha",
+          "texto": "Até 50 hectares",
+          "proxima": "tipo_material_distribuir"
+        },
+        {
+          "valor": "51_100ha",
+          "texto": "51 a 100 hectares",
+          "proxima": "tipo_material_distribuir"
+        },
+        {
+          "valor": "acima_100ha",
+          "texto": "Acima de 100 hectares",
+          "proxima": "tipo_material_distribuir"
+        }
+      ]
+    },
+    {
+      "id": "tipo_material_distribuir",
+      "pergunta": "Você pretende distribuir apenas esterco sólido, compostos orgânicos ou organo mineral?",
+      "opcoes": [
+        {
+          "valor": "apenas_esterco_solido",
+          "texto": "Apenas esterco sólido",
+          "acao": {
+            "tipo": "resultado"
+          }
+        },
+        {
+          "valor": "esterco_solido_compostos_organicos",
+          "texto": "Esterco sólido e compostos orgânicos",
+          "acao": {
+            "tipo": "resultado"
+          }
+        },
+        {
+          "valor": "organo_mineral",
+          "texto": "Organo mineral",
+          "acao": {
+            "tipo": "resultado"
+          }
+        }
+      ]
+    }
+  ]
+}

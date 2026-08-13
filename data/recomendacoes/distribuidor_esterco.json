@@ -1,0 +1,1514 @@
+[
+  {
+    "id": "DISTRIBUIDOR-001",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "*",
+      "tamanho_rebanho_confinado": "*",
+      "potencia_tdp": "ate_70cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "*",
+      "tipo_material_distribuir": "*"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-002",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "*",
+      "tamanho_rebanho_confinado": "*",
+      "potencia_tdp": "*",
+      "sistema_pesagem": "*",
+      "area_coberta": "*",
+      "tipo_material_distribuir": "organo_mineral"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-003",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "*",
+      "tamanho_rebanho_confinado": "*",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "*",
+      "tipo_material_distribuir": "esterco_solido_compostos_organicos"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-004",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 405"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-005",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 405"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-006",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-007",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 405"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-008",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-009",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-010",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 405"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-011",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-012",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-013",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-014",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-015",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-016",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-017",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-018",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-019",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-020",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-021",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-022",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-023",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-024",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-025",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-026",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-027",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-028",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-029",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-030",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-031",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-032",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-033",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-034",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-035",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-036",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-037",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-038",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-039",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-040",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-041",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-042",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-043",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-044",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-045",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-046",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-047",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-048",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-049",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-050",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-051",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-052",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-053",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-054",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-055",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-056",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-057",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "confinamento",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-058",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 405"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-059",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-060",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-061",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-062",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-063",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-064",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-065",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-066",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "ate_200_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-067",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-068",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-069",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-070",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-071",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-072",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-073",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 8511"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-074",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-075",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "201_600_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-076",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-077",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-078",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "70_85cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-079",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-080",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-081",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "86_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-082",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "ate_50ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-083",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "51_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR-084",
+    "equipamento": "distribuidor_esterco",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "distribuidor_esterco",
+      "sistema_predominante": "compostagem_e_confinamento",
+      "tamanho_rebanho_confinado": "acima_600_animais",
+      "potencia_tdp": "acima_200cv",
+      "sistema_pesagem": "*",
+      "area_coberta": "acima_100ha",
+      "tipo_material_distribuir": "apenas_esterco_solido"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "LEC 1620 Hydro"
+    }
+  }
+]

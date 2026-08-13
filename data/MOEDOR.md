@@ -61,7 +61,7 @@ Cada recomendação deve utilizar os campos abaixo:
   "equipamento": "moedor",
   "criterios": {
     "tipo_gado": "*",
-    "equipamento": "moedores",
+    "equipamento": "moedor",
     "tipo_material_moer": "ID_DO_MATERIAL",
     "toneladas_feno": "ID_DAS_TONELADAS_DE_FENO",
     "toneladas_graos": "ID_DAS_TONELADAS_DE_GRAOS",

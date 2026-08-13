@@ -79,7 +79,7 @@ Cada recomendação deve utilizar os campos abaixo:
   "equipamento": "colhedora",
   "criterios": {
     "tipo_gado": "*",
-    "equipamento": "colhedoras_de_forragem",
+    "equipamento": "colhedora",
     "uso_material": "ID_DO_USO",
     "tipo_forragem": "ID_DA_FORRAGEM",
     "altura_material": "ID_DA_ALTURA",

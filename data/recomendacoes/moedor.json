@@ -4,7 +4,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "feno",
       "toneladas_feno": "ate_7_ton_hora",
       "toneladas_graos": "*",
@@ -20,7 +20,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "feno",
       "toneladas_feno": "ate_7_ton_hora",
       "toneladas_graos": "*",
@@ -36,7 +36,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "feno",
       "toneladas_feno": "7_10_ton_hora",
       "toneladas_graos": "*",
@@ -52,7 +52,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "feno",
       "toneladas_feno": "7_10_ton_hora",
       "toneladas_graos": "*",
@@ -68,7 +68,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "feno",
       "toneladas_feno": "acima_10_ton_hora",
       "toneladas_graos": "*",
@@ -84,7 +84,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "feno",
       "toneladas_feno": "acima_10_ton_hora",
       "toneladas_graos": "*",
@@ -100,7 +100,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "graos",
       "toneladas_feno": "*",
       "toneladas_graos": "ate_20_ton_hora",
@@ -116,7 +116,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "graos",
       "toneladas_feno": "*",
       "toneladas_graos": "ate_20_ton_hora",
@@ -132,7 +132,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "graos",
       "toneladas_feno": "*",
       "toneladas_graos": "20_40_ton_hora",
@@ -148,7 +148,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "graos",
       "toneladas_feno": "*",
       "toneladas_graos": "20_40_ton_hora",
@@ -164,7 +164,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "graos",
       "toneladas_feno": "*",
       "toneladas_graos": "acima_40_ton_hora",
@@ -180,7 +180,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "graos",
       "toneladas_feno": "*",
       "toneladas_graos": "acima_40_ton_hora",
@@ -196,7 +196,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "feno_e_graos",
       "toneladas_feno": "ate_7_ton_hora",
       "toneladas_graos": "ate_20_ton_hora",
@@ -212,7 +212,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "feno_e_graos",
       "toneladas_feno": "ate_7_ton_hora",
       "toneladas_graos": "ate_20_ton_hora",
@@ -228,7 +228,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "feno_e_graos",
       "toneladas_feno": "7_10_ton_hora",
       "toneladas_graos": "ate_20_ton_hora",
@@ -244,7 +244,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "feno_e_graos",
       "toneladas_feno": "7_10_ton_hora",
       "toneladas_graos": "ate_20_ton_hora",
@@ -260,7 +260,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "feno_e_graos",
       "toneladas_feno": "ate_7_ton_hora",
       "toneladas_graos": "20_40_ton_hora",
@@ -276,7 +276,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "feno_e_graos",
       "toneladas_feno": "ate_7_ton_hora",
       "toneladas_graos": "20_40_ton_hora",
@@ -292,7 +292,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "feno_e_graos",
       "toneladas_feno": "7_10_ton_hora",
       "toneladas_graos": "20_40_ton_hora",
@@ -308,7 +308,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "feno_e_graos",
       "toneladas_feno": "7_10_ton_hora",
       "toneladas_graos": "20_40_ton_hora",
@@ -324,7 +324,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "feno_e_graos",
       "toneladas_feno": "acima_10_ton_hora",
       "toneladas_graos": "ate_20_ton_hora",
@@ -340,7 +340,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "feno_e_graos",
       "toneladas_feno": "acima_10_ton_hora",
       "toneladas_graos": "ate_20_ton_hora",
@@ -356,7 +356,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "feno_e_graos",
       "toneladas_feno": "ate_7_ton_hora",
       "toneladas_graos": "acima_40_ton_hora",
@@ -372,7 +372,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "feno_e_graos",
       "toneladas_feno": "ate_7_ton_hora",
       "toneladas_graos": "acima_40_ton_hora",
@@ -388,7 +388,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "feno_e_graos",
       "toneladas_feno": "7_10_ton_hora",
       "toneladas_graos": "acima_40_ton_hora",
@@ -404,7 +404,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "feno_e_graos",
       "toneladas_feno": "7_10_ton_hora",
       "toneladas_graos": "acima_40_ton_hora",
@@ -420,7 +420,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "feno_e_graos",
       "toneladas_feno": "acima_10_ton_hora",
       "toneladas_graos": "20_40_ton_hora",
@@ -436,7 +436,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "feno_e_graos",
       "toneladas_feno": "acima_10_ton_hora",
       "toneladas_graos": "20_40_ton_hora",
@@ -452,7 +452,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "feno_e_graos",
       "toneladas_feno": "acima_10_ton_hora",
       "toneladas_graos": "acima_40_ton_hora",
@@ -468,7 +468,7 @@
     "equipamento": "moedor",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "moedores",
+      "equipamento": "moedor",
       "tipo_material_moer": "feno_e_graos",
       "toneladas_feno": "acima_10_ton_hora",
       "toneladas_graos": "acima_40_ton_hora",

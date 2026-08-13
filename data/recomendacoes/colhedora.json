@@ -4,7 +4,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "milho",
       "tipo_forragem": "*",
       "altura_material": "*",
@@ -21,7 +21,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "outros",
       "altura_material": "*",
@@ -38,7 +38,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "outros",
       "altura_material": "*",
@@ -55,7 +55,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "outros",
       "altura_material": "*",
@@ -72,7 +72,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "feno_pre_secada",
       "tipo_forragem": "*",
       "altura_material": "*",
@@ -89,7 +89,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem_feno_pre_secada",
       "tipo_forragem": "*",
       "altura_material": "*",
@@ -106,7 +106,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "acima_160cm",
@@ -123,7 +123,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "acima_160cm",
@@ -140,7 +140,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "acima_160cm",
@@ -157,7 +157,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -174,7 +174,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -191,7 +191,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -208,7 +208,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -225,7 +225,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -242,7 +242,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -259,7 +259,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -277,7 +277,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -295,7 +295,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -312,7 +312,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -329,7 +329,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -346,7 +346,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -363,7 +363,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -380,7 +380,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -397,7 +397,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -414,7 +414,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -431,7 +431,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -448,7 +448,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -465,7 +465,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -482,7 +482,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -499,7 +499,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -516,7 +516,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -533,7 +533,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -550,7 +550,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -567,7 +567,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -584,7 +584,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -601,7 +601,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -618,7 +618,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -635,7 +635,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -652,7 +652,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -669,7 +669,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -686,7 +686,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -703,7 +703,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -720,7 +720,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -737,7 +737,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -754,7 +754,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -771,7 +771,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -788,7 +788,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -805,7 +805,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -822,7 +822,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -839,7 +839,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -856,7 +856,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -873,7 +873,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -890,7 +890,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -907,7 +907,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -924,7 +924,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -941,7 +941,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -958,7 +958,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -975,7 +975,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -992,7 +992,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1009,7 +1009,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1026,7 +1026,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1043,7 +1043,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1060,7 +1060,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1077,7 +1077,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1094,7 +1094,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1111,7 +1111,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1128,7 +1128,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1145,7 +1145,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1162,7 +1162,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "qualquier",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1179,7 +1179,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1196,7 +1196,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1213,7 +1213,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1230,7 +1230,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1247,7 +1247,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1264,7 +1264,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1281,7 +1281,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1298,7 +1298,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1315,7 +1315,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1332,7 +1332,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1349,7 +1349,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1366,7 +1366,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1383,7 +1383,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1400,7 +1400,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1417,7 +1417,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1434,7 +1434,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1451,7 +1451,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1468,7 +1468,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1485,7 +1485,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1502,7 +1502,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1519,7 +1519,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1536,7 +1536,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1553,7 +1553,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1570,7 +1570,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1587,7 +1587,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1604,7 +1604,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1621,7 +1621,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1638,7 +1638,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1655,7 +1655,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1672,7 +1672,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1689,7 +1689,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1706,7 +1706,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1723,7 +1723,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1740,7 +1740,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1757,7 +1757,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1774,7 +1774,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1791,7 +1791,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1808,7 +1808,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1825,7 +1825,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1842,7 +1842,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1859,7 +1859,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1876,7 +1876,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1893,7 +1893,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1910,7 +1910,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1927,7 +1927,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
@@ -1944,7 +1944,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1961,7 +1961,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
@@ -1978,7 +1978,7 @@
     "equipamento": "colhedora",
     "criterios": {
       "tipo_gado": "*",
-      "equipamento": "colhedoras_de_forragem",
+      "equipamento": "colhedora",
       "uso_material": "trato_verde_silagem",
       "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "41_160cm",
