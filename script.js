@@ -1,54 +1,11 @@
-/**
- * ============================================================
- * SIMULADOR CASALE
- * ============================================================
- *
- * Estrutura dos arquivos:
- *
- * /data/
- *   colhedora.json
- *   outro-equipamento.json
- *
- * /data/recomendacoes/
- *   colhedora.json
- *   outro-equipamento.json
- *
- *
- * FLUXO:
- *
- * STEP 1
- * Identificação
- *
- * STEP 2
- * Produção
- *
- * STEP 3
- * Equipamento
- * + perguntas específicas carregadas do JSON
- *
- * STEP 4
- * Recomendação
- *
- * ============================================================
- */
-
-/* ============================================================
-   CONFIGURAÇÃO
-============================================================ */
 
 const DATA_PATH = "./data";
 
 const RECOMMENDATIONS_PATH = "./data/recomendacoes";
 
-/* ============================================================
-   ESTADO GLOBAL
-============================================================ */
 
 let currentStep = 1;
 
-/**
- * Estado principal da simulação
- */
 let userAnswers = {
   identificacao: {},
 
@@ -59,38 +16,18 @@ let userAnswers = {
   perguntasEquipamento: {},
 };
 
-/**
- * Perguntas do equipamento carregadas
- * do arquivo JSON.
- */
+
 let currentEquipmentQuestions = [];
 
-/**
- * Índice da pergunta atual.
- */
 let currentEquipmentQuestionIndex = -1;
 
-/**
- * Configuração do equipamento carregado.
- */
+
 let currentEquipmentConfig = null;
 
-/**
- * Recomendações carregadas do JSON.
- */
+
 let currentRecommendations = [];
 
-/**
- * Cache dos JSONs já carregados.
- *
- * Evita fazer fetch novamente
- * desnecessariamente.
- */
 const jsonCache = {};
-
-/* ============================================================
-   INICIALIZAÇÃO
-============================================================ */
 
 document.addEventListener("DOMContentLoaded", () => {
   setupIdentification();
@@ -104,9 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
   updateStepper(1);
 });
 
-/* ============================================================
-   STEP 1 — IDENTIFICAÇÃO
-============================================================ */
 
 function setupIdentification() {
   const button = document.querySelector("#continue-identification");
@@ -178,10 +112,6 @@ function setupIdentification() {
   });
 }
 
-/* ============================================================
-   SALVAR IDENTIFICAÇÃO
-============================================================ */
-
 function salvarIdentificacao() {
   userAnswers.identificacao = {
     nome: getInputValue("nome-completo") || getInputValue("nome"),
@@ -204,10 +134,6 @@ function salvarIdentificacao() {
   };
 }
 
-/* ============================================================
-   AUXILIARES DE INPUT
-============================================================ */
-
 function getInputValue(id) {
   const element = document.querySelector(`#${id}`);
 
@@ -218,10 +144,6 @@ function getInputValue(id) {
   return element.value.trim();
 }
 
-/* ============================================================
-   PREENCHER CAMPO
-============================================================ */
-
 function preencherCampo(id, valor) {
   const element = document.querySelector(`#${id}`);
 
@@ -229,10 +151,6 @@ function preencherCampo(id, valor) {
     element.value = valor || "";
   }
 }
-
-/* ============================================================
-   EQUIPAMENTO CASALE — SIM/NÃO
-============================================================ */
 
 function obterEquipamentoCasaleSelecionado() {
   const selected = document.querySelector(
@@ -246,9 +164,6 @@ function obterEquipamentoCasaleSelecionado() {
   return selected.dataset.identificationAnswer || null;
 }
 
-/* ============================================================
-   OPÇÕES SIM / NÃO
-============================================================ */
 
 function setupSimpleOptions() {
   const buttons = document.querySelectorAll(".question-block .answer-option");
@@ -270,9 +185,6 @@ function setupSimpleOptions() {
   });
 }
 
-/* ============================================================
-   STEP 2 — PRODUÇÃO
-============================================================ */
 
 function setupProductionOptions() {
   const options = document.querySelectorAll("#step-2 .selectable");
@@ -299,9 +211,6 @@ function setupProductionOptions() {
   });
 }
 
-/* ============================================================
-   VALOR DA OPÇÃO
-============================================================ */
 
 function obterValorOpcao(option) {
   if (!option) {
@@ -332,9 +241,6 @@ function obterValorOpcao(option) {
   return option.innerText.trim();
 }
 
-/* ============================================================
-   NAVEGAÇÃO
-============================================================ */
 
 function setupNavigation() {
   /*
@@ -395,9 +301,6 @@ function setupNavigation() {
   });
 }
 
-/* ============================================================
-   CONTINUAR PRODUÇÃO
-============================================================ */
 
 function continuarProducao() {
   const selected = document.querySelector("#step-2 .selectable.selected");
@@ -424,10 +327,6 @@ function continuarProducao() {
   iniciarEquipamento();
 }
 
-/* ============================================================
-   STEP 3 — EQUIPAMENTO
-============================================================ */
-
 function iniciarEquipamento() {
   userAnswers.equipamento = null;
 
@@ -443,10 +342,6 @@ function iniciarEquipamento() {
 
   renderEquipmentSelection();
 }
-
-/* ============================================================
-   SELEÇÃO DO EQUIPAMENTO
-============================================================ */
 
 function renderEquipmentSelection() {
   const section = document.querySelector("#step-3");
@@ -524,10 +419,6 @@ function renderEquipmentSelection() {
   setupDynamicEquipmentSelection();
 }
 
-/* ============================================================
-   CRIAR OPÇÃO DE EQUIPAMENTO
-============================================================ */
-
 function criarOpcaoEquipamento(value, text, key) {
   return `
 
@@ -547,9 +438,6 @@ function criarOpcaoEquipamento(value, text, key) {
   `;
 }
 
-/* ============================================================
-   EVENTOS — EQUIPAMENTO
-============================================================ */
 
 function setupDynamicEquipmentSelection() {
   const options = document.querySelectorAll("#step-3 .equipment-option");
@@ -595,9 +483,6 @@ function setupDynamicEquipmentSelection() {
   }
 }
 
-/* ============================================================
-   CARREGAR PERGUNTAS DO JSON
-============================================================ */
 
 async function carregarPerguntasEquipamento() {
   /*
@@ -660,32 +545,13 @@ async function carregarPerguntasEquipamento() {
   }
 }
 
-/* ============================================================
-   CARREGAR RECOMENDAÇÕES
-============================================================ */
 
 async function carregarRecomendacoes(equipmentKey) {
   const url = `${RECOMMENDATIONS_PATH}/${equipmentKey}.json`;
 
   const data = await carregarJSON(url);
 
-  /*
-   * Permite diferentes formatos.
-   *
-   * Formato 1:
-   *
-   * [
-   *   {...},
-   *   {...}
-   * ]
-   *
-   *
-   * Formato 2:
-   *
-   * {
-   *   "recomendacoes": [...]
-   * }
-   */
+ 
 
   if (Array.isArray(data)) {
     currentRecommendations = data;
@@ -710,9 +576,7 @@ async function carregarRecomendacoes(equipmentKey) {
   );
 }
 
-/* ============================================================
-   FETCH / CACHE DOS JSONS
-============================================================ */
+
 
 async function carregarJSON(url) {
   /*
@@ -739,9 +603,7 @@ async function carregarJSON(url) {
   return data;
 }
 
-/* ============================================================
-   LOADING
-============================================================ */
+
 
 function mostrarLoadingStep3(mensagem) {
   const section = document.querySelector("#step-3");
@@ -774,10 +636,6 @@ function mostrarLoadingStep3(mensagem) {
 
   `;
 }
-
-/* ============================================================
-   ERRO DE CARREGAMENTO
-============================================================ */
 
 function mostrarErroCarregamento(mensagem) {
   const section = document.querySelector("#step-3");
@@ -857,9 +715,6 @@ function mostrarErroCarregamento(mensagem) {
   }
 }
 
-/* ============================================================
-   RENDERIZA PERGUNTA
-============================================================ */
 
 function renderEquipmentQuestion() {
   const section = document.querySelector("#step-3");
@@ -971,9 +826,6 @@ function renderEquipmentQuestion() {
   setupDynamicQuestionEvents();
 }
 
-/* ============================================================
-   EVENTOS DA PERGUNTA
-============================================================ */
 
 function setupDynamicQuestionEvents() {
   const options = document.querySelectorAll("#step-3 .dynamic-option");
@@ -1015,9 +867,7 @@ function setupDynamicQuestionEvents() {
   }
 }
 
-/* ============================================================
-   SALVAR RESPOSTA DA PERGUNTA
-============================================================ */
+
 
 function salvarRespostaPergunta(selected) {
   const question = currentEquipmentQuestions[currentEquipmentQuestionIndex];
@@ -1097,9 +947,7 @@ function salvarRespostaPergunta(selected) {
   renderEquipmentQuestion();
 }
 
-/* ============================================================
-   VOLTAR PERGUNTA
-============================================================ */
+
 
 function voltarPerguntaEquipamento() {
   /*
@@ -1142,9 +990,6 @@ function voltarPerguntaEquipamento() {
   renderEquipmentQuestion();
 }
 
-/* ============================================================
-   ENCONTRAR PERGUNTA ANTERIOR
-============================================================ */
 
 function encontrarPerguntaAnterior(currentQuestionId) {
   /*
@@ -1171,9 +1016,7 @@ function encontrarPerguntaAnterior(currentQuestionId) {
   return -1;
 }
 
-/* ============================================================
-   FINALIZAR EQUIPAMENTO
-============================================================ */
+
 
 function finalizarEquipamento() {
   console.log("=== FINALIZANDO SIMULAÇÃO ===");
@@ -1205,53 +1048,50 @@ function buscarRecomendacao() {
   const respostas = userAnswers.perguntasEquipamento || {};
 
   /*
-   * IMPORTANTE:
-   *
-   * Os nomes abaixo representam
-   * os IDs das perguntas do JSON.
-   *
-   * Portanto:
-   *
-   * principal_uso_material
-   * tipo_forragem
-   * altura_material
-   * potencia_tdp
-   * hectares
-   *
-   * são usados diretamente.
+   * Monta os dados básicos da simulação.
    */
-
   const dados = {
     /*
-     * Produção.
+     * Produção
      */
-
     tipo_gado: userAnswers.producao,
 
     /*
-     * Equipamento.
+     * Equipamento
      */
-
     equipamento: userAnswers.equipamento.valor,
 
     equipamento_key: userAnswers.equipamento.key,
 
     /*
-     * Perguntas da colhedora.
+     * Todas as respostas específicas
+     * do equipamento entram automaticamente.
+     *
+     * Exemplo MOEDOR:
+     *
+     * tipo_material_moer
+     * toneladas_feno
+     * toneladas_graos
+     * acionamento
+     *
+     * Exemplo COLHEDORA:
+     *
+     * principal_uso_material
+     * tipo_forragem
+     * altura_material
+     * potencia_tdp
+     * hectares
      */
-
-    principal_uso_material: respostas.principal_uso_material,
-
-    uso_material: respostas.principal_uso_material,
-
-    tipo_forragem: respostas.tipo_forragem,
-
-    altura_material: respostas.altura_material,
-
-    potencia_tdp: respostas.potencia_tdp,
-
-    hectares: respostas.hectares,
+    ...respostas,
   };
+
+  /*
+   * Compatibilidade com o campo antigo
+   * usado nas recomendações da colhedora.
+   */
+  if (respostas.principal_uso_material) {
+    dados.uso_material = respostas.principal_uso_material;
+  }
 
   console.group("CASALE — MOTOR DE RECOMENDAÇÃO");
 
@@ -1259,20 +1099,28 @@ function buscarRecomendacao() {
 
   console.table(dados);
 
-  console.log("Regras carregadas:", currentRecommendations);
+  console.log("Respostas do equipamento:");
+
+  console.table(respostas);
+
+  console.log("Regras carregadas:");
+
+  console.table(currentRecommendations);
 
   console.groupEnd();
 
   /*
    * Testa todas as recomendações.
    */
-
   for (const regra of currentRecommendations) {
     const criterios =
-      regra.criterios || regra.criterio || regra.condicoes || {};
+      regra.criterios ||
+      regra.criterio ||
+      regra.condicoes ||
+      {};
 
     if (regraCombina(criterios, dados)) {
-      console.log("✅ Recomendação encontrada:", regra);
+      console.log("✅ RECOMENDAÇÃO ENCONTRADA:", regra);
 
       return regra;
     }
@@ -1283,9 +1131,6 @@ function buscarRecomendacao() {
   return null;
 }
 
-/* ============================================================
-   COMPARAÇÃO DOS CRITÉRIOS
-============================================================ */
 
 function regraCombina(criterios, respostas) {
   for (const campoOriginal in criterios) {
@@ -1342,9 +1187,6 @@ function regraCombina(criterios, respostas) {
   return true;
 }
 
-/* ============================================================
-   NORMALIZAR NOME DO CAMPO
-============================================================ */
 
 function normalizarNomeCampo(campo) {
   const aliases = {
@@ -1358,9 +1200,6 @@ function normalizarNomeCampo(campo) {
   return aliases[campo] || campo;
 }
 
-/* ============================================================
-   NORMALIZAÇÃO DE VALORES
-============================================================ */
 
 function normalizarValor(valor) {
   if (valor === null || valor === undefined) {
@@ -1375,9 +1214,6 @@ function normalizarValor(valor) {
     .replace(/\s+/g, "_");
 }
 
-/* ============================================================
-   RESULTADO
-============================================================ */
 
 function mostrarResultado(regra) {
   const resultado = regra?.resultado;
@@ -1415,10 +1251,6 @@ function mostrarResultado(regra) {
   renderProductResult(section, resultado.valor);
 }
 
-/* ============================================================
-   RESULTADO CONSULTOR
-============================================================ */
-
 function mostrarResultadoConsultor(mensagem) {
   goToStep(4);
 
@@ -1430,10 +1262,6 @@ function mostrarResultadoConsultor(mensagem) {
 
   renderConsultorResult(section, mensagem);
 }
-
-/* ============================================================
-   RENDER RESULTADO CONSULTOR
-============================================================ */
 
 function renderConsultorResult(section, mensagem) {
   section.innerHTML = `
@@ -1478,9 +1306,6 @@ function renderConsultorResult(section, mensagem) {
   configurarResultadoAcoes();
 }
 
-/* ============================================================
-   RENDER RESULTADO PRODUTO
-============================================================ */
 
 function renderProductResult(section, produto) {
   section.innerHTML = `
@@ -1528,9 +1353,6 @@ function renderProductResult(section, produto) {
   configurarResultadoAcoes();
 }
 
-/* ============================================================
-   AÇÕES DO RESULTADO
-============================================================ */
 
 function criarResultadoAcoes() {
   return `
@@ -1600,9 +1422,6 @@ function criarResultadoAcoes() {
   `;
 }
 
-/* ============================================================
-   EVENTOS DO RESULTADO
-============================================================ */
 
 function configurarResultadoAcoes() {
   const restart = document.querySelector("#restart-simulation");
@@ -1618,9 +1437,6 @@ function configurarResultadoAcoes() {
   }
 }
 
-/* ============================================================
-   WHATSAPP
-============================================================ */
 
 function abrirWhatsApp() {
   /*
@@ -1637,9 +1453,6 @@ function abrirWhatsApp() {
   window.open(`https://wa.me/${numero}?text=${mensagem}`, "_blank");
 }
 
-/* ============================================================
-   CONTINUAR PERGUNTA
-============================================================ */
 
 function continuarPerguntaEquipamento() {
   const selected = document.querySelector("#step-3 .dynamic-option.selected");
@@ -1653,9 +1466,6 @@ function continuarPerguntaEquipamento() {
   salvarRespostaPergunta(selected);
 }
 
-/* ============================================================
-   VOLTAR ETAPA
-============================================================ */
 
 function voltarEtapa() {
   /*
@@ -1689,9 +1499,6 @@ function voltarEtapa() {
   }
 }
 
-/* ============================================================
-   TROCA DE ETAPA
-============================================================ */
 
 function goToStep(step) {
   currentStep = step;
@@ -1715,9 +1522,6 @@ function goToStep(step) {
   });
 }
 
-/* ============================================================
-   STEPPER
-============================================================ */
 
 function updateStepper(step) {
   const steps = document.querySelectorAll(".step-item");
@@ -1749,9 +1553,6 @@ function updateStepper(step) {
   });
 }
 
-/* ============================================================
-   RESET
-============================================================ */
 
 function resetSimulation() {
   currentStep = 1;
@@ -1829,9 +1630,6 @@ function resetSimulation() {
   goToStep(1);
 }
 
-/* ============================================================
-   RESTAURAR STEP 3
-============================================================ */
 
 function restaurarStep3Original() {
   const section = document.querySelector("#step-3");
@@ -1913,9 +1711,6 @@ function restaurarStep3Original() {
   setupDynamicEquipmentSelection();
 }
 
-/* ============================================================
-   ESCAPE HTML
-============================================================ */
 
 function escapeHTML(value) {
   if (value === null || value === undefined) {
@@ -1930,17 +1725,11 @@ function escapeHTML(value) {
     .replace(/'/g, "&#039;");
 }
 
-/* ============================================================
-   ESCAPE ATTRIBUTE
-============================================================ */
 
 function escapeAttribute(value) {
   return escapeHTML(value);
 }
 
-/* ============================================================
-   DEBUG
-============================================================ */
 
 function debugAnswers() {
   console.group("========== CASALE ==========");

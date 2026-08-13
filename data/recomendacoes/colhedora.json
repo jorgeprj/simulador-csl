@@ -56,7 +56,7 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
+      "uso_material": "trato_verde_silagem",
       "tipo_forragem": "outros",
       "altura_material": "*",
       "potencia_tdp": "*",
@@ -73,7 +73,7 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "feno_presecada",
+      "uso_material": "feno_pre_secada",
       "tipo_forragem": "*",
       "altura_material": "*",
       "potencia_tdp": "*",
@@ -90,7 +90,7 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_silagem_e_feno_presecada",
+      "uso_material": "trato_verde_silagem_feno_pre_secada",
       "tipo_forragem": "*",
       "altura_material": "*",
       "potencia_tdp": "*",
@@ -108,8 +108,8 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "acima_de_160_cm",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "acima_160cm",
       "potencia_tdp": "*",
       "hectares": "*"
     },
@@ -125,8 +125,8 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "acima_de_160_cm",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "acima_160cm",
       "potencia_tdp": "*",
       "hectares": "*"
     },
@@ -141,9 +141,9 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "acima_de_160_cm",
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "acima_160cm",
       "potencia_tdp": "*",
       "hectares": "*"
     },
@@ -159,10 +159,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "ate_40_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "ate_40cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -176,10 +176,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "ate_40_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "ate_40cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -193,10 +193,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "ate_40_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "ate_40cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -210,10 +210,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "ate_40_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "ate_40cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -227,10 +227,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "ate_40_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "ate_40cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -244,10 +244,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "ate_40_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "ate_40cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -331,10 +331,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "41_a_50_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "41_50cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -348,10 +348,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "41_a_50_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "41_50cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -365,10 +365,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "51_a_60_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "51_60cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -382,10 +382,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "51_a_60_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "51_60cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -399,10 +399,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "51_a_60_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "51_60cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -416,10 +416,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "51_a_60_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "51_60cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -433,10 +433,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "51_a_60_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "51_60cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -450,10 +450,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "51_a_60_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "51_60cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -467,10 +467,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "61_a_75_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "61_75cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -484,10 +484,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "61_a_75_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "61_75cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -501,10 +501,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "61_a_75_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "61_75cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -518,10 +518,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "61_a_75_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "61_75cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -535,10 +535,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "61_a_75_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "61_75cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -552,10 +552,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "61_a_75_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "61_75cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -569,10 +569,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "76_a_85_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "76_85cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -586,10 +586,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "76_a_85_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "76_85cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -603,10 +603,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "76_a_85_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "76_85cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -620,10 +620,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "76_a_85_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "76_85cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -637,10 +637,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "76_a_85_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "76_85cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -654,10 +654,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "76_a_85_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "76_85cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -671,10 +671,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
       "altura_material": "ate_40cm",
-      "potencia_tdp": "acima_de_85_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "potencia_tdp": "acima_85cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -688,10 +688,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "acima_de_85_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "acima_85cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -705,10 +705,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "acima_de_85_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "acima_85cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -722,10 +722,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "acima_de_85_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "acima_85cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -739,10 +739,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "acima_de_85_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "acima_85cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -756,10 +756,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "trato_verde",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "acima_de_85_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "acima_85cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -773,10 +773,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "ate_40_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "ate_40cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -790,10 +790,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "ate_40_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "ate_40cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -807,10 +807,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "ate_40_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "ate_40cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -824,10 +824,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "ate_40_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "ate_40cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -841,10 +841,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "ate_40_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "ate_40cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -858,10 +858,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "ate_40_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "ate_40cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -875,10 +875,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "41_a_50_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "41_50cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -892,10 +892,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "41_a_50_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "41_50cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -909,10 +909,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "41_a_50_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "41_50cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -926,10 +926,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "41_a_50_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "41_50cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -943,10 +943,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "41_a_50_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "41_50cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -960,10 +960,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "41_a_50_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "41_50cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -977,10 +977,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "51_a_60_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "51_60cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -994,10 +994,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "51_a_60_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "51_60cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1011,10 +1011,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "51_a_60_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "51_60cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1028,10 +1028,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "51_a_60_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "51_60cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1045,10 +1045,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "51_a_60_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "51_60cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1062,10 +1062,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "51_a_60_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "51_60cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1079,10 +1079,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "61_a_75_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "61_75cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1096,10 +1096,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "61_a_75_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "61_75cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1113,10 +1113,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "61_a_75_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "61_75cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1130,10 +1130,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "61_a_75_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "61_75cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1147,10 +1147,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "61_a_75_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "61_75cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1164,10 +1164,10 @@
       "tipo_gado": "qualquier",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "61_a_75_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "61_75cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1181,10 +1181,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "76_a_85_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "76_85cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1198,10 +1198,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "76_a_85_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "76_85cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1215,10 +1215,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "76_a_85_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "76_85cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1232,10 +1232,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "76_a_85_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "76_85cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1249,10 +1249,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "76_a_85_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "76_85cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1266,10 +1266,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "76_a_85_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "76_85cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1283,10 +1283,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "acima_de_85_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "acima_85cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1300,10 +1300,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "acima_de_85_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "acima_85cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1317,10 +1317,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "acima_de_85_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "acima_85cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1334,10 +1334,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "acima_de_85_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "acima_85cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1351,10 +1351,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "acima_de_85_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "acima_85cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1368,10 +1368,10 @@
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
       "uso_material": "silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "acima_de_85_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "acima_85cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1384,11 +1384,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "ate_40_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "ate_40cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1401,11 +1401,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "ate_40_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "ate_40cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1418,11 +1418,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "ate_40_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "ate_40cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1435,11 +1435,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "ate_40_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "ate_40cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1452,11 +1452,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "ate_40_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "ate_40cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1469,11 +1469,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "ate_40_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "ate_40cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1486,11 +1486,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "41_a_50_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "41_50cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1503,11 +1503,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "41_a_50_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "41_50cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1520,11 +1520,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "41_a_50_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "41_50cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1537,11 +1537,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "41_a_50_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "41_50cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1554,11 +1554,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "41_a_50_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "41_50cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1571,11 +1571,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "41_a_50_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "41_50cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1588,11 +1588,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "51_a_60_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "51_60cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1605,11 +1605,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "51_a_60_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "51_60cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1622,11 +1622,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "51_a_60_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "51_60cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1639,11 +1639,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "51_a_60_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "51_60cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1656,11 +1656,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "51_a_60_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "51_60cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1673,11 +1673,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "51_a_60_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "51_60cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1690,11 +1690,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "61_a_75_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "61_75cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1707,11 +1707,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "61_a_75_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "61_75cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1724,11 +1724,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "61_a_75_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "61_75cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1741,11 +1741,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "61_a_75_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "61_75cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1758,11 +1758,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "61_a_75_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "61_75cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1775,11 +1775,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "61_a_75_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "61_75cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1792,11 +1792,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "76_a_85_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "76_85cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1809,11 +1809,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "76_a_85_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "76_85cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1826,11 +1826,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "76_a_85_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "76_85cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1843,11 +1843,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "76_a_85_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "76_85cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1860,11 +1860,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "76_a_85_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "76_85cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1877,11 +1877,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "76_a_85_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "76_85cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1894,11 +1894,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "acima_de_85_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "acima_85cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1911,11 +1911,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "acima_de_85_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "acima_85cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1928,11 +1928,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "ate_40_cm",
-      "potencia_tdp": "acima_de_85_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "ate_40cm",
+      "potencia_tdp": "acima_85cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1945,11 +1945,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "acima_de_85_cv_na_tdp",
-      "hectares": "ate_30_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "acima_85cv",
+      "hectares": "ate_30ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1962,11 +1962,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "acima_de_85_cv_na_tdp",
-      "hectares": "31_a_60_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "acima_85cv",
+      "hectares": "30_60ha"
     },
     "resultado": {
       "tipo": "produto",
@@ -1979,11 +1979,11 @@
     "criterios": {
       "tipo_gado": "*",
       "equipamento": "colhedoras_de_forragem",
-      "uso_material": "trato_verde_e_silagem",
-      "tipo_forragem": "mombaca_braquiarias_tifiton_elefante",
-      "altura_material": "41_a_160_cm",
-      "potencia_tdp": "acima_de_85_cv_na_tdp",
-      "hectares": "acima_de_60_hectares"
+      "uso_material": "trato_verde_silagem",
+      "tipo_forragem": "mombaca_braquiaria_tifton_elefante",
+      "altura_material": "41_160cm",
+      "potencia_tdp": "acima_85cv",
+      "hectares": "acima_60ha"
     },
     "resultado": {
       "tipo": "produto",

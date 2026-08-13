@@ -52,6 +52,8 @@
 | `41_50cv`  | 41 a 50 cv na TDP |
 | `51_60cv`  | 51 a 60 cv na TDP |
 | `61_75cv`  | 61 a 75 cv na TDP |
+| `76_85cv`  | 76 a 85 cv na TDP |
+| `acima_85cv`  | Acima de 85 cv na TDP |
 
 ---
 

@@ -1,0 +1,482 @@
+[
+  {
+    "id": "MOEDOR-001",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "feno",
+      "toneladas_feno": "ate_7_ton_hora",
+      "toneladas_graos": "*",
+      "acionamento": "trator"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "H-835"
+    }
+  },
+  {
+    "id": "MOEDOR-002",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "feno",
+      "toneladas_feno": "ate_7_ton_hora",
+      "toneladas_graos": "*",
+      "acionamento": "motor_eletrico"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "H-835"
+    }
+  },
+  {
+    "id": "MOEDOR-003",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "feno",
+      "toneladas_feno": "7_10_ton_hora",
+      "toneladas_graos": "*",
+      "acionamento": "trator"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "H-1000"
+    }
+  },
+  {
+    "id": "MOEDOR-004",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "feno",
+      "toneladas_feno": "7_10_ton_hora",
+      "toneladas_graos": "*",
+      "acionamento": "motor_eletrico"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "H-1000"
+    }
+  },
+  {
+    "id": "MOEDOR-005",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "feno",
+      "toneladas_feno": "acima_10_ton_hora",
+      "toneladas_graos": "*",
+      "acionamento": "trator"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "MOEDOR-006",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "feno",
+      "toneladas_feno": "acima_10_ton_hora",
+      "toneladas_graos": "*",
+      "acionamento": "motor_eletrico"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "MOEDOR-007",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "graos",
+      "toneladas_feno": "*",
+      "toneladas_graos": "ate_20_ton_hora",
+      "acionamento": "trator"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "H-835"
+    }
+  },
+  {
+    "id": "MOEDOR-008",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "graos",
+      "toneladas_feno": "*",
+      "toneladas_graos": "ate_20_ton_hora",
+      "acionamento": "motor_eletrico"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "H-835"
+    }
+  },
+  {
+    "id": "MOEDOR-009",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "graos",
+      "toneladas_feno": "*",
+      "toneladas_graos": "20_40_ton_hora",
+      "acionamento": "trator"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "H-1000"
+    }
+  },
+  {
+    "id": "MOEDOR-010",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "graos",
+      "toneladas_feno": "*",
+      "toneladas_graos": "20_40_ton_hora",
+      "acionamento": "motor_eletrico"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "H-1000"
+    }
+  },
+  {
+    "id": "MOEDOR-011",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "graos",
+      "toneladas_feno": "*",
+      "toneladas_graos": "acima_40_ton_hora",
+      "acionamento": "trator"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "MOEDOR-012",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "graos",
+      "toneladas_feno": "*",
+      "toneladas_graos": "acima_40_ton_hora",
+      "acionamento": "motor_eletrico"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "MOEDOR-013",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "feno_e_graos",
+      "toneladas_feno": "ate_7_ton_hora",
+      "toneladas_graos": "ate_20_ton_hora",
+      "acionamento": "trator"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "H-835"
+    }
+  },
+  {
+    "id": "MOEDOR-014",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "feno_e_graos",
+      "toneladas_feno": "ate_7_ton_hora",
+      "toneladas_graos": "ate_20_ton_hora",
+      "acionamento": "motor_eletrico"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "H-835"
+    }
+  },
+  {
+    "id": "MOEDOR-015",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "feno_e_graos",
+      "toneladas_feno": "7_10_ton_hora",
+      "toneladas_graos": "ate_20_ton_hora",
+      "acionamento": "trator"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "H-1000"
+    }
+  },
+  {
+    "id": "MOEDOR-016",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "feno_e_graos",
+      "toneladas_feno": "7_10_ton_hora",
+      "toneladas_graos": "ate_20_ton_hora",
+      "acionamento": "motor_eletrico"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "H-1000"
+    }
+  },
+  {
+    "id": "MOEDOR-017",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "feno_e_graos",
+      "toneladas_feno": "ate_7_ton_hora",
+      "toneladas_graos": "20_40_ton_hora",
+      "acionamento": "trator"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "H-1000"
+    }
+  },
+  {
+    "id": "MOEDOR-018",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "feno_e_graos",
+      "toneladas_feno": "ate_7_ton_hora",
+      "toneladas_graos": "20_40_ton_hora",
+      "acionamento": "motor_eletrico"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "H-1000"
+    }
+  },
+  {
+    "id": "MOEDOR-019",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "feno_e_graos",
+      "toneladas_feno": "7_10_ton_hora",
+      "toneladas_graos": "20_40_ton_hora",
+      "acionamento": "trator"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "H-1000"
+    }
+  },
+  {
+    "id": "MOEDOR-020",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "feno_e_graos",
+      "toneladas_feno": "7_10_ton_hora",
+      "toneladas_graos": "20_40_ton_hora",
+      "acionamento": "motor_eletrico"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "H-1000"
+    }
+  },
+  {
+    "id": "MOEDOR-021",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "feno_e_graos",
+      "toneladas_feno": "acima_10_ton_hora",
+      "toneladas_graos": "ate_20_ton_hora",
+      "acionamento": "trator"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "MOEDOR-022",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "feno_e_graos",
+      "toneladas_feno": "acima_10_ton_hora",
+      "toneladas_graos": "ate_20_ton_hora",
+      "acionamento": "motor_eletrico"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "MOEDOR-023",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "feno_e_graos",
+      "toneladas_feno": "ate_7_ton_hora",
+      "toneladas_graos": "acima_40_ton_hora",
+      "acionamento": "trator"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "MOEDOR-024",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "feno_e_graos",
+      "toneladas_feno": "ate_7_ton_hora",
+      "toneladas_graos": "acima_40_ton_hora",
+      "acionamento": "motor_eletrico"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "MOEDOR-025",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "feno_e_graos",
+      "toneladas_feno": "7_10_ton_hora",
+      "toneladas_graos": "acima_40_ton_hora",
+      "acionamento": "trator"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "MOEDOR-026",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "feno_e_graos",
+      "toneladas_feno": "7_10_ton_hora",
+      "toneladas_graos": "acima_40_ton_hora",
+      "acionamento": "motor_eletrico"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "MOEDOR-027",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "feno_e_graos",
+      "toneladas_feno": "acima_10_ton_hora",
+      "toneladas_graos": "20_40_ton_hora",
+      "acionamento": "trator"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "MOEDOR-028",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "feno_e_graos",
+      "toneladas_feno": "acima_10_ton_hora",
+      "toneladas_graos": "20_40_ton_hora",
+      "acionamento": "motor_eletrico"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "MOEDOR-029",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "feno_e_graos",
+      "toneladas_feno": "acima_10_ton_hora",
+      "toneladas_graos": "acima_40_ton_hora",
+      "acionamento": "trator"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  },
+  {
+    "id": "MOEDOR-030",
+    "equipamento": "moedor",
+    "criterios": {
+      "tipo_gado": "*",
+      "equipamento": "moedores",
+      "tipo_material_moer": "feno_e_graos",
+      "toneladas_feno": "acima_10_ton_hora",
+      "toneladas_graos": "acima_40_ton_hora",
+      "acionamento": "motor_eletrico"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Falar com consultor"
+    }
+  }
+]

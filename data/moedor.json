@@ -1,0 +1,88 @@
+{
+  "equipamento": "moedor",
+  "perguntas": [
+    {
+      "id": "tipo_material_moer",
+      "pergunta": "O que você pretende moer?",
+      "opcoes": [
+        {
+          "valor": "feno",
+          "texto": "Feno",
+          "proxima": "toneladas_feno"
+        },
+        {
+          "valor": "graos",
+          "texto": "Grãos",
+          "proxima": "toneladas_graos"
+        },
+        {
+          "valor": "feno_e_graos",
+          "texto": "Feno e Grãos",
+          "proxima": "toneladas_feno"
+        }
+      ]
+    },
+    {
+      "id": "toneladas_feno",
+      "pergunta": "Quantas toneladas de feno por hora você pretende moer?",
+      "opcoes": [
+        {
+          "valor": "ate_7_ton_hora",
+          "texto": "Até 7 ton/hora",
+          "proxima": "toneladas_graos"
+        },
+        {
+          "valor": "7_10_ton_hora",
+          "texto": "De 7 a 10 ton/hora",
+          "proxima": "toneladas_graos"
+        },
+        {
+          "valor": "acima_10_ton_hora",
+          "texto": "Acima de 10 ton/hora",
+          "proxima": "toneladas_graos"
+        }
+      ]
+    },
+    {
+      "id": "toneladas_graos",
+      "pergunta": "Quantas toneladas de grãos por hora você pretende moer?",
+      "opcoes": [
+        {
+          "valor": "ate_20_ton_hora",
+          "texto": "Até 20 ton/hora",
+          "proxima": "acionamento"
+        },
+        {
+          "valor": "20_40_ton_hora",
+          "texto": "De 20 a 40 ton/hora",
+          "proxima": "acionamento"
+        },
+        {
+          "valor": "acima_40_ton_hora",
+          "texto": "Acima de 40 ton/hora",
+          "proxima": "acionamento"
+        }
+      ]
+    },
+    {
+      "id": "acionamento",
+      "pergunta": "Como a máquina será acionada?",
+      "opcoes": [
+        {
+          "valor": "trator",
+          "texto": "Com trator",
+          "acao": {
+            "tipo": "resultado"
+          }
+        },
+        {
+          "valor": "motor_eletrico",
+          "texto": "Com motor elétrico",
+          "acao": {
+            "tipo": "resultado"
+          }
+        }
+      ]
+    }
+  ]
+}
