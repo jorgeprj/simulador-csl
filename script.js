@@ -1,5 +1,3 @@
-import { validarIdentificacao } from "./validation";
-
 const DATA_PATH = "./data";
 
 const RECOMMENDATIONS_PATH = "./data/recomendacoes";
@@ -39,102 +37,205 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function setupIdentification() {
-  const button = document.querySelector("#continue-identification");
+  const button = document.querySelector(
+    "#continue-identification"
+  );
 
-  const extraFields = document.querySelector("#extra-fields");
+  const extraFields =
+    document.querySelector("#extra-fields");
 
   if (!button) {
+    console.warn(
+      "Botão #continue-identification não encontrado."
+    );
+
     return;
   }
 
-  button.addEventListener("click", () => {
-    const nome = getInputValue("nome");
+  if (!extraFields) {
+    console.warn(
+      "Elemento #extra-fields não encontrado."
+    );
 
-    const funcao = getInputValue("funcao-inicial");
+    return;
+  }
 
-    /*
-     * Primeiro clique:
-     *
-     * valida nome e função,
-     * salva os dados,
-     * remove o hero,
-     * mostra os demais campos.
-     */
+  /*
+   * Estado inicial.
+   */
 
-    if (!extraFields || !extraFields.classList.contains("visible")) {
-      if (!nome || !funcao) {
-        alert("Preencha nome e função para continuar.");
+  extraFields.classList.remove("visible");
+
+  button.addEventListener(
+    "click",
+    () => {
+      /*
+       * =====================================================
+       * PRIMEIRO CLIQUE
+       * =====================================================
+       */
+
+      if (
+        !extraFields.classList.contains(
+          "visible"
+        )
+      ) {
+        const nome =
+          getInputValue("nome");
+
+        const funcao =
+          getInputValue(
+            "funcao-inicial"
+          );
+
+        /*
+         * Validação inicial.
+         */
+
+        if (!nome) {
+          alert(
+            "Preencha seu nome para continuar."
+          );
+
+          document
+            .querySelector("#nome")
+            ?.focus();
+
+          return;
+        }
+
+        if (!funcao) {
+          alert(
+            "Preencha sua função para continuar."
+          );
+
+          document
+            .querySelector(
+              "#funcao-inicial"
+            )
+            ?.focus();
+
+          return;
+        }
+
+        /*
+         * Salva temporariamente.
+         */
+
+        userAnswers.identificacao = {
+          nome,
+          funcao,
+        };
+
+        /*
+         * Copia os dados.
+         */
+
+        preencherCampo(
+          "nome-completo",
+          nome
+        );
+
+        preencherCampo(
+          "funcao-completa",
+          funcao
+        );
+
+        /*
+         * Mostra campos extras.
+         */
+
+        extraFields.classList.add(
+          "visible"
+        );
+
+        /*
+         * Atualiza estado visual.
+         */
+
+        const page =
+          document.querySelector(
+            ".casale-page"
+          );
+
+        if (page) {
+          page.classList.remove(
+            "onboarding-state"
+          );
+
+          page.classList.add(
+            "simulation-state"
+          );
+        }
 
         return;
       }
 
-      userAnswers.identificacao.nome = nome;
+      /*
+       * =====================================================
+       * SEGUNDO CLIQUE
+       * =====================================================
+       */
 
-      userAnswers.identificacao.funcao = funcao;
-
-      if (extraFields) {
-        extraFields.classList.add("visible");
+      if (!validarIdentificacao()) {
+        return;
       }
 
-      const page = document.querySelector(".casale-page");
+      /*
+       * Salva os dados.
+       */
 
-      if (page) {
-        page.classList.remove("onboarding-state");
+      salvarIdentificacao();
 
-        page.classList.add("simulation-state");
-      }
+      /*
+       * Próxima etapa.
+       */
 
-      preencherCampo("nome-completo", nome);
-
-      preencherCampo("funcao-completa", funcao);
-
-      return;
+      goToStep(2);
     }
-
-    /*
-     * Segundo clique:
-     *
-     * salva todos os dados
-     * da identificação.
-     */
-
-    salvarIdentificacao();
-
-    /*
-     * Vai para Produção.
-     */
-
-    goToStep(2);
-  });
+  );
 }
 
 function salvarIdentificacao() {
-  if (!validarIdentificacao()) {
-    return false;
-  }
-
   userAnswers.identificacao = {
-    nome: getInputValue("nome-completo") || getInputValue("nome"),
+    nome:
+      getInputValue("nome-completo") ||
+      getInputValue("nome"),
 
-    funcao: getInputValue("funcao-completa") || getInputValue("funcao-inicial"),
+    funcao:
+      getInputValue("funcao-completa") ||
+      getInputValue("funcao-inicial"),
 
-    telefone: obterTelefoneInternacional(),
+    telefone:
+      obterTelefoneInternacional(),
 
-    propriedade: getInputValue("propriedade"),
+    propriedade:
+      getInputValue("propriedade"),
 
-    pais: getInputValue("pais"),
+    pais:
+      getInputValue("pais"),
 
-    cidade: getInputValue("cidade"),
+    cidade:
+      getInputValue("cidade"),
 
-    estado: getInputValue("estado"),
+    estado:
+      getInputValue("estado"),
 
-    email: getInputValue("email"),
+    email:
+      getInputValue("email"),
 
-    equipamentoCasale: obterEquipamentoCasaleSelecionado(),
+    equipamentoCasale:
+      obterEquipamentoCasaleSelecionado(),
   };
+
+  console.log(
+    "Identificação salva:",
+    userAnswers.identificacao
+  );
 
   return true;
 }
+
 function getInputValue(id) {
   const element = document.querySelector(`#${id}`);
 
@@ -154,34 +255,70 @@ function preencherCampo(id, valor) {
 }
 
 function obterEquipamentoCasaleSelecionado() {
-  const selected = document.querySelector(
-    ".question-block .answer-option.selected[data-identification-answer]",
-  );
+  const selected =
+    document.querySelector(
+      "#extra-fields .question-block .answer-option.selected[data-identification-answer]"
+    );
 
   if (!selected) {
     return null;
   }
 
-  return selected.dataset.identificationAnswer || null;
+  return (
+    selected.dataset
+      .identificationAnswer || null
+  );
 }
 
 function setupSimpleOptions() {
-  const buttons = document.querySelectorAll(".question-block .answer-option");
+  const buttons =
+    document.querySelectorAll(
+      "#extra-fields .question-block .answer-option"
+    );
 
   buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const parent = button.parentElement;
+    button.addEventListener(
+      "click",
+      () => {
+        const parent =
+          button.closest(
+            ".option-grid"
+          );
 
-      if (!parent) {
-        return;
+        if (!parent) {
+          return;
+        }
+
+        parent
+          .querySelectorAll(
+            ".answer-option"
+          )
+          .forEach((item) => {
+            item.classList.remove(
+              "selected"
+            );
+          });
+
+        button.classList.add(
+          "selected"
+        );
+
+        /*
+         * Remove eventual erro.
+         */
+
+        const questionBlock =
+          button.closest(
+            ".question-block"
+          );
+
+        if (questionBlock) {
+          questionBlock.classList.remove(
+            "validation-error"
+          );
+        }
       }
-
-      parent.querySelectorAll(".answer-option").forEach((item) => {
-        item.classList.remove("selected");
-      });
-
-      button.classList.add("selected");
-    });
+    );
   });
 }
 
@@ -370,6 +507,12 @@ function renderEquipmentSelection() {
       ${criarOpcaoEquipamento(
         "distribuidor_esterco",
         "Distribuidores de esterco",
+        "distribuidor_esterco",
+      )}
+
+            ${criarOpcaoEquipamento(
+        "distribuidor_esterco",
+        "Distribuidores de ração",
         "distribuidor_esterco",
       )}
 
@@ -1509,68 +1652,94 @@ function updateStepper(step) {
     }
   });
 }
-
 function resetSimulation() {
   currentStep = 1;
 
   userAnswers = {
     identificacao: {},
-
     producao: null,
-
     equipamento: null,
-
     perguntasEquipamento: {},
   };
 
   currentEquipmentQuestions = [];
-
   currentEquipmentQuestionIndex = -1;
-
   currentEquipmentConfig = null;
-
   currentRecommendations = [];
 
   /*
-   * Limpa inputs.
+   * Limpa campos.
    */
 
-  document.querySelectorAll("input, textarea, select").forEach((input) => {
-    if (input.tagName === "SELECT") {
-      input.selectedIndex = 0;
-    } else {
-      input.value = "";
-    }
-  });
+  document
+    .querySelectorAll(
+      "input, textarea, select"
+    )
+    .forEach((input) => {
+      if (
+        input.tagName === "SELECT"
+      ) {
+        input.selectedIndex = 0;
+      } else {
+        input.value = "";
+      }
+    });
 
   /*
    * Remove seleções.
    */
 
-  document.querySelectorAll(".selected").forEach((item) => {
-    item.classList.remove("selected");
-  });
+  document
+    .querySelectorAll(".selected")
+    .forEach((item) => {
+      item.classList.remove(
+        "selected"
+      );
+    });
+
+  /*
+   * Limpa mensagens/erros.
+   */
+
+  if (
+    typeof limparValidacoes ===
+    "function"
+  ) {
+    limparValidacoes();
+  }
 
   /*
    * Esconde campos extras.
    */
 
-  const extra = document.querySelector("#extra-fields");
+  const extra =
+    document.querySelector(
+      "#extra-fields"
+    );
 
   if (extra) {
-    extra.classList.remove("visible");
+    extra.classList.remove(
+      "visible"
+    );
   }
 
   /*
-   * Volta estado onboarding.
+   * Volta para onboarding.
    */
 
-  const page = document.querySelector(".casale-page");
+  const page =
+    document.querySelector(
+      ".casale-page"
+    );
 
   if (page) {
-    page.classList.remove("simulation-state");
+    page.classList.remove(
+      "simulation-state"
+    );
 
-    page.classList.add("onboarding-state");
+    page.classList.add(
+      "onboarding-state"
+    );
   }
 
   /*
@@ -1580,7 +1749,7 @@ function resetSimulation() {
   restaurarStep3Original();
 
   /*
-   * Volta Step 1.
+   * Volta para Step 1.
    */
 
   goToStep(1);
@@ -1620,6 +1789,13 @@ function restaurarStep3Original() {
       ${criarOpcaoEquipamento(
         "distribuidor_esterco",
         "Distribuidores de esterco",
+        "distribuidor_esterco",
+      )}
+
+      
+      ${criarOpcaoEquipamento(
+        "distribuidor_esterco",
+        "Distribuidores de ração",
         "distribuidor_esterco",
       )}
 

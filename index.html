@@ -193,10 +193,6 @@
                       autocomplete="tel"
                       placeholder="Digite seu telefone"
                     />
-
-                    <small class="field-help">
-                      Selecione o país e informe o número.
-                    </small>
                   </div>
 
                   <!-- PROPRIEDADE -->
@@ -212,57 +208,49 @@
                     />
                   </div>
 
-                  <!-- FUNÇÃO -->
-
-                  <div class="field">
-                    <label for="funcao-completa"> Função </label>
-
-                    <input
-                      id="funcao-completa"
-                      type="text"
-                      autocomplete="organization-title"
-                      placeholder="Ex: Proprietário"
-                      readonly
-                    />
-                  </div>
-
                   <!-- PAÍS -->
 
                   <div class="field">
-                    <label for="pais"> País </label>
+                    <label for="pais">País</label>
 
-                    <input
-                      id="pais"
-                      type="text"
-                      autocomplete="country-name"
-                      value="Brasil"
-                      placeholder="Ex: Brasil"
-                    />
+                    <select id="pais" autocomplete="country-name">
+                      <option value="BR" selected>Brasil</option>
+                      <option value="AR">Argentina</option>
+                      <option value="BO">Bolívia</option>
+                      <option value="CL">Chile</option>
+                      <option value="CO">Colômbia</option>
+                      <option value="PY">Paraguai</option>
+                      <option value="PE">Peru</option>
+                      <option value="UY">Uruguai</option>
+                      <option value="US">Estados Unidos</option>
+                      <option value="PT">Portugal</option>
+                      <option value="ES">Espanha</option>
+                      <option value="FR">França</option>
+                      <option value="DE">Alemanha</option>
+                      <option value="IT">Itália</option>
+                      <option value="GB">Reino Unido</option>
+                      <option value="OTHER">Outro</option>
+                    </select>
                   </div>
 
+                  <!-- ESTADO -->
+                  <div class="field" id="estado-field">
+                    <label for="estado">Estado</label>
+
+                    <select id="estado" autocomplete="address-level1">
+                      <option value="">Selecione o estado</option>
+                    </select>
+                  </div>
                   <!-- CIDADE -->
 
-                  <div class="field">
-                    <label for="cidade"> Cidade </label>
+                  <div class="field" id="cidade-field">
+                    <label for="cidade">Cidade</label>
 
                     <input
                       id="cidade"
                       type="text"
                       autocomplete="address-level2"
                       placeholder="Digite sua cidade"
-                    />
-                  </div>
-
-                  <!-- ESTADO -->
-
-                  <div class="field">
-                    <label for="estado"> Estado </label>
-
-                    <input
-                      id="estado"
-                      type="text"
-                      autocomplete="address-level1"
-                      placeholder="Ex: SP"
                     />
                   </div>
 
@@ -561,6 +549,7 @@
     ====================================================== -->
 
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/intlTelInput.min.js"></script>
+
     <script src="validation.js"></script>
     <script src="script.js"></script>
   </body>
