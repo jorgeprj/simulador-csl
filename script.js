@@ -4,6 +4,14 @@ const DATA_PATH = `${BASE_URL}/data`;
 
 const RECOMMENDATIONS_PATH = `${DATA_PATH}/recomendacoes`;
 
+// ============================================================
+// RD STATION
+// ============================================================
+
+const RD_API_KEY = "IVZKkTXIzFbMJSPDcYYgeNiUqlIRxFIQPWYm";
+
+const RD_CONVERSION_IDENTIFIER = "simulador_casale_teste";
+
 let currentStep = 1;
 
 let userAnswers = {
@@ -39,25 +47,18 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function setupIdentification() {
-  const button = document.querySelector(
-    "#continue-identification"
-  );
+  const button = document.querySelector("#continue-identification");
 
-  const extraFields =
-    document.querySelector("#extra-fields");
+  const extraFields = document.querySelector("#extra-fields");
 
   if (!button) {
-    console.warn(
-      "Botão #continue-identification não encontrado."
-    );
+    console.warn("Botão #continue-identification não encontrado.");
 
     return;
   }
 
   if (!extraFields) {
-    console.warn(
-      "Elemento #extra-fields não encontrado."
-    );
+    console.warn("Elemento #extra-fields não encontrado.");
 
     return;
   }
@@ -68,174 +69,211 @@ function setupIdentification() {
 
   extraFields.classList.remove("visible");
 
-  button.addEventListener(
-    "click",
-    () => {
+  button.addEventListener("click", () => {
+    /*
+     * =====================================================
+     * PRIMEIRO CLIQUE
+     * =====================================================
+     */
+
+    if (!extraFields.classList.contains("visible")) {
+      const nome = getInputValue("nome");
+
+      const funcao = getInputValue("funcao-inicial");
+
       /*
-       * =====================================================
-       * PRIMEIRO CLIQUE
-       * =====================================================
+       * Validação inicial.
        */
 
-      if (
-        !extraFields.classList.contains(
-          "visible"
-        )
-      ) {
-        const nome =
-          getInputValue("nome");
+      if (!nome) {
+        alert("Preencha seu nome para continuar.");
 
-        const funcao =
-          getInputValue(
-            "funcao-inicial"
-          );
+        document.querySelector("#nome")?.focus();
 
-        /*
-         * Validação inicial.
-         */
+        return;
+      }
 
-        if (!nome) {
-          alert(
-            "Preencha seu nome para continuar."
-          );
+      if (!funcao) {
+        alert("Preencha sua função para continuar.");
 
-          document
-            .querySelector("#nome")
-            ?.focus();
-
-          return;
-        }
-
-        if (!funcao) {
-          alert(
-            "Preencha sua função para continuar."
-          );
-
-          document
-            .querySelector(
-              "#funcao-inicial"
-            )
-            ?.focus();
-
-          return;
-        }
-
-        /*
-         * Salva temporariamente.
-         */
-
-        userAnswers.identificacao = {
-          nome,
-          funcao,
-        };
-
-        /*
-         * Copia os dados.
-         */
-
-        preencherCampo(
-          "nome-completo",
-          nome
-        );
-
-        preencherCampo(
-          "funcao-completa",
-          funcao
-        );
-
-        /*
-         * Mostra campos extras.
-         */
-
-        extraFields.classList.add(
-          "visible"
-        );
-
-        /*
-         * Atualiza estado visual.
-         */
-
-        const page =
-          document.querySelector(
-            ".casale-page"
-          );
-
-        if (page) {
-          page.classList.remove(
-            "onboarding-state"
-          );
-
-          page.classList.add(
-            "simulation-state"
-          );
-        }
+        document.querySelector("#funcao-inicial")?.focus();
 
         return;
       }
 
       /*
-       * =====================================================
-       * SEGUNDO CLIQUE
-       * =====================================================
+       * Salva temporariamente.
        */
 
-      if (!validarIdentificacao()) {
-        return;
+      userAnswers.identificacao = {
+        nome,
+        funcao,
+      };
+
+      /*
+       * Copia os dados.
+       */
+
+      preencherCampo("nome-completo", nome);
+
+      preencherCampo("funcao-completa", funcao);
+
+      /*
+       * Mostra campos extras.
+       */
+
+      extraFields.classList.add("visible");
+
+      /*
+       * Atualiza estado visual.
+       */
+
+      const page = document.querySelector(".casale-page");
+
+      if (page) {
+        page.classList.remove("onboarding-state");
+
+        page.classList.add("simulation-state");
       }
 
-      /*
-       * Salva os dados.
-       */
-
-      salvarIdentificacao();
-
-      /*
-       * Próxima etapa.
-       */
-
-      goToStep(2);
+      return;
     }
-  );
+
+    /*
+     * =====================================================
+     * SEGUNDO CLIQUE
+     * =====================================================
+     */
+
+    if (!validarIdentificacao()) {
+      return;
+    }
+
+    /*
+     * Salva os dados.
+     */
+
+    salvarIdentificacao();
+
+    enviarParaRDStation();
+
+    /*
+     * Próxima etapa.
+     */
+
+    goToStep(2);
+  });
 }
 
 function salvarIdentificacao() {
   userAnswers.identificacao = {
-    nome:
-      getInputValue("nome-completo") ||
-      getInputValue("nome"),
+    nome: getInputValue("nome-completo") || getInputValue("nome"),
 
-    funcao:
-      getInputValue("funcao-completa") ||
-      getInputValue("funcao-inicial"),
+    funcao: getInputValue("funcao-completa") || getInputValue("funcao-inicial"),
 
-    telefone:
-      obterTelefoneInternacional(),
+    telefone: obterTelefoneInternacional(),
 
-    propriedade:
-      getInputValue("propriedade"),
+    propriedade: getInputValue("propriedade"),
 
-    pais:
-      getInputValue("pais"),
+    pais: getInputValue("pais"),
 
-    cidade:
-      getInputValue("cidade"),
+    cidade: getInputValue("cidade"),
 
-    estado:
-      getInputValue("estado"),
+    estado: getInputValue("estado"),
 
-    email:
-      getInputValue("email"),
+    email: getInputValue("email"),
 
-    equipamentoCasale:
-      obterEquipamentoCasaleSelecionado(),
+    equipamentoCasale: obterEquipamentoCasaleSelecionado(),
   };
 
-  console.log(
-    "Identificação salva:",
-    userAnswers.identificacao
-  );
+  console.log("Identificação salva:", userAnswers.identificacao);
 
   return true;
+}
+
+async function enviarParaRDStation() {
+  const identificacao = userAnswers.identificacao;
+
+  if (!identificacao) {
+    console.warn("RD Station: dados de identificação não encontrados.");
+
+    return;
+  }
+
+  if (!identificacao.nome) {
+    console.warn("RD Station: nome não informado.");
+
+    return;
+  }
+
+  if (!identificacao.email) {
+    console.warn("RD Station: e-mail não informado.");
+
+    return;
+  }
+
+  if (!identificacao.funcao) {
+    console.warn("RD Station: função não informada.");
+
+    return;
+  }
+
+  try {
+    console.log("📤 Enviando dados para o RD Station...");
+
+    const response = await fetch(
+      `https://api.rd.services/platform/conversions?api_key=${encodeURIComponent(
+        RD_API_KEY,
+      )}`,
+      {
+        method: "POST",
+
+        headers: {
+          "Content-Type": "application/json",
+        },
+
+        body: JSON.stringify({
+          event_type: "CONVERSION",
+
+          event_family: "CDP",
+
+          payload: {
+            conversion_identifier: RD_CONVERSION_IDENTIFIER,
+
+            name: identificacao.nome,
+
+            email: identificacao.email,
+
+            job_title: identificacao.funcao,
+          },
+        }),
+      },
+    );
+
+    const contentType = response.headers.get("content-type") || "";
+
+    const data = contentType.includes("application/json")
+      ? await response.json()
+      : await response.text();
+
+    console.log("📥 RD Station — Status:", response.status);
+
+    console.log("📥 RD Station — Resposta:", data);
+
+    if (!response.ok) {
+      console.error("❌ Erro ao enviar para o RD Station.");
+
+      return false;
+    }
+
+    console.log("✅ Dados enviados para o RD Station com sucesso!");
+
+    return true;
+  } catch (error) {
+    console.error("❌ Erro de conexão com o RD Station:", error);
+
+    return false;
+  }
 }
 
 function getInputValue(id) {
@@ -257,70 +295,46 @@ function preencherCampo(id, valor) {
 }
 
 function obterEquipamentoCasaleSelecionado() {
-  const selected =
-    document.querySelector(
-      "#extra-fields .question-block .answer-option.selected[data-identification-answer]"
-    );
+  const selected = document.querySelector(
+    "#extra-fields .question-block .answer-option.selected[data-identification-answer]",
+  );
 
   if (!selected) {
     return null;
   }
 
-  return (
-    selected.dataset
-      .identificationAnswer || null
-  );
+  return selected.dataset.identificationAnswer || null;
 }
 
 function setupSimpleOptions() {
-  const buttons =
-    document.querySelectorAll(
-      "#extra-fields .question-block .answer-option"
-    );
+  const buttons = document.querySelectorAll(
+    "#extra-fields .question-block .answer-option",
+  );
 
   buttons.forEach((button) => {
-    button.addEventListener(
-      "click",
-      () => {
-        const parent =
-          button.closest(
-            ".option-grid"
-          );
+    button.addEventListener("click", () => {
+      const parent = button.closest(".option-grid");
 
-        if (!parent) {
-          return;
-        }
-
-        parent
-          .querySelectorAll(
-            ".answer-option"
-          )
-          .forEach((item) => {
-            item.classList.remove(
-              "selected"
-            );
-          });
-
-        button.classList.add(
-          "selected"
-        );
-
-        /*
-         * Remove eventual erro.
-         */
-
-        const questionBlock =
-          button.closest(
-            ".question-block"
-          );
-
-        if (questionBlock) {
-          questionBlock.classList.remove(
-            "validation-error"
-          );
-        }
+      if (!parent) {
+        return;
       }
-    );
+
+      parent.querySelectorAll(".answer-option").forEach((item) => {
+        item.classList.remove("selected");
+      });
+
+      button.classList.add("selected");
+
+      /*
+       * Remove eventual erro.
+       */
+
+      const questionBlock = button.closest(".question-block");
+
+      if (questionBlock) {
+        questionBlock.classList.remove("validation-error");
+      }
+    });
   });
 }
 
@@ -513,10 +527,10 @@ function renderEquipmentSelection() {
       )}
 
             ${criarOpcaoEquipamento(
-        "distribuidor_esterco",
-        "Distribuidores de ração",
-        "distribuidor_esterco",
-      )}
+              "distribuidor_esterco",
+              "Distribuidores de ração",
+              "distribuidor_esterco",
+            )}
 
       ${criarOpcaoEquipamento(
         "misturador_racao",
@@ -1673,40 +1687,27 @@ function resetSimulation() {
    * Limpa campos.
    */
 
-  document
-    .querySelectorAll(
-      "input, textarea, select"
-    )
-    .forEach((input) => {
-      if (
-        input.tagName === "SELECT"
-      ) {
-        input.selectedIndex = 0;
-      } else {
-        input.value = "";
-      }
-    });
+  document.querySelectorAll("input, textarea, select").forEach((input) => {
+    if (input.tagName === "SELECT") {
+      input.selectedIndex = 0;
+    } else {
+      input.value = "";
+    }
+  });
 
   /*
    * Remove seleções.
    */
 
-  document
-    .querySelectorAll(".selected")
-    .forEach((item) => {
-      item.classList.remove(
-        "selected"
-      );
-    });
+  document.querySelectorAll(".selected").forEach((item) => {
+    item.classList.remove("selected");
+  });
 
   /*
    * Limpa mensagens/erros.
    */
 
-  if (
-    typeof limparValidacoes ===
-    "function"
-  ) {
+  if (typeof limparValidacoes === "function") {
     limparValidacoes();
   }
 
@@ -1714,34 +1715,22 @@ function resetSimulation() {
    * Esconde campos extras.
    */
 
-  const extra =
-    document.querySelector(
-      "#extra-fields"
-    );
+  const extra = document.querySelector("#extra-fields");
 
   if (extra) {
-    extra.classList.remove(
-      "visible"
-    );
+    extra.classList.remove("visible");
   }
 
   /*
    * Volta para onboarding.
    */
 
-  const page =
-    document.querySelector(
-      ".casale-page"
-    );
+  const page = document.querySelector(".casale-page");
 
   if (page) {
-    page.classList.remove(
-      "simulation-state"
-    );
+    page.classList.remove("simulation-state");
 
-    page.classList.add(
-      "onboarding-state"
-    );
+    page.classList.add("onboarding-state");
   }
 
   /*
