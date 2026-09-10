@@ -1,6 +1,8 @@
-const DATA_PATH = "./data";
+const BASE_URL = "https://jorgeprj.github.io/simulador-csl";
 
-const RECOMMENDATIONS_PATH = "./data/recomendacoes";
+const DATA_PATH = `${BASE_URL}/data`;
+
+const RECOMMENDATIONS_PATH = `${DATA_PATH}/recomendacoes`;
 
 let currentStep = 1;
 
