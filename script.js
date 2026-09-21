@@ -48,28 +48,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function setupIdentification() {
   const button = document.querySelector("#continue-identification");
-
   const extraFields = document.querySelector("#extra-fields");
 
   if (!button) {
     console.warn("Botão #continue-identification não encontrado.");
-
     return;
   }
 
   if (!extraFields) {
     console.warn("Elemento #extra-fields não encontrado.");
-
     return;
   }
 
-  /*
-   * Estado inicial.
-   */
-
+  // Estado inicial
   extraFields.classList.remove("visible");
 
-  button.addEventListener("click", () => {
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+
     /*
      * =====================================================
      * PRIMEIRO CLIQUE
@@ -78,61 +74,40 @@ function setupIdentification() {
 
     if (!extraFields.classList.contains("visible")) {
       const nome = getInputValue("nome");
-
       const funcao = getInputValue("funcao-inicial");
 
-      /*
-       * Validação inicial.
-       */
-
+      // Validação inicial
       if (!nome) {
         alert("Preencha seu nome para continuar.");
-
         document.querySelector("#nome")?.focus();
-
         return;
       }
 
       if (!funcao) {
         alert("Preencha sua função para continuar.");
-
         document.querySelector("#funcao-inicial")?.focus();
-
         return;
       }
 
-      /*
-       * Salva temporariamente.
-       */
-
+      // Salva os dados sem apagar informações existentes
       userAnswers.identificacao = {
+        ...userAnswers.identificacao,
         nome,
         funcao,
       };
 
-      /*
-       * Copia os dados.
-       */
-
+      // Copia os dados para os campos completos
       preencherCampo("nome-completo", nome);
-
       preencherCampo("funcao-completa", funcao);
 
-      /*
-       * Mostra campos extras.
-       */
-
+      // Mostra os campos extras
       extraFields.classList.add("visible");
 
-      /*
-       * Atualiza estado visual.
-       */
-
+      // Atualiza o estado visual
       const page = document.querySelector(".casale-page");
 
       if (page) {
         page.classList.remove("onboarding-state");
-
         page.classList.add("simulation-state");
       }
 
@@ -149,18 +124,10 @@ function setupIdentification() {
       return;
     }
 
-    /*
-     * Salva os dados.
-     */
-
+    // Salva todos os dados da identificação
     salvarIdentificacao();
 
-    enviarParaRDStation();
-
-    /*
-     * Próxima etapa.
-     */
-
+    // Avança para a etapa 2
     goToStep(2);
   });
 }
@@ -196,30 +163,101 @@ async function enviarParaRDStation() {
 
   if (!identificacao) {
     console.warn("RD Station: dados de identificação não encontrados.");
-
-    return;
+    return false;
   }
 
   if (!identificacao.nome) {
     console.warn("RD Station: nome não informado.");
-
-    return;
+    return false;
   }
 
   if (!identificacao.email) {
     console.warn("RD Station: e-mail não informado.");
-
-    return;
+    return false;
   }
 
   if (!identificacao.funcao) {
     console.warn("RD Station: função não informada.");
-
-    return;
+    return false;
   }
 
+  /*
+   * ============================================================
+   * DADOS DA SIMULAÇÃO
+   * ============================================================
+   */
+
+  const producao = userAnswers.producao || "";
+
+  const equipamento = userAnswers.equipamento?.valor || "";
+
+  const equipamentoKey = userAnswers.equipamento?.key || "";
+
+  /*
+   * A recomendação será preenchida posteriormente,
+   * quando o usuário chegar ao resultado final.
+   */
+
+  const recomendacao = userAnswers.recomendacao || "";
+
+  /*
+   * ============================================================
+   * PAYLOAD PARA O RD STATION
+   * ============================================================
+   */
+
+  const payload = {
+    event_type: "CONVERSION",
+
+    event_family: "CDP",
+
+    payload: {
+      conversion_identifier: RD_CONVERSION_IDENTIFIER,
+
+      /*
+       * CAMPOS PADRÃO DO RD STATION
+       */
+
+      name: identificacao.nome,
+
+      email: identificacao.email,
+
+      job_title: identificacao.funcao,
+
+      personal_phone: identificacao.telefone || "",
+
+      company_name: identificacao.propriedade || "",
+
+      country: identificacao.pais || "",
+
+      state: identificacao.estado || "",
+
+      city: identificacao.cidade || "",
+
+      /*
+       * CAMPOS PERSONALIZADOS
+       */
+
+      cf_tipo_de_producao: producao,
+
+      cf_equipamento_de_interesse: equipamento,
+
+      cf_possui_equipamento_casale: identificacao.equipamentoCasale || "",
+
+      cf_recomendacao_simulacao: recomendacao,
+    },
+  };
+
+  /*
+   * ============================================================
+   * ENVIO
+   * ============================================================
+   */
+
   try {
-    console.log("📤 Enviando dados para o RD Station...");
+    console.log("📤 Enviando lead completo para o RD Station...");
+
+    console.log("Payload:", payload);
 
     const response = await fetch(
       `https://api.rd.services/platform/conversions?api_key=${encodeURIComponent(
@@ -232,21 +270,7 @@ async function enviarParaRDStation() {
           "Content-Type": "application/json",
         },
 
-        body: JSON.stringify({
-          event_type: "CONVERSION",
-
-          event_family: "CDP",
-
-          payload: {
-            conversion_identifier: RD_CONVERSION_IDENTIFIER,
-
-            name: identificacao.nome,
-
-            email: identificacao.email,
-
-            job_title: identificacao.funcao,
-          },
-        }),
+        body: JSON.stringify(payload),
       },
     );
 
@@ -261,12 +285,12 @@ async function enviarParaRDStation() {
     console.log("📥 RD Station — Resposta:", data);
 
     if (!response.ok) {
-      console.error("❌ Erro ao enviar para o RD Station.");
+      console.error("❌ Erro ao enviar lead para o RD Station.");
 
       return false;
     }
 
-    console.log("✅ Dados enviados para o RD Station com sucesso!");
+    console.log("✅ Lead enviado com sucesso!");
 
     return true;
   } catch (error) {
@@ -1149,7 +1173,7 @@ function encontrarPerguntaAnterior(currentQuestionId) {
   return -1;
 }
 
-function finalizarEquipamento() {
+async function finalizarEquipamento() {
   console.log("=== FINALIZANDO SIMULAÇÃO ===");
 
   console.log(userAnswers);
@@ -1157,12 +1181,42 @@ function finalizarEquipamento() {
   const resultado = buscarRecomendacao();
 
   if (!resultado) {
+    userAnswers.recomendacao = "Atendimento com consultor";
+
     mostrarResultadoConsultor(
       "Não encontramos uma recomendação específica para essa combinação. Fale com um consultor da Casale para receber a orientação mais adequada.",
     );
 
+    /*
+     * Envia o lead mesmo sem produto definido.
+     */
+
+    await enviarParaRDStation();
+
     return;
   }
+
+  /*
+   * Salva a recomendação.
+   */
+
+  const resultadoFinal = resultado.resultado;
+
+  if (resultadoFinal?.tipo === "produto") {
+    userAnswers.recomendacao = resultadoFinal.valor;
+  } else {
+    userAnswers.recomendacao = "Atendimento com consultor";
+  }
+
+  /*
+   * Envia o lead completo.
+   */
+
+  await enviarParaRDStation();
+
+  /*
+   * Mostra o resultado na tela.
+   */
 
   mostrarResultado(resultado);
 }
@@ -1350,6 +1404,20 @@ function mostrarResultado(regra) {
     return;
   }
 
+  /*
+   * Salva a recomendação final.
+   */
+
+  if (resultado.tipo === "produto") {
+    userAnswers.recomendacao = resultado.valor;
+  } else {
+    userAnswers.recomendacao = "Atendimento com consultor";
+  }
+
+  /*
+   * Continua o fluxo normal.
+   */
+
   goToStep(4);
 
   const section = document.querySelector("#step-4");
@@ -1358,19 +1426,11 @@ function mostrarResultado(regra) {
     return;
   }
 
-  /*
-   * Resultado para consultor.
-   */
-
   if (resultado.tipo === "consultor") {
     renderConsultorResult(section, resultado.valor);
 
     return;
   }
-
-  /*
-   * Resultado de produto.
-   */
 
   renderProductResult(section, resultado.valor);
 }
@@ -1668,35 +1728,46 @@ function updateStepper(step) {
     }
   });
 }
+
 function resetSimulation() {
-  currentStep = 1;
+  /*
+   * Guarda os dados de identificação
+   * antes de reiniciar a simulação.
+   */
+
+  const identificacaoSalva = {
+    ...userAnswers.identificacao,
+  };
+
+  /*
+   * Reinicia apenas os dados da simulação.
+   */
+
+  currentStep = 2;
 
   userAnswers = {
-    identificacao: {},
+    identificacao: identificacaoSalva,
+
     producao: null,
+
     equipamento: null,
+
     perguntasEquipamento: {},
+
+    recomendacao: null,
   };
 
   currentEquipmentQuestions = [];
+
   currentEquipmentQuestionIndex = -1;
+
   currentEquipmentConfig = null;
+
   currentRecommendations = [];
 
   /*
-   * Limpa campos.
-   */
-
-  document.querySelectorAll("input, textarea, select").forEach((input) => {
-    if (input.tagName === "SELECT") {
-      input.selectedIndex = 0;
-    } else {
-      input.value = "";
-    }
-  });
-
-  /*
-   * Remove seleções.
+   * Remove seleções das etapas de produção
+   * e equipamentos.
    */
 
   document.querySelectorAll(".selected").forEach((item) => {
@@ -1704,46 +1775,59 @@ function resetSimulation() {
   });
 
   /*
-   * Limpa mensagens/erros.
-   */
-
-  if (typeof limparValidacoes === "function") {
-    limparValidacoes();
-  }
-
-  /*
-   * Esconde campos extras.
-   */
-
-  const extra = document.querySelector("#extra-fields");
-
-  if (extra) {
-    extra.classList.remove("visible");
-  }
-
-  /*
-   * Volta para onboarding.
-   */
-
-  const page = document.querySelector(".casale-page");
-
-  if (page) {
-    page.classList.remove("simulation-state");
-
-    page.classList.add("onboarding-state");
-  }
-
-  /*
-   * Restaura Step 3.
+   * Restaura a etapa 3 original.
    */
 
   restaurarStep3Original();
 
   /*
-   * Volta para Step 1.
+   * Mantém os dados de identificação preenchidos.
    */
 
-  goToStep(1);
+  preencherCampo("nome", identificacaoSalva.nome);
+
+  preencherCampo("funcao-inicial", identificacaoSalva.funcao);
+
+  preencherCampo("nome-completo", identificacaoSalva.nome);
+
+  preencherCampo("funcao-completa", identificacaoSalva.funcao);
+
+  preencherCampo("telefone", identificacaoSalva.telefone);
+
+  preencherCampo("propriedade", identificacaoSalva.propriedade);
+
+  preencherCampo("pais", identificacaoSalva.pais);
+
+  preencherCampo("cidade", identificacaoSalva.cidade);
+
+  preencherCampo("estado", identificacaoSalva.estado);
+
+  preencherCampo("email", identificacaoSalva.email);
+
+  /*
+   * Mantém a tela no estado de simulação,
+   * sem voltar ao onboarding.
+   */
+
+  const extra = document.querySelector("#extra-fields");
+
+  if (extra) {
+    extra.classList.add("visible");
+  }
+
+  const page = document.querySelector(".casale-page");
+
+  if (page) {
+    page.classList.remove("onboarding-state");
+
+    page.classList.add("simulation-state");
+  }
+
+  /*
+   * Volta diretamente para a Etapa 2.
+   */
+
+  goToStep(2);
 }
 
 function restaurarStep3Original() {
