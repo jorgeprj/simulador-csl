@@ -161,23 +161,41 @@ function salvarIdentificacao() {
 async function enviarParaRDStation() {
   const identificacao = userAnswers.identificacao;
 
+  /*
+   * ============================================================
+   * VALIDAÇÃO DOS DADOS
+   * ============================================================
+   */
+
   if (!identificacao) {
-    console.warn("RD Station: dados de identificação não encontrados.");
+    console.warn(
+      "⚠️ RD Station: dados de identificação não encontrados.",
+    );
+
     return false;
   }
 
   if (!identificacao.nome) {
-    console.warn("RD Station: nome não informado.");
+    console.warn(
+      "⚠️ RD Station: nome não informado.",
+    );
+
     return false;
   }
 
   if (!identificacao.email) {
-    console.warn("RD Station: e-mail não informado.");
+    console.warn(
+      "⚠️ RD Station: e-mail não informado.",
+    );
+
     return false;
   }
 
   if (!identificacao.funcao) {
-    console.warn("RD Station: função não informada.");
+    console.warn(
+      "⚠️ RD Station: função não informada.",
+    );
+
     return false;
   }
 
@@ -187,22 +205,18 @@ async function enviarParaRDStation() {
    * ============================================================
    */
 
-  const producao = userAnswers.producao || "";
+  const producao =
+    userAnswers.producao || "";
 
-  const equipamento = userAnswers.equipamento?.valor || "";
+  const equipamento =
+    userAnswers.equipamento?.valor || "";
 
-  const equipamentoKey = userAnswers.equipamento?.key || "";
-
-  /*
-   * A recomendação será preenchida posteriormente,
-   * quando o usuário chegar ao resultado final.
-   */
-
-  const recomendacao = userAnswers.recomendacao || "";
+  const recomendacao =
+    userAnswers.recomendacao || "";
 
   /*
    * ============================================================
-   * PAYLOAD PARA O RD STATION
+   * PAYLOAD
    * ============================================================
    */
 
@@ -212,41 +226,82 @@ async function enviarParaRDStation() {
     event_family: "CDP",
 
     payload: {
-      conversion_identifier: RD_CONVERSION_IDENTIFIER,
-
       /*
-       * CAMPOS PADRÃO DO RD STATION
+       * IDENTIFICADOR DA CONVERSÃO
        */
 
-      name: identificacao.nome,
-
-      email: identificacao.email,
-
-      job_title: identificacao.funcao,
-
-      personal_phone: identificacao.telefone || "",
-
-      company_name: identificacao.propriedade || "",
-
-      country: identificacao.pais || "",
-
-      state: identificacao.estado || "",
-
-      city: identificacao.cidade || "",
+      conversion_identifier:
+        RD_CONVERSION_IDENTIFIER,
 
       /*
+       * ========================================================
+       * CAMPOS PADRÃO
+       * ========================================================
+       */
+
+      name:
+        identificacao.nome,
+
+      email:
+        identificacao.email,
+
+      job_title:
+        identificacao.funcao,
+
+      personal_phone:
+        identificacao.telefone || "",
+
+      company_name:
+        identificacao.propriedade || "",
+
+      country:
+        identificacao.pais || "",
+
+      state:
+        identificacao.estado || "",
+
+      city:
+        identificacao.cidade || "",
+
+      /*
+       * ========================================================
        * CAMPOS PERSONALIZADOS
+       * ========================================================
+       *
+       * IMPORTANTE:
+       * Os nomes abaixo precisam ser exatamente os
+       * identificadores dos campos personalizados
+       * existentes no RD Station.
        */
 
-      cf_tipo_de_producao: producao,
+      cf_tipo_de_producao:
+        producao,
 
-      cf_equipamento_de_interesse: equipamento,
+      cf_equipamento_de_interesse_0:
+        equipamento,
 
-      cf_possui_equipamento_casale: identificacao.equipamentoCasale || "",
+      cf_possui_equipamento_casale:
+        identificacao.equipamentoCasale || "",
 
-      cf_recomendacao_simulacao: recomendacao,
+      cf_recomendacao_simulacao:
+        recomendacao,
     },
   };
+
+  /*
+   * ============================================================
+   * LOG DO PAYLOAD
+   * ============================================================
+   */
+
+  console.log(
+    "📤 Enviando lead completo para o RD Station..."
+  );
+
+  console.log(
+    "📦 Payload RD Station:",
+    JSON.stringify(payload, null, 2)
+  );
 
   /*
    * ============================================================
@@ -255,10 +310,6 @@ async function enviarParaRDStation() {
    */
 
   try {
-    console.log("📤 Enviando lead completo para o RD Station...");
-
-    console.log("Payload:", payload);
-
     const response = await fetch(
       `https://api.rd.services/platform/conversions?api_key=${encodeURIComponent(
         RD_API_KEY,
@@ -268,33 +319,116 @@ async function enviarParaRDStation() {
 
         headers: {
           "Content-Type": "application/json",
+          Accept: "application/json",
         },
 
         body: JSON.stringify(payload),
       },
     );
 
-    const contentType = response.headers.get("content-type") || "";
+    /*
+     * ==========================================================
+     * LEITURA DA RESPOSTA
+     * ==========================================================
+     */
 
-    const data = contentType.includes("application/json")
-      ? await response.json()
-      : await response.text();
+    const contentType =
+      response.headers.get("content-type") || "";
 
-    console.log("📥 RD Station — Status:", response.status);
+    let data;
 
-    console.log("📥 RD Station — Resposta:", data);
+    if (contentType.includes("application/json")) {
+      data = await response.json();
+    } else {
+      data = await response.text();
+    }
+
+    /*
+     * ==========================================================
+     * LOG DA RESPOSTA
+     * ==========================================================
+     */
+
+    console.log(
+      "📥 RD Station — Status:",
+      response.status,
+    );
+
+    console.log(
+      "📥 RD Station — Resposta:",
+      data,
+    );
+
+    /*
+     * ==========================================================
+     * ERRO
+     * ==========================================================
+     */
 
     if (!response.ok) {
-      console.error("❌ Erro ao enviar lead para o RD Station.");
+      console.error(
+        "❌ RD Station recusou a requisição."
+      );
+
+      console.error(
+        "❌ Status HTTP:",
+        response.status,
+      );
+
+      console.error(
+        "❌ Detalhes:",
+        JSON.stringify(data, null, 2),
+      );
+
+      /*
+       * Tenta mostrar especificamente os erros
+       * retornados pela API.
+       */
+
+      if (
+        data &&
+        Array.isArray(data.errors)
+      ) {
+        console.error(
+          "❌ Erros retornados pelo RD Station:"
+        );
+
+        data.errors.forEach(
+          (erro, index) => {
+            console.error(
+              `Erro ${index + 1}:`,
+              erro,
+            );
+          },
+        );
+      }
 
       return false;
     }
 
-    console.log("✅ Lead enviado com sucesso!");
+    /*
+     * ==========================================================
+     * SUCESSO
+     * ==========================================================
+     */
+
+    console.log(
+      "✅ Lead enviado com sucesso para o RD Station!"
+    );
 
     return true;
+
   } catch (error) {
-    console.error("❌ Erro de conexão com o RD Station:", error);
+    /*
+     * ==========================================================
+     * ERRO DE CONEXÃO
+     * ==========================================================
+     */
+
+    console.error(
+      "❌ Erro de conexão com o RD Station:",
+      error,
+    );
 
     return false;
   }
