@@ -10,7 +10,7 @@ const RECOMMENDATIONS_PATH = `${DATA_PATH}/recomendacoes`;
 
 const RD_API_KEY = "IVZKkTXIzFbMJSPDcYYgeNiUqlIRxFIQPWYm";
 
-const RD_CONVERSION_IDENTIFIER = "simulador_casale_teste";
+const RD_CONVERSION_IDENTIFIER = "simulador_casale";
 
 let currentStep = 1;
 
@@ -168,33 +168,25 @@ async function enviarParaRDStation() {
    */
 
   if (!identificacao) {
-    console.warn(
-      "⚠️ RD Station: dados de identificação não encontrados.",
-    );
+    console.warn("⚠️ RD Station: dados de identificação não encontrados.");
 
     return false;
   }
 
   if (!identificacao.nome) {
-    console.warn(
-      "⚠️ RD Station: nome não informado.",
-    );
+    console.warn("⚠️ RD Station: nome não informado.");
 
     return false;
   }
 
   if (!identificacao.email) {
-    console.warn(
-      "⚠️ RD Station: e-mail não informado.",
-    );
+    console.warn("⚠️ RD Station: e-mail não informado.");
 
     return false;
   }
 
   if (!identificacao.funcao) {
-    console.warn(
-      "⚠️ RD Station: função não informada.",
-    );
+    console.warn("⚠️ RD Station: função não informada.");
 
     return false;
   }
@@ -205,14 +197,11 @@ async function enviarParaRDStation() {
    * ============================================================
    */
 
-  const producao =
-    userAnswers.producao || "";
+  const producao = userAnswers.producao || "";
 
-  const equipamento =
-    userAnswers.equipamento?.valor || "";
+  const equipamento = userAnswers.equipamento?.valor || "";
 
-  const recomendacao =
-    userAnswers.recomendacao || "";
+  const recomendacao = userAnswers.recomendacao || "";
 
   /*
    * ============================================================
@@ -230,8 +219,7 @@ async function enviarParaRDStation() {
        * IDENTIFICADOR DA CONVERSÃO
        */
 
-      conversion_identifier:
-        RD_CONVERSION_IDENTIFIER,
+      conversion_identifier: RD_CONVERSION_IDENTIFIER,
 
       /*
        * ========================================================
@@ -239,29 +227,21 @@ async function enviarParaRDStation() {
        * ========================================================
        */
 
-      name:
-        identificacao.nome,
+      name: identificacao.nome,
 
-      email:
-        identificacao.email,
+      email: identificacao.email,
 
-      job_title:
-        identificacao.funcao,
+      job_title: identificacao.funcao,
 
-      personal_phone:
-        identificacao.telefone || "",
+      personal_phone: identificacao.telefone || "",
 
-      company_name:
-        identificacao.propriedade || "",
+      company_name: identificacao.propriedade || "",
 
-      country:
-        identificacao.pais || "",
+      country: identificacao.pais || "",
 
-      state:
-        identificacao.estado || "",
+      state: identificacao.estado || "",
 
-      city:
-        identificacao.cidade || "",
+      city: identificacao.cidade || "",
 
       /*
        * ========================================================
@@ -274,17 +254,13 @@ async function enviarParaRDStation() {
        * existentes no RD Station.
        */
 
-      cf_tipo_de_producao:
-        producao,
+      cf_tipo_de_producao: producao,
 
-      cf_equipamento_de_interesse_0:
-        equipamento,
+      cf_equipamento_de_interesse_0: equipamento,
 
-      cf_possui_equipamento_casale:
-        identificacao.equipamentoCasale || "",
+      cf_possui_equipamento_casale: identificacao.equipamentoCasale || "",
 
-      cf_recomendacao_simulacao:
-        recomendacao,
+      cf_recomendacao_simulacao: recomendacao,
     },
   };
 
@@ -294,14 +270,9 @@ async function enviarParaRDStation() {
    * ============================================================
    */
 
-  console.log(
-    "📤 Enviando lead completo para o RD Station..."
-  );
+  console.log("📤 Enviando lead completo para o RD Station...");
 
-  console.log(
-    "📦 Payload RD Station:",
-    JSON.stringify(payload, null, 2)
-  );
+  console.log("📦 Payload RD Station:", JSON.stringify(payload, null, 2));
 
   /*
    * ============================================================
@@ -332,8 +303,7 @@ async function enviarParaRDStation() {
      * ==========================================================
      */
 
-    const contentType =
-      response.headers.get("content-type") || "";
+    const contentType = response.headers.get("content-type") || "";
 
     let data;
 
@@ -349,15 +319,9 @@ async function enviarParaRDStation() {
      * ==========================================================
      */
 
-    console.log(
-      "📥 RD Station — Status:",
-      response.status,
-    );
+    console.log("📥 RD Station — Status:", response.status);
 
-    console.log(
-      "📥 RD Station — Resposta:",
-      data,
-    );
+    console.log("📥 RD Station — Resposta:", data);
 
     /*
      * ==========================================================
@@ -366,41 +330,23 @@ async function enviarParaRDStation() {
      */
 
     if (!response.ok) {
-      console.error(
-        "❌ RD Station recusou a requisição."
-      );
+      console.error("❌ RD Station recusou a requisição.");
 
-      console.error(
-        "❌ Status HTTP:",
-        response.status,
-      );
+      console.error("❌ Status HTTP:", response.status);
 
-      console.error(
-        "❌ Detalhes:",
-        JSON.stringify(data, null, 2),
-      );
+      console.error("❌ Detalhes:", JSON.stringify(data, null, 2));
 
       /*
        * Tenta mostrar especificamente os erros
        * retornados pela API.
        */
 
-      if (
-        data &&
-        Array.isArray(data.errors)
-      ) {
-        console.error(
-          "❌ Erros retornados pelo RD Station:"
-        );
+      if (data && Array.isArray(data.errors)) {
+        console.error("❌ Erros retornados pelo RD Station:");
 
-        data.errors.forEach(
-          (erro, index) => {
-            console.error(
-              `Erro ${index + 1}:`,
-              erro,
-            );
-          },
-        );
+        data.errors.forEach((erro, index) => {
+          console.error(`Erro ${index + 1}:`, erro);
+        });
       }
 
       return false;
@@ -412,12 +358,9 @@ async function enviarParaRDStation() {
      * ==========================================================
      */
 
-    console.log(
-      "✅ Lead enviado com sucesso para o RD Station!"
-    );
+    console.log("✅ Lead enviado com sucesso para o RD Station!");
 
     return true;
-
   } catch (error) {
     /*
      * ==========================================================
@@ -425,10 +368,7 @@ async function enviarParaRDStation() {
      * ==========================================================
      */
 
-    console.error(
-      "❌ Erro de conexão com o RD Station:",
-      error,
-    );
+    console.error("❌ Erro de conexão com o RD Station:", error);
 
     return false;
   }
@@ -1591,28 +1531,29 @@ function renderConsultorResult(section, mensagem) {
       </h3>
 
       <p>
-        Encontramos uma aplicação que
-        precisa de uma avaliação personalizada.
+        Encontramos uma aplicação que precisa de uma avaliação personalizada.
       </p>
 
     </div>
 
 
-    <div class="recommendation-card">
+    <div class="recommendation-card consultor">
 
-      <div class="machine-placeholder">
-        💬
+      <div class="consultor-content">
+
+        <span class="recommendation-label">
+          Fale com um consultor
+        </span>
+
+        <h4>
+          Vamos encontrar a melhor solução para sua operação.
+        </h4>
+
+        <p>
+          ${escapeHTML(mensagem)}
+        </p>
+
       </div>
-
-
-      <h4>
-        Vamos encontrar a melhor solução
-      </h4>
-
-
-      <p>
-        ${escapeHTML(mensagem)}
-      </p>
 
     </div>
 
@@ -1623,6 +1564,7 @@ function renderConsultorResult(section, mensagem) {
 
   configurarResultadoAcoes();
 }
+
 
 function renderProductResult(section, produto) {
   section.innerHTML = `
@@ -1633,32 +1575,52 @@ function renderProductResult(section, produto) {
         Recomendação
       </h3>
 
-
       <p>
-        Encontramos uma solução para
-        sua operação.
+        Encontramos uma solução para sua operação.
       </p>
 
     </div>
 
 
-    <div class="recommendation-card">
+    <div class="recommendation-card produto">
 
-      <div class="machine-placeholder">
-        🚜
+      <div class="recommendation-content">
+
+        <span class="recommendation-label">
+          Solução recomendada
+        </span>
+
+        <h4>
+          ${escapeHTML(produto)}
+        </h4>
+
+        <p>
+          Essa solução foi identificada com base nas respostas fornecidas durante a simulação.
+        </p>
+
+        <div class="recommendation-meta">
+
+          <span class="recommendation-tag">
+            Solução Casale
+          </span>
+
+          <span class="recommendation-tag">
+            Recomendação personalizada
+          </span>
+
+        </div>
+
       </div>
 
 
-      <h4>
-        ${escapeHTML(produto)}
-      </h4>
+      <div class="recommendation-image">
 
+        <img
+          src="${obterImagemProduto(produto)}"
+          alt="${escapeHTML(produto)}"
+        />
 
-      <p>
-        Essa solução foi identificada
-        com base nas respostas fornecidas
-        durante a simulação.
-      </p>
+      </div>
 
     </div>
 
@@ -1669,6 +1631,34 @@ function renderProductResult(section, produto) {
 
   configurarResultadoAcoes();
 }
+
+function obterImagemProduto(produto) {
+  if (!produto) {
+    return "./assets/vertmix.webp";
+  }
+
+  const nome = normalizarValor(produto);
+
+  /*
+   * Mapeamento dos produtos para suas imagens.
+   *
+   * Adicione novos produtos aqui conforme
+   * forem entrando nos JSONs.
+   */
+
+  const imagens = {
+
+    "misturador_de_racao_total_vertmix":
+      "./assets/vertmix.webp",
+
+    "vertmix":
+      "./assets/vertmix.webp",
+
+  };
+
+  return imagens[nome] || "./assets/vertmix.webp";
+}
+
 
 function criarResultadoAcoes() {
   return `
@@ -1753,18 +1743,30 @@ function configurarResultadoAcoes() {
 }
 
 function abrirWhatsApp() {
-  /*
-   * Substituir posteriormente pelo
-   * número oficial da Casale.
-   */
+  const numero = "551634115000";
 
-  const numero = "5511999999999";
+  const recomendacao = userAnswers?.recomendacao;
 
-  const mensagem = encodeURIComponent(
-    "Olá! Fiz uma simulação no site da Casale e gostaria de falar com um consultor.",
+  let mensagem;
+
+  if (recomendacao && recomendacao !== "Atendimento com consultor") {
+    mensagem = `Olá! Fiz uma simulação no site da Casale e gostaria de falar com um consultor.
+
+        A máquina recomendada para minha operação foi: ${recomendacao}
+
+        Gostaria de saber mais detalhes sobre essa solução.`;
+        } else {
+            mensagem = `Olá! Fiz uma simulação no site da Casale e gostaria de falar com um consultor.
+
+        Minha simulação indicou que preciso de um atendimento com consultor.
+
+        Gostaria de conversar sobre a melhor solução para minha operação.`;
+        }
+
+  window.open(
+    `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`,
+    "_blank",
   );
-
-  window.open(`https://wa.me/${numero}?text=${mensagem}`, "_blank");
 }
 
 function continuarPerguntaEquipamento() {
