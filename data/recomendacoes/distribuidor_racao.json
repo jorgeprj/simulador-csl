@@ -5,7 +5,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_corte",
       "sistema_producao": "pasto_suplementacao",
-      "animais_dia": "ate_500"
+      "animais_trato": "ate_500"
     },
     "resultado": {
       "tipo": "produto",
@@ -18,7 +18,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_corte",
       "sistema_producao": "pasto_suplementacao",
-      "animais_dia": "501_1500"
+      "animais_trato": "501_1500"
     },
     "resultado": {
       "tipo": "produto",
@@ -31,7 +31,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_corte",
       "sistema_producao": "pasto_suplementacao",
-      "animais_dia": "1501_3000"
+      "animais_trato": "1501_3000"
     },
     "resultado": {
       "tipo": "produto",
@@ -44,7 +44,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_corte",
       "sistema_producao": "pasto_suplementacao",
-      "animais_dia": "acima_3000"
+      "animais_trato": "acima_3000"
     },
     "resultado": {
       "tipo": "consultor",
@@ -57,7 +57,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_corte",
       "sistema_producao": "semi_confinamento",
-      "animais_dia": "ate_500"
+      "animais_trato": "ate_500"
     },
     "resultado": {
       "tipo": "produto",
@@ -70,7 +70,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_corte",
       "sistema_producao": "semi_confinamento",
-      "animais_dia": "501_1500"
+      "animais_trato": "501_1500"
     },
     "resultado": {
       "tipo": "produto",
@@ -83,7 +83,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_corte",
       "sistema_producao": "semi_confinamento",
-      "animais_dia": "1501_3000"
+      "animais_trato": "1501_3000"
     },
     "resultado": {
       "tipo": "produto",
@@ -96,7 +96,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_corte",
       "sistema_producao": "semi_confinamento",
-      "animais_dia": "acima_3000"
+      "animais_trato": "acima_3000"
     },
     "resultado": {
       "tipo": "produto",
@@ -109,7 +109,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_corte",
       "sistema_producao": "tip",
-      "animais_dia": "ate_500"
+      "animais_trato": "ate_500"
     },
     "resultado": {
       "tipo": "produto",
@@ -122,7 +122,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_corte",
       "sistema_producao": "tip",
-      "animais_dia": "501_1500"
+      "animais_trato": "501_1500"
     },
     "resultado": {
       "tipo": "produto",
@@ -135,7 +135,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_corte",
       "sistema_producao": "tip",
-      "animais_dia": "1501_3000"
+      "animais_trato": "1501_3000"
     },
     "resultado": {
       "tipo": "produto",
@@ -148,7 +148,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_corte",
       "sistema_producao": "tip",
-      "animais_dia": "acima_3000"
+      "animais_trato": "acima_3000"
     },
     "resultado": {
       "tipo": "produto",
@@ -161,7 +161,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_corte",
       "sistema_producao": "confinamento",
-      "animais_dia": "ate_500"
+      "animais_trato": "ate_500"
     },
     "resultado": {
       "tipo": "consultor",
@@ -174,7 +174,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_corte",
       "sistema_producao": "confinamento",
-      "animais_dia": "501_1500"
+      "animais_trato": "501_1500"
     },
     "resultado": {
       "tipo": "consultor",
@@ -187,7 +187,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_corte",
       "sistema_producao": "confinamento",
-      "animais_dia": "1501_3000"
+      "animais_trato": "1501_3000"
     },
     "resultado": {
       "tipo": "consultor",
@@ -200,7 +200,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_corte",
       "sistema_producao": "confinamento",
-      "animais_dia": "acima_3000"
+      "animais_trato": "acima_3000"
     },
     "resultado": {
       "tipo": "consultor",
@@ -213,7 +213,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_leite",
       "sistema_producao": "pasto_suplementacao",
-      "animais_dia": "ate_500"
+      "animais_trato": "ate_500"
     },
     "resultado": {
       "tipo": "consultor",
@@ -226,7 +226,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_leite",
       "sistema_producao": "pasto_suplementacao",
-      "animais_dia": "501_1500"
+      "animais_trato": "501_1500"
     },
     "resultado": {
       "tipo": "consultor",
@@ -239,7 +239,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_leite",
       "sistema_producao": "pasto_suplementacao",
-      "animais_dia": "1501_3000"
+      "animais_trato": "1501_3000"
     },
     "resultado": {
       "tipo": "consultor",
@@ -252,7 +252,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_leite",
       "sistema_producao": "pasto_suplementacao",
-      "animais_dia": "acima_3000"
+      "animais_trato": "acima_3000"
     },
     "resultado": {
       "tipo": "consultor",
@@ -265,7 +265,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_leite",
       "sistema_producao": "semi_confinamento",
-      "animais_dia": "ate_500"
+      "animais_trato": "ate_500"
     },
     "resultado": {
       "tipo": "consultor",
@@ -278,7 +278,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_leite",
       "sistema_producao": "semi_confinamento",
-      "animais_dia": "501_1500"
+      "animais_trato": "501_1500"
     },
     "resultado": {
       "tipo": "consultor",
@@ -291,7 +291,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_leite",
       "sistema_producao": "semi_confinamento",
-      "animais_dia": "1501_3000"
+      "animais_trato": "1501_3000"
     },
     "resultado": {
       "tipo": "consultor",
@@ -304,7 +304,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_leite",
       "sistema_producao": "semi_confinamento",
-      "animais_dia": "acima_3000"
+      "animais_trato": "acima_3000"
     },
     "resultado": {
       "tipo": "consultor",
@@ -317,7 +317,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_leite",
       "sistema_producao": "tip",
-      "animais_dia": "ate_500"
+      "animais_trato": "ate_500"
     },
     "resultado": {
       "tipo": "consultor",
@@ -330,7 +330,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_leite",
       "sistema_producao": "tip",
-      "animais_dia": "501_1500"
+      "animais_trato": "501_1500"
     },
     "resultado": {
       "tipo": "consultor",
@@ -343,7 +343,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_leite",
       "sistema_producao": "tip",
-      "animais_dia": "1501_3000"
+      "animais_trato": "1501_3000"
     },
     "resultado": {
       "tipo": "consultor",
@@ -356,7 +356,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_leite",
       "sistema_producao": "tip",
-      "animais_dia": "acima_3000"
+      "animais_trato": "acima_3000"
     },
     "resultado": {
       "tipo": "consultor",
@@ -369,7 +369,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_leite",
       "sistema_producao": "confinamento",
-      "animais_dia": "ate_500"
+      "animais_trato": "ate_500"
     },
     "resultado": {
       "tipo": "consultor",
@@ -382,7 +382,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_leite",
       "sistema_producao": "confinamento",
-      "animais_dia": "501_1500"
+      "animais_trato": "501_1500"
     },
     "resultado": {
       "tipo": "consultor",
@@ -395,7 +395,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_leite",
       "sistema_producao": "confinamento",
-      "animais_dia": "1501_3000"
+      "animais_trato": "1501_3000"
     },
     "resultado": {
       "tipo": "consultor",
@@ -408,7 +408,7 @@
     "criterios": {
       "tipo_gado": "apenas_gado_leite",
       "sistema_producao": "confinamento",
-      "animais_dia": "acima_3000"
+      "animais_trato": "acima_3000"
     },
     "resultado": {
       "tipo": "consultor",
