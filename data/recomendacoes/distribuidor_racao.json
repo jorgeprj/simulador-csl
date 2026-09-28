@@ -1,0 +1,418 @@
+[
+  {
+    "id": "DISTRIBUIDOR_RACAO-001",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_corte",
+      "sistema_producao": "pasto_suplementacao",
+      "animais_dia": "ate_500"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Feeder 20 SC"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-002",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_corte",
+      "sistema_producao": "pasto_suplementacao",
+      "animais_dia": "501_1500"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Feeder SC"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-003",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_corte",
+      "sistema_producao": "pasto_suplementacao",
+      "animais_dia": "1501_3000"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Feeder 200 SC"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-004",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_corte",
+      "sistema_producao": "pasto_suplementacao",
+      "animais_dia": "acima_3000"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-005",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_corte",
+      "sistema_producao": "semi_confinamento",
+      "animais_dia": "ate_500"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Feeder"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-006",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_corte",
+      "sistema_producao": "semi_confinamento",
+      "animais_dia": "501_1500"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Feeder"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-007",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_corte",
+      "sistema_producao": "semi_confinamento",
+      "animais_dia": "1501_3000"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Feeder"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-008",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_corte",
+      "sistema_producao": "semi_confinamento",
+      "animais_dia": "acima_3000"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Feeder"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-009",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_corte",
+      "sistema_producao": "tip",
+      "animais_dia": "ate_500"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Feeder 20 SC"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-010",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_corte",
+      "sistema_producao": "tip",
+      "animais_dia": "501_1500"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Feeder SC"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-011",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_corte",
+      "sistema_producao": "tip",
+      "animais_dia": "1501_3000"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Feeder 200 SC"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-012",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_corte",
+      "sistema_producao": "tip",
+      "animais_dia": "acima_3000"
+    },
+    "resultado": {
+      "tipo": "produto",
+      "valor": "Feeder 200 SC"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-013",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_corte",
+      "sistema_producao": "confinamento",
+      "animais_dia": "ate_500"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-014",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_corte",
+      "sistema_producao": "confinamento",
+      "animais_dia": "501_1500"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-015",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_corte",
+      "sistema_producao": "confinamento",
+      "animais_dia": "1501_3000"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-016",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_corte",
+      "sistema_producao": "confinamento",
+      "animais_dia": "acima_3000"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-017",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_leite",
+      "sistema_producao": "pasto_suplementacao",
+      "animais_dia": "ate_500"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-018",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_leite",
+      "sistema_producao": "pasto_suplementacao",
+      "animais_dia": "501_1500"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-019",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_leite",
+      "sistema_producao": "pasto_suplementacao",
+      "animais_dia": "1501_3000"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-020",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_leite",
+      "sistema_producao": "pasto_suplementacao",
+      "animais_dia": "acima_3000"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-021",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_leite",
+      "sistema_producao": "semi_confinamento",
+      "animais_dia": "ate_500"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-022",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_leite",
+      "sistema_producao": "semi_confinamento",
+      "animais_dia": "501_1500"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-023",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_leite",
+      "sistema_producao": "semi_confinamento",
+      "animais_dia": "1501_3000"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-024",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_leite",
+      "sistema_producao": "semi_confinamento",
+      "animais_dia": "acima_3000"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-025",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_leite",
+      "sistema_producao": "tip",
+      "animais_dia": "ate_500"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-026",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_leite",
+      "sistema_producao": "tip",
+      "animais_dia": "501_1500"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-027",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_leite",
+      "sistema_producao": "tip",
+      "animais_dia": "1501_3000"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-028",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_leite",
+      "sistema_producao": "tip",
+      "animais_dia": "acima_3000"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-029",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_leite",
+      "sistema_producao": "confinamento",
+      "animais_dia": "ate_500"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-030",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_leite",
+      "sistema_producao": "confinamento",
+      "animais_dia": "501_1500"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-031",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_leite",
+      "sistema_producao": "confinamento",
+      "animais_dia": "1501_3000"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada"
+    }
+  },
+  {
+    "id": "DISTRIBUIDOR_RACAO-032",
+    "equipamento": "distribuidor_racao",
+    "criterios": {
+      "tipo_gado": "gado_leite",
+      "sistema_producao": "confinamento",
+      "animais_dia": "acima_3000"
+    },
+    "resultado": {
+      "tipo": "consultor",
+      "valor": "Para essa aplicação, fale com um consultor da Casale para receber a orientação mais adequada"
+    }
+  }
+]

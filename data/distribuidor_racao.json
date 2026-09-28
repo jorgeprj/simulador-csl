@@ -1,0 +1,65 @@
+{
+  "equipamento": "distribuidor_racao",
+  "perguntas": [
+    {
+      "id": "sistema_producao",
+      "pergunta": "Qual o sistema de produção predominante da fazenda?",
+      "opcoes": [
+        {
+          "valor": "pasto_suplementacao",
+          "texto": "Pasto com suplementação",
+          "proxima": "animais_trato"
+        },
+        {
+          "valor": "semi_confinamento",
+          "texto": "Semi-confinamento",
+          "proxima": "animais_trato"
+        },
+        {
+          "valor": "tip",
+          "texto": "TIP (Terminação Intensiva a Pasto)",
+          "proxima": "animais_trato"
+        },
+        {
+          "valor": "confinamento",
+          "texto": "Confinamento",
+          "proxima": "animais_trato"
+        }
+      ]
+    },
+    {
+      "id": "animais_trato",
+      "pergunta": "Quantos animais recebem trato diariamente?",
+      "opcoes": [
+        {
+          "valor": "ate_500",
+          "texto": "Até 500 animais",
+          "acao": {
+            "tipo": "resultado"
+          }
+        },
+        {
+          "valor": "501_1500",
+          "texto": "501 a 1.500 animais",
+          "acao": {
+            "tipo": "resultado"
+          }
+        },
+        {
+          "valor": "1501_3000",
+          "texto": "1.501 a 3.000 animais",
+          "acao": {
+            "tipo": "resultado"
+          }
+        },
+        {
+          "valor": "acima_3000",
+          "texto": "Acima de 3.000 animais",
+          "acao": {
+            "tipo": "resultado"
+          }
+        }
+      ]
+    }
+  ]
+}

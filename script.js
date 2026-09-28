@@ -624,11 +624,11 @@ function renderEquipmentSelection() {
         "distribuidor_esterco",
       )}
 
-            ${criarOpcaoEquipamento(
-              "distribuidor_esterco",
-              "Distribuidores de ração",
-              "distribuidor_esterco",
-            )}
+${criarOpcaoEquipamento(
+  "distribuidor_racao",
+  "Distribuidores de ração",
+  "distribuidor_racao",
+)}
 
       ${criarOpcaoEquipamento(
         "misturador_racao",
@@ -1565,7 +1565,6 @@ function renderConsultorResult(section, mensagem) {
   configurarResultadoAcoes();
 }
 
-
 function renderProductResult(section, produto) {
   section.innerHTML = `
 
@@ -1647,18 +1646,13 @@ function obterImagemProduto(produto) {
    */
 
   const imagens = {
+    misturador_de_racao_total_vertmix: "./assets/vertmix.webp",
 
-    "misturador_de_racao_total_vertmix":
-      "./assets/vertmix.webp",
-
-    "vertmix":
-      "./assets/vertmix.webp",
-
+    vertmix: "./assets/vertmix.webp",
   };
 
   return imagens[nome] || "./assets/vertmix.webp";
 }
-
 
 function criarResultadoAcoes() {
   return `
@@ -1755,13 +1749,13 @@ function abrirWhatsApp() {
         A máquina recomendada para minha operação foi: ${recomendacao}
 
         Gostaria de saber mais detalhes sobre essa solução.`;
-        } else {
-            mensagem = `Olá! Fiz uma simulação no site da Casale e gostaria de falar com um consultor.
+  } else {
+    mensagem = `Olá! Fiz uma simulação no site da Casale e gostaria de falar com um consultor.
 
         Minha simulação indicou que preciso de um atendimento com consultor.
 
         Gostaria de conversar sobre a melhor solução para minha operação.`;
-        }
+  }
 
   window.open(
     `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`,
@@ -1991,32 +1985,32 @@ function restaurarStep3Original() {
 
     <div class="option-list">
 
-      ${criarOpcaoEquipamento(
-        "colhedora",
-        "Colhedoras de forragem",
-        "colhedora",
-      )}
+        ${criarOpcaoEquipamento(
+            "colhedora",
+            "Colhedoras de forragem",
+            "colhedora",
+        )}
 
-      ${criarOpcaoEquipamento(
-        "distribuidor_esterco",
-        "Distribuidores de esterco",
-        "distribuidor_esterco",
-      )}
+        ${criarOpcaoEquipamento(
+            "distribuidor_esterco",
+            "Distribuidores de esterco",
+            "distribuidor_esterco",
+        )}
 
       
-      ${criarOpcaoEquipamento(
-        "distribuidor_esterco",
+        ${criarOpcaoEquipamento(
+        "distribuidor_racao",
         "Distribuidores de ração",
-        "distribuidor_esterco",
-      )}
+        "distribuidor_racao",
+        )}
 
-      ${criarOpcaoEquipamento(
-        "misturador_racao",
-        "Misturadores de ração total",
-        "misturador_racao",
-      )}
+        ${criarOpcaoEquipamento(
+            "misturador_racao",
+            "Misturadores de ração total",
+            "misturador_racao",
+        )}
 
-      ${criarOpcaoEquipamento("moedor", "Moedores", "moedor")}
+        ${criarOpcaoEquipamento("moedor", "Moedores", "moedor")}
 
     </div>
 
