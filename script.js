@@ -1639,29 +1639,29 @@ function obterImagemProduto(produto) {
   const nome = normalizarValor(produto);
 
   const imagens = {
-    cfc_1300: "cfc-1300.jpg",
-    cfc_1800: "cfc-1800.jpg",
+    "cfc-1300": "cfc-1300.jpg",
+    "cfc-1800": "cfc-1800.jpg",
 
-    crc_150: "crc-150.jpg",
-    crc_180: "crc-180.jpg",
+    "crc-150": "crc-150.jpg",
+    "crc-180": "crc-180.jpg",
 
-    feeder_20sc: "feeder-20sc.jpg",
-    feeder_200sc: "feeder-200sc.jpg",
-    feeder: "feeder.jpg",
+    "feeder-20sc": "feeder-20sc.jpg",
+    "feeder-200sc": "feeder-200sc.jpg",
+    "feeder": "feeder.jpg",
 
-    h835: "h835.jpg",
-    h1000: "h1000.jpg",
+    "h835": "h835.jpg",
+    "h1000": "h1000.jpg",
 
-    lec_1620: "lec-1620.jpg",
-    lec_8511: "lec-8511.jpg",
+    "lec-1620": "lec-1620.jpg",
+    "lec-8511": "lec-8511.jpg",
 
-    rotormix: "rotormix.jpg",
+    "rotormix": "rotormix.jpg",
 
-    rx_techbull: "rx-techbull.jpg",
+    "rx-techbull": "rx-techbull.jpg",
 
-    totalmix: "totalmix.jpg",
+    "totalmix": "totalmix.jpg",
 
-    vertimix: "vertimix.jpg",
+    "vertimix": "vertimix.jpg",
   };
 
   const imagem = imagens[nome];
