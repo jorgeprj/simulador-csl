@@ -1636,45 +1636,63 @@ function obterImagemProduto(produto) {
     return `${BASE_URL}/assets/vertimix.jpg`;
   }
 
-  const nome = normalizarValor(produto);
+  /*
+   * Normaliza o nome do produto para o padrão:
+   *
+   * "CFC-1300"  → "cfc_1300"
+   * "CFC 1300"  → "cfc_1300"
+   * "LEC 1620"  → "lec_1620"
+   * "LEC-1620"  → "lec_1620"
+   * "RX TechBull" → "rx_techbull"
+   */
+  const nome = String(produto)
+    .trim()
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[-\s]+/g, "_");
 
   const imagens = {
-    "cfc-1300": "cfc-1300.jpg",
-    "cfc-1800": "cfc-1800.jpg",
+    cfc_1300: "cfc-1300.jpg",
+    cfc_1800: "cfc-1800.jpg",
 
-    "crc-150": "crc-150.jpg",
-    "crc-180": "crc-180.jpg",
+    crc_150: "crc-150.jpg",
+    crc_180: "crc-180.jpg",
 
-    "feeder-20sc": "feeder-20sc.jpg",
-    "feeder-200sc": "feeder-200sc.jpg",
-    "feeder": "feeder.jpg",
+    feeder_20sc: "feeder-20sc.jpg",
+    feeder_200sc: "feeder-200sc.jpg",
+    feeder: "feeder.jpg",
 
-    "h835": "h835.jpg",
-    "h1000": "h1000.jpg",
+    h835: "h835.jpg",
+    h1000: "h1000.jpg",
 
-    "lec-1620": "lec-1620.jpg",
-    "lec-8511": "lec-8511.jpg",
+    lec_1620: "lec-1620.jpg",
+    lec_8511: "lec-8511.jpg",
 
-    "rotormix": "rotormix.jpg",
+    rotormix: "rotormix.jpg",
 
-    "rx-techbull": "rx-techbull.jpg",
+    rx_techbull: "rx-techbull.jpg",
 
-    "totalmix": "totalmix.jpg",
+    totalmix: "totalmix.jpg",
 
-    "vertimix": "vertimix.jpg",
+    vertimix: "vertimix.jpg",
   };
 
   const imagem = imagens[nome];
 
   if (!imagem) {
     console.warn(
-      `⚠️ Imagem não cadastrada para o produto: "${produto}"`,
+      `⚠️ Imagem não cadastrada para o produto: "${produto}"`
     );
 
     return `${BASE_URL}/assets/vertimix.jpg`;
   }
 
-  return `${BASE_URL}/assets/${imagem}`;
+  const url = `${BASE_URL}/assets/${imagem}`;
+
+  console.log(`🖼️ Imagem do produto "${produto}":`, url);
+
+  return url;
 }
 
 function criarResultadoAcoes() {
