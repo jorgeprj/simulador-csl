@@ -1652,7 +1652,7 @@ function obterImagemProduto(produto) {
     h835: "h835.jpg",
     h1000: "h1000.jpg",
 
-    lec_620: "lec-620.jpg",
+    lec_1620: "lec-1620.jpg",
     lec_8511: "lec-8511.jpg",
 
     rotormix: "rotormix.jpg",
