@@ -1633,25 +1633,48 @@ function renderProductResult(section, produto) {
 
 function obterImagemProduto(produto) {
   if (!produto) {
-    return "./assets/vertmix.webp";
+    return `${BASE_URL}/assets/vertimix.jpg`;
   }
 
   const nome = normalizarValor(produto);
 
-  /*
-   * Mapeamento dos produtos para suas imagens.
-   *
-   * Adicione novos produtos aqui conforme
-   * forem entrando nos JSONs.
-   */
-
   const imagens = {
-    misturador_de_racao_total_vertmix: "./assets/vertmix.webp",
+    cfc_1300: "cfc-1300.jpg",
+    cfc_1800: "cfc-1800.jpg",
 
-    vertmix: "./assets/vertmix.webp",
+    crc_150: "crc-150.jpg",
+    crc_180: "crc-180.jpg",
+
+    feeder_20sc: "feeder-20sc.jpg",
+    feeder_200sc: "feeder-200sc.jpg",
+    feeder: "feeder.jpg",
+
+    h835: "h835.jpg",
+    h1000: "h1000.jpg",
+
+    lec_620: "lec-620.jpg",
+    lec_8511: "lec-8511.jpg",
+
+    rotormix: "rotormix.jpg",
+
+    rx_techbull: "rx-techbull.jpg",
+
+    totalmix: "totalmix.jpg",
+
+    vertimix: "vertimix.jpg",
   };
 
-  return imagens[nome] || "./assets/vertmix.webp";
+  const imagem = imagens[nome];
+
+  if (!imagem) {
+    console.warn(
+      `⚠️ Imagem não cadastrada para o produto: "${produto}"`,
+    );
+
+    return `${BASE_URL}/assets/vertimix.jpg`;
+  }
+
+  return `${BASE_URL}/assets/${imagem}`;
 }
 
 function criarResultadoAcoes() {
