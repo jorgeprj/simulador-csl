@@ -1632,25 +1632,29 @@ function renderProductResult(section, produto) {
 }
 
 function obterImagemProduto(produto) {
+  console.group("🖼️ DEBUG — obterImagemProduto");
+
+  console.log("1️⃣ Produto recebido:", produto);
+  console.log("   Tipo:", typeof produto);
+
   if (!produto) {
-    return `${BASE_URL}/assets/vertimix.jpg`;
+    const fallback = `${BASE_URL}/assets/vertimix.jpg`;
+
+    console.warn("⚠️ Produto vazio. Usando fallback:");
+    console.log("   URL:", fallback);
+
+    console.groupEnd();
+    return fallback;
   }
 
-  /*
-   * Normaliza o nome do produto para o padrão:
-   *
-   * "CFC-1300"  → "cfc_1300"
-   * "CFC 1300"  → "cfc_1300"
-   * "LEC 1620"  → "lec_1620"
-   * "LEC-1620"  → "lec_1620"
-   * "RX TechBull" → "rx_techbull"
-   */
   const nome = String(produto)
     .trim()
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/[-\s]+/g, "_");
+
+  console.log("2️⃣ Nome normalizado:", nome);
 
   const imagens = {
     cfc_1300: "cfc-1300.jpg",
@@ -1679,19 +1683,31 @@ function obterImagemProduto(produto) {
     vertimix: "vertimix.jpg",
   };
 
+  console.log("3️⃣ Chaves disponíveis:");
+  console.log(Object.keys(imagens));
+
+  console.log("4️⃣ Chave procurada:", nome);
+
   const imagem = imagens[nome];
 
+  console.log("5️⃣ Resultado encontrado:", imagem);
+
   if (!imagem) {
-    console.warn(
-      `⚠️ Imagem não cadastrada para o produto: "${produto}"`
-    );
+    console.error("❌ IMAGEM NÃO ENCONTRADA");
+    console.error("   Produto original:", produto);
+    console.error("   Chave gerada:", nome);
+    console.error("   Chaves disponíveis:", Object.keys(imagens));
+
+    console.groupEnd();
 
     return `${BASE_URL}/assets/vertimix.jpg`;
   }
 
   const url = `${BASE_URL}/assets/${imagem}`;
 
-  console.log(`🖼️ Imagem do produto "${produto}":`, url);
+  console.log("6️⃣ URL FINAL:", url);
+
+  console.groupEnd();
 
   return url;
 }
