@@ -1663,8 +1663,8 @@ function obterImagemProduto(produto) {
     feeder_200sc: "feeder-200sc.jpg",
     feeder: "feeder.jpg",
 
-    h835: "h-835.jpg",
-    h1000: "h-1000.jpg",
+    h_835: "h-835.jpg",
+    h_1000: "h-1000.jpg",
 
     lec_405: "lec-405.jpg",
     lec_1620: "lec-1620.jpg",
