@@ -43,6 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setupNavigation();
 
+  setupLocalizacao();
+
   updateStepper(1);
 });
 
@@ -2128,4 +2130,328 @@ function debugAnswers() {
   console.log("Recomendações carregadas:", currentRecommendations);
 
   console.groupEnd();
+}
+
+// ============================================================
+// PAÍS / ESTADO / CIDADE
+// ============================================================
+
+const CASALE_IBGE_UF_URL =
+  "https://servicodados.ibge.gov.br/api/v1/localidades/estados";
+
+const CASALE_IBGE_CIDADES_URL =
+  "https://servicodados.ibge.gov.br/api/v1/localidades/estados/{UF}/municipios";
+
+// Nomes exclusivos para evitar conflito com validation.js
+let casaleEstadosBrasil = [];
+let casaleCidadesBrasilCache = {};
+
+function setupLocalizacao() {
+  const pais = document.querySelector("#pais");
+  const estadoField = document.querySelector("#estado-field");
+  const estado = document.querySelector("#estado");
+  const cidadeField = document.querySelector("#cidade-field");
+  const cidade = document.querySelector("#cidade");
+
+  if (!pais || !estadoField || !estado || !cidadeField || !cidade) {
+    console.warn("Campos de localização não encontrados.");
+    return;
+  }
+
+  atualizarCamposLocalizacao();
+
+  pais.addEventListener("change", () => {
+    atualizarCamposLocalizacao();
+  });
+
+  estado.addEventListener("change", async () => {
+    const uf = estado.value;
+
+    if (!uf) {
+      resetarCidades();
+      return;
+    }
+
+    await carregarCidades(uf);
+  });
+}
+
+async function atualizarCamposLocalizacao() {
+  const pais = document.querySelector("#pais");
+  const estadoField = document.querySelector("#estado-field");
+  const estado = document.querySelector("#estado");
+  const cidadeField = document.querySelector("#cidade-field");
+  const cidade = document.querySelector("#cidade");
+
+  if (!pais || !estadoField || !estado || !cidadeField || !cidade) {
+    return;
+  }
+
+  // ==========================================================
+  // BRASIL
+  // ==========================================================
+
+  if (pais.value === "BR") {
+    estadoField.style.display = "";
+    cidadeField.style.display = "";
+
+    transformarCidadeEmSelect();
+
+    await carregarEstados();
+
+    return;
+  }
+
+  // ==========================================================
+  // OUTROS PAÍSES
+  // ==========================================================
+
+  estadoField.style.display = "none";
+
+  estado.value = "";
+
+  transformarCidadeEmInput();
+}
+
+// ============================================================
+// ESTADOS
+// ============================================================
+
+async function carregarEstados() {
+  const estado = document.querySelector("#estado");
+
+  if (!estado) {
+    return;
+  }
+
+  if (casaleEstadosBrasil.length > 0) {
+    preencherEstados();
+    return;
+  }
+
+  try {
+    estado.disabled = true;
+
+    estado.innerHTML = `
+      <option value="">
+        Carregando estados...
+      </option>
+    `;
+
+    const response = await fetch(CASALE_IBGE_UF_URL);
+
+    if (!response.ok) {
+      throw new Error(
+        `Erro HTTP ${response.status} ao carregar estados.`
+      );
+    }
+
+    casaleEstadosBrasil = await response.json();
+
+    casaleEstadosBrasil.sort((a, b) =>
+      a.nome.localeCompare(b.nome, "pt-BR")
+    );
+
+    preencherEstados();
+
+  } catch (error) {
+    console.error("Erro ao carregar estados:", error);
+
+    estado.innerHTML = `
+      <option value="">
+        Não foi possível carregar os estados
+      </option>
+    `;
+
+  } finally {
+    estado.disabled = false;
+  }
+}
+
+function preencherEstados() {
+  const estado = document.querySelector("#estado");
+
+  if (!estado) {
+    return;
+  }
+
+  const estadoAtual = estado.value;
+
+  estado.innerHTML = `
+    <option value="">
+      Selecione o estado
+    </option>
+  `;
+
+  casaleEstadosBrasil.forEach((item) => {
+    const option = document.createElement("option");
+
+    option.value = item.sigla;
+    option.textContent = item.nome;
+
+    estado.appendChild(option);
+  });
+
+  if (estadoAtual) {
+    estado.value = estadoAtual;
+  }
+}
+
+// ============================================================
+// CIDADES
+// ============================================================
+
+async function carregarCidades(uf) {
+  const cidade = document.querySelector("#cidade");
+
+  if (!cidade) {
+    return;
+  }
+
+  if (casaleCidadesBrasilCache[uf]) {
+    preencherCidades(casaleCidadesBrasilCache[uf]);
+    return;
+  }
+
+  try {
+    cidade.disabled = true;
+
+    cidade.innerHTML = `
+      <option value="">
+        Carregando cidades...
+      </option>
+    `;
+
+    const url = CASALE_IBGE_CIDADES_URL.replace("{UF}", uf);
+
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error(
+        `Erro HTTP ${response.status} ao carregar cidades.`
+      );
+    }
+
+    const cidades = await response.json();
+
+    const nomes = cidades
+      .map((item) => item.nome)
+      .sort((a, b) => a.localeCompare(b, "pt-BR"));
+
+    casaleCidadesBrasilCache[uf] = nomes;
+
+    preencherCidades(nomes);
+
+  } catch (error) {
+    console.error("Erro ao carregar cidades:", error);
+
+    cidade.innerHTML = `
+      <option value="">
+        Não foi possível carregar as cidades
+      </option>
+    `;
+
+  } finally {
+    cidade.disabled = false;
+  }
+}
+
+function preencherCidades(cidades) {
+  const cidade = document.querySelector("#cidade");
+
+  if (!cidade) {
+    return;
+  }
+
+  cidade.innerHTML = `
+    <option value="">
+      Selecione a cidade
+    </option>
+  `;
+
+  cidades.forEach((nome) => {
+    const option = document.createElement("option");
+
+    option.value = nome;
+    option.textContent = nome;
+
+    cidade.appendChild(option);
+  });
+}
+
+// ============================================================
+// TROCA INPUT ↔ SELECT DA CIDADE
+// ============================================================
+
+function transformarCidadeEmSelect() {
+  const cidadeAtual = document.querySelector("#cidade");
+
+  if (!cidadeAtual) {
+    return;
+  }
+
+  if (cidadeAtual.tagName === "SELECT") {
+    return;
+  }
+
+  const select = document.createElement("select");
+
+  select.id = "cidade";
+  select.name = cidadeAtual.name || "cidade";
+  select.autocomplete = "address-level2";
+
+  select.innerHTML = `
+    <option value="">
+      Selecione primeiro o estado
+    </option>
+  `;
+
+  cidadeAtual.replaceWith(select);
+}
+
+function transformarCidadeEmInput() {
+  const cidadeAtual = document.querySelector("#cidade");
+
+  if (!cidadeAtual) {
+    return;
+  }
+
+  if (cidadeAtual.tagName === "INPUT") {
+    cidadeAtual.type = "text";
+    cidadeAtual.placeholder = "Digite sua cidade";
+
+    return;
+  }
+
+  const input = document.createElement("input");
+
+  input.id = "cidade";
+  input.type = "text";
+  input.name = cidadeAtual.name || "cidade";
+  input.autocomplete = "address-level2";
+  input.placeholder = "Digite sua cidade";
+
+  cidadeAtual.replaceWith(input);
+}
+
+// ============================================================
+// RESET CIDADES
+// ============================================================
+
+function resetarCidades() {
+  const cidade = document.querySelector("#cidade");
+
+  if (!cidade) {
+    return;
+  }
+
+  if (cidade.tagName === "SELECT") {
+    cidade.innerHTML = `
+      <option value="">
+        Selecione primeiro o estado
+      </option>
+    `;
+  } else {
+    cidade.value = "";
+  }
 }

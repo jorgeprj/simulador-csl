@@ -8,18 +8,28 @@
     <title>Simulador Casale</title>
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/css/intlTelInput.css" />
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/css/intlTelInput.css"
+    />
 </head>
 
 <body>
+
     <div class="casale-page onboarding-state">
+
         <!-- =====================================================
-           HERO
-      ====================================================== -->
+             HERO
+        ====================================================== -->
 
         <section class="casale-hero">
+
             <div class="hero-content">
-                <h1>Descubra a solução ideal para sua operação.</h1>
+
+                <h1>
+                    Descubra a solução ideal para sua operação.
+                </h1>
 
                 <p class="hero-description">
                     Responda algumas perguntas e receba uma recomendação alinhada ao seu
@@ -27,6 +37,7 @@
                 </p>
 
                 <ul class="hero-benefits">
+
                     <li>
                         <span class="benefit-icon">✓</span>
                         Leva menos de 2 minutos
@@ -41,348 +52,738 @@
                         <span class="benefit-icon">✓</span>
                         Atendimento via WhatsApp
                     </li>
+
                 </ul>
+
             </div>
+
         </section>
 
+
         <!-- =====================================================
-           SIMULADOR
-      ====================================================== -->
+             SIMULADOR
+        ====================================================== -->
 
         <section class="simulator-area">
+
             <div class="simulator-card">
-                <!-- HEADER -->
+
+                <!-- =================================================
+                     HEADER
+                ================================================== -->
 
                 <header class="simulator-header">
+
                     <div class="simulator-title">
+
                         <div class="simulator-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                                <path d="M7 3H17C18.1 3 19 3.9 19 5V21H5V5C5 3.9 5.9 3 7 3Z" stroke="currentColor"
-                                    stroke-width="2" />
 
-                                <path d="M8 8H16" stroke="currentColor" stroke-width="2" />
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                aria-hidden="true"
+                            >
 
-                                <path d="M8 12H16" stroke="currentColor" stroke-width="2" />
+                                <path
+                                    d="M7 3H17C18.1 3 19 3.9 19 5V21H5V5C5 3.9 5.9 3 7 3Z"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+
+                                <path
+                                    d="M8 8H16"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+
+                                <path
+                                    d="M8 12H16"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+
                             </svg>
+
                         </div>
 
                         <div>
-                            <h2>Simulador Casale</h2>
-                            <span>Leva menos de 2 minutos</span>
+
+                            <h2>
+                                Simulador Casale
+                            </h2>
+
+                            <span>
+                                Leva menos de 2 minutos
+                            </span>
+
                         </div>
+
                     </div>
+
                 </header>
 
-                <!-- =================================================
-               STEPPER
-          ================================================== -->
 
-                <nav class="stepper" aria-label="Progresso da simulação">
-                    <div class="step-item active" data-step="1">
+                <!-- =================================================
+                     STEPPER
+                ================================================== -->
+
+                <nav
+                    class="stepper"
+                    aria-label="Progresso da simulação"
+                >
+
+                    <div
+                        class="step-item active"
+                        data-step="1"
+                    >
+
                         <div class="step-circle">
                             <span>1</span>
                         </div>
 
-                        <p>Identificação</p>
+                        <p>
+                            Identificação
+                        </p>
+
                     </div>
+
 
                     <div class="step-line"></div>
 
-                    <div class="step-item" data-step="2">
+
+                    <div
+                        class="step-item"
+                        data-step="2"
+                    >
+
                         <div class="step-circle">
                             <span>2</span>
                         </div>
 
-                        <p>Produção</p>
+                        <p>
+                            Produção
+                        </p>
+
                     </div>
+
 
                     <div class="step-line"></div>
 
-                    <div class="step-item" data-step="3">
+
+                    <div
+                        class="step-item"
+                        data-step="3"
+                    >
+
                         <div class="step-circle">
                             <span>3</span>
                         </div>
 
-                        <p>Equipamento</p>
+                        <p>
+                            Equipamento
+                        </p>
+
                     </div>
+
 
                     <div class="step-line"></div>
 
-                    <div class="step-item" data-step="4">
+
+                    <div
+                        class="step-item"
+                        data-step="4"
+                    >
+
                         <div class="step-circle">
                             <span>4</span>
                         </div>
 
-                        <p>Recomendação</p>
+                        <p>
+                            Recomendação
+                        </p>
+
                     </div>
+
                 </nav>
 
+
                 <!-- =================================================
-               CONTEÚDO
-          ================================================== -->
+                     CONTEÚDO
+                ================================================== -->
 
                 <main class="simulator-content">
+
                     <!-- =================================================
-                 STEP 1 — IDENTIFICAÇÃO
-            ================================================== -->
+                         STEP 1 — IDENTIFICAÇÃO
+                    ================================================== -->
 
-                    <section class="form-step active" id="step-1">
+                    <section
+                        class="form-step active"
+                        id="step-1"
+                    >
+
                         <div class="step-header">
-                            <h3>Identificação</h3>
 
-                            <p>Preencha seus dados para iniciar a simulação.</p>
+                            <h3>
+                                Identificação
+                            </h3>
+
+                            <p>
+                                Preencha seus dados para iniciar a simulação.
+                            </p>
+
                         </div>
 
-                        <!--
-                PRIMEIRA VISUALIZAÇÃO
 
-                Apenas nome e função aparecem inicialmente.
-              -->
+                        <!-- PRIMEIRA VISUALIZAÇÃO -->
 
                         <div class="fields-grid onboarding-fields">
-                            <div class="field">
-                                <label for="nome"> Nome </label>
-
-                                <input id="nome" type="text" autocomplete="name" placeholder="Digite seu nome" />
-                            </div>
 
                             <div class="field">
-                                <label for="funcao-inicial"> Função </label>
 
-                                <input id="funcao-inicial" type="text" autocomplete="organization-title"
-                                    placeholder="Ex: Proprietário" />
+                                <label for="nome">
+                                    Nome
+                                </label>
+
+                                <input
+                                    id="nome"
+                                    type="text"
+                                    autocomplete="name"
+                                    placeholder="Digite seu nome"
+                                />
+
                             </div>
+
+
+                            <div class="field">
+
+                                <label for="funcao-inicial">
+                                    Função
+                                </label>
+
+                                <input
+                                    id="funcao-inicial"
+                                    type="text"
+                                    autocomplete="organization-title"
+                                    placeholder="Ex: Proprietário"
+                                />
+
+                            </div>
+
                         </div>
 
+
                         <!-- =================================================
-                   CAMPOS COMPLETOS
+                             CAMPOS COMPLETOS
+                        ================================================== -->
 
-                   São exibidos após o primeiro Continuar.
-              ================================================== -->
+                        <div
+                            class="extra-fields"
+                            id="extra-fields"
+                        >
 
-                        <div class="extra-fields" id="extra-fields">
                             <div class="fields-grid">
+
                                 <!-- TELEFONE -->
 
                                 <div class="field">
-                                    <label for="telefone">Telefone</label>
 
-                                    <input id="telefone" type="tel" autocomplete="tel"
-                                        placeholder="Digite seu telefone" />
+                                    <label for="telefone">
+                                        Telefone
+                                    </label>
+
+                                    <input
+                                        id="telefone"
+                                        type="tel"
+                                        autocomplete="tel"
+                                        placeholder="Digite seu telefone"
+                                    />
+
                                 </div>
+
 
                                 <!-- PROPRIEDADE -->
 
                                 <div class="field">
-                                    <label for="propriedade"> Propriedade / Empresa </label>
 
-                                    <input id="propriedade" type="text" autocomplete="organization"
-                                        placeholder="Nome da propriedade ou empresa" />
+                                    <label for="propriedade">
+                                        Propriedade / Empresa
+                                    </label>
+
+                                    <input
+                                        id="propriedade"
+                                        type="text"
+                                        autocomplete="organization"
+                                        placeholder="Nome da propriedade ou empresa"
+                                    />
+
                                 </div>
+
 
                                 <!-- PAÍS -->
 
                                 <div class="field">
-                                    <label for="pais">País</label>
 
-                                    <select id="pais" autocomplete="country-name">
-                                        <option value="BR" selected>Brasil</option>
-                                        <option value="AR">Argentina</option>
-                                        <option value="BO">Bolívia</option>
-                                        <option value="CL">Chile</option>
-                                        <option value="CO">Colômbia</option>
-                                        <option value="PY">Paraguai</option>
-                                        <option value="PE">Peru</option>
-                                        <option value="UY">Uruguai</option>
-                                        <option value="US">Estados Unidos</option>
-                                        <option value="PT">Portugal</option>
-                                        <option value="ES">Espanha</option>
-                                        <option value="FR">França</option>
-                                        <option value="DE">Alemanha</option>
-                                        <option value="IT">Itália</option>
-                                        <option value="GB">Reino Unido</option>
-                                        <option value="OTHER">Outro</option>
+                                    <label for="pais">
+                                        País
+                                    </label>
+
+                                    <select
+                                        id="pais"
+                                        autocomplete="country-name"
+                                    >
+
+                                        <option
+                                            value="BR"
+                                            selected
+                                        >
+                                            Brasil
+                                        </option>
+
+                                        <option value="AR">
+                                            Argentina
+                                        </option>
+
+                                        <option value="BO">
+                                            Bolívia
+                                        </option>
+
+                                        <option value="CL">
+                                            Chile
+                                        </option>
+
+                                        <option value="CO">
+                                            Colômbia
+                                        </option>
+
+                                        <option value="PY">
+                                            Paraguai
+                                        </option>
+
+                                        <option value="PE">
+                                            Peru
+                                        </option>
+
+                                        <option value="UY">
+                                            Uruguai
+                                        </option>
+
+                                        <option value="US">
+                                            Estados Unidos
+                                        </option>
+
+                                        <option value="PT">
+                                            Portugal
+                                        </option>
+
+                                        <option value="ES">
+                                            Espanha
+                                        </option>
+
+                                        <option value="FR">
+                                            França
+                                        </option>
+
+                                        <option value="DE">
+                                            Alemanha
+                                        </option>
+
+                                        <option value="IT">
+                                            Itália
+                                        </option>
+
+                                        <option value="GB">
+                                            Reino Unido
+                                        </option>
+
+                                        <option value="OTHER">
+                                            Outro
+                                        </option>
+
                                     </select>
+
                                 </div>
+
 
                                 <!-- ESTADO -->
-                                <div class="field" id="estado-field">
-                                    <label for="estado">Estado</label>
 
-                                    <select id="estado" autocomplete="address-level1">
-                                        <option value="">Selecione o estado</option>
+                                <div
+                                    class="field"
+                                    id="estado-field"
+                                >
+
+                                    <label for="estado">
+                                        Estado
+                                    </label>
+
+                                    <select
+                                        id="estado"
+                                        autocomplete="address-level1"
+                                    >
+
+                                        <option value="">
+                                            Selecione o estado
+                                        </option>
+
                                     </select>
+
                                 </div>
+
+
                                 <!-- CIDADE -->
 
-                                <div class="field" id="cidade-field">
-                                    <label for="cidade">Cidade</label>
+                                <div
+                                    class="field"
+                                    id="cidade-field"
+                                >
 
-                                    <input id="cidade" type="text" autocomplete="address-level2"
-                                        placeholder="Digite sua cidade" />
+                                    <label for="cidade">
+                                        Cidade
+                                    </label>
+
+                                    <input
+                                        id="cidade"
+                                        type="text"
+                                        autocomplete="address-level2"
+                                        placeholder="Digite sua cidade"
+                                    />
+
                                 </div>
+
 
                                 <!-- EMAIL -->
 
                                 <div class="field">
-                                    <label for="email"> Email </label>
 
-                                    <input id="email" type="email" autocomplete="email" placeholder="seu@email.com" />
+                                    <label for="email">
+                                        Email
+                                    </label>
+
+                                    <input
+                                        id="email"
+                                        type="email"
+                                        autocomplete="email"
+                                        placeholder="seu@email.com"
+                                    />
+
                                 </div>
+
                             </div>
 
+
                             <!-- =================================================
-                     EQUIPAMENTO CASALE
-                ================================================== -->
+                                 EQUIPAMENTO CASALE
+                            ================================================== -->
 
                             <div class="question-block">
-                                <label> Já possui equipamento Casale? </label>
+
+                                <label>
+                                    Já possui equipamento Casale?
+                                </label>
 
                                 <div class="option-grid">
-                                    <button type="button" class="answer-option" data-identification-answer="sim">
+
+                                    <button
+                                        type="button"
+                                        class="answer-option"
+                                        data-identification-answer="sim"
+                                    >
                                         Sim
                                     </button>
 
-                                    <button type="button" class="answer-option" data-identification-answer="nao">
+                                    <button
+                                        type="button"
+                                        class="answer-option"
+                                        data-identification-answer="nao"
+                                    >
                                         Não
                                     </button>
+
                                 </div>
+
                             </div>
+
                         </div>
+
 
                         <!-- AÇÃO -->
 
                         <footer class="actions">
-                            <button type="button" class="btn-primary" id="continue-identification">
+
+                            <button
+                                type="button"
+                                class="btn-primary"
+                                id="continue-identification"
+                            >
                                 Continuar
                             </button>
+
                         </footer>
+
                     </section>
 
+
                     <!-- =================================================
-                 STEP 2 — PRODUÇÃO
-            ================================================== -->
+                         STEP 2 — PRODUÇÃO
+                    ================================================== -->
 
-                    <section class="form-step" id="step-2">
+                    <section
+                        class="form-step"
+                        id="step-2"
+                    >
+
                         <div class="step-header">
-                            <h3>Produção</h3>
 
-                            <p>Qual é o tipo de produção da sua fazenda?</p>
+                            <h3>
+                                Produção
+                            </h3>
+
+                            <p>
+                                Qual é o tipo de produção da sua fazenda?
+                            </p>
+
                         </div>
 
-                        <div class="option-list" id="production-options">
-                            <button type="button" class="answer-option selectable" data-value="apenas_gado_corte">
+
+                        <div
+                            class="option-list"
+                            id="production-options"
+                        >
+
+                            <button
+                                type="button"
+                                class="answer-option selectable"
+                                data-value="apenas_gado_corte"
+                            >
+
                                 <span class="radio"></span>
 
-                                <span> Apenas gado de corte </span>
+                                <span>
+                                    Apenas gado de corte
+                                </span>
+
                             </button>
 
-                            <button type="button" class="answer-option selectable" data-value="apenas_gado_leite">
+
+                            <button
+                                type="button"
+                                class="answer-option selectable"
+                                data-value="apenas_gado_leite"
+                            >
+
                                 <span class="radio"></span>
 
-                                <span> Apenas gado de leite </span>
+                                <span>
+                                    Apenas gado de leite
+                                </span>
+
                             </button>
 
-                            <button type="button" class="answer-option selectable" data-value="gado_corte_leite">
+
+                            <button
+                                type="button"
+                                class="answer-option selectable"
+                                data-value="gado_corte_leite"
+                            >
+
                                 <span class="radio"></span>
 
-                                <span> Gado de corte e leite </span>
+                                <span>
+                                    Gado de corte e leite
+                                </span>
+
                             </button>
+
                         </div>
+
 
                         <footer class="actions">
-                            <button type="button" class="btn-secondary" data-action="back">
+
+                            <button
+                                type="button"
+                                class="btn-secondary"
+                                data-action="back"
+                            >
                                 Voltar
                             </button>
 
-                            <button type="button" class="btn-primary" data-action="continue-production">
+                            <button
+                                type="button"
+                                class="btn-primary"
+                                data-action="continue-production"
+                            >
                                 Continuar
                             </button>
+
                         </footer>
+
                     </section>
 
-                    <!-- =================================================
-                 STEP 3 — EQUIPAMENTO + PERGUNTAS DINÂMICAS
-            ================================================== -->
 
-                    <section class="form-step" id="step-3">
-                        <!--
-                A primeira pergunta do equipamento é sempre
-                qual equipamento o usuário procura.
-              -->
+                    <!-- =================================================
+                         STEP 3 — EQUIPAMENTO
+                    ================================================== -->
+
+                    <section
+                        class="form-step"
+                        id="step-3"
+                    >
 
                         <div class="step-header">
-                            <h3>Equipamento</h3>
 
-                            <p>Qual equipamento você procura?</p>
+                            <h3>
+                                Equipamento
+                            </h3>
+
+                            <p>
+                                Qual equipamento você procura?
+                            </p>
+
                         </div>
 
-                        <!-- EQUIPAMENTOS -->
 
-                        <div class="option-list" id="equipment-options">
-                            <button type="button" class="answer-option selectable equipment-option"
-                                data-equipment="colhedoras_de_forragem" data-value="colhedoras_de_forragem">
+                        <!--
+                            O JavaScript substitui o conteúdo
+                            desta etapa dinamicamente.
+                        -->
+
+                        <div
+                            class="option-list"
+                            id="equipment-options"
+                        >
+
+                            <button
+                                type="button"
+                                class="answer-option selectable equipment-option"
+                                data-equipment="colhedora"
+                                data-value="colhedora"
+                            >
+
                                 <span class="radio"></span>
 
-                                <span> Colhedoras de forragem </span>
+                                <span>
+                                    Colhedoras de forragem
+                                </span>
+
                             </button>
 
-                            <button type="button" class="answer-option selectable equipment-option"
-                                data-equipment="distribuidores_de_esterco" data-value="distribuidores_de_esterco">
+
+                            <button
+                                type="button"
+                                class="answer-option selectable equipment-option"
+                                data-equipment="distribuidor_esterco"
+                                data-value="distribuidor_esterco"
+                            >
+
                                 <span class="radio"></span>
 
-                                <span> Distribuidores de esterco </span>
+                                <span>
+                                    Distribuidores de esterco
+                                </span>
+
                             </button>
 
-                            <button type="button" class="answer-option selectable equipment-option"
-                                data-equipment="distribuidores_de_racao" data-value="distribuidores_de_racao">
+
+                            <button
+                                type="button"
+                                class="answer-option selectable equipment-option"
+                                data-equipment="distribuidor_racao"
+                                data-value="distribuidor_racao"
+                            >
+
                                 <span class="radio"></span>
 
-                                <span> Distribuidores de ração </span>
+                                <span>
+                                    Distribuidores de ração
+                                </span>
+
                             </button>
 
-                            <button type="button" class="answer-option selectable equipment-option"
-                                data-equipment="misturadores_de_racao_total" data-value="misturadores_de_racao_total">
+
+                            <button
+                                type="button"
+                                class="answer-option selectable equipment-option"
+                                data-equipment="misturador_racao"
+                                data-value="misturador_racao"
+                            >
+
                                 <span class="radio"></span>
 
-                                <span> Misturadores de ração total </span>
+                                <span>
+                                    Misturadores de ração total
+                                </span>
+
                             </button>
 
-                            <button type="button" class="answer-option selectable equipment-option"
-                                data-equipment="moedores" data-value="moedores">
+
+                            <button
+                                type="button"
+                                class="answer-option selectable equipment-option"
+                                data-equipment="moedor"
+                                data-value="moedor"
+                            >
+
                                 <span class="radio"></span>
 
-                                <span> Moedores </span>
+                                <span>
+                                    Moedores
+                                </span>
+
                             </button>
+
                         </div>
 
-                        <!-- =================================================
-                   PERGUNTAS DINÂMICAS
-              ================================================== -->
 
-                        <div id="dynamic-equipment-questions" class="dynamic-questions">
-                            <!-- O JavaScript insere as perguntas aqui -->
+                        <!-- PERGUNTAS DINÂMICAS -->
+
+                        <div
+                            id="dynamic-equipment-questions"
+                            class="dynamic-questions"
+                        >
                         </div>
+
 
                         <!-- AÇÕES -->
 
                         <footer class="actions">
-                            <button type="button" class="btn-secondary" data-action="back">
+
+                            <button
+                                type="button"
+                                class="btn-secondary"
+                                data-action="back"
+                            >
                                 Voltar
                             </button>
 
-                            <button type="button" class="btn-primary" data-action="continue-equipment">
+                            <button
+                                type="button"
+                                class="btn-primary"
+                                data-action="continue-equipment"
+                            >
                                 Continuar
                             </button>
+
                         </footer>
+
                     </section>
 
+
                     <!-- =================================================
-                 STEP 4 — RECOMENDAÇÃO
-            ================================================== -->
-                    <section class="form-step" id="step-4">
+                         STEP 4 — RECOMENDAÇÃO
+                    ================================================== -->
+
+                    <section
+                        class="form-step"
+                        id="step-4"
+                    >
+
                         <div class="step-header">
-                            <h3>Recomendação</h3>
+
+                            <h3>
+                                Recomendação
+                            </h3>
 
                             <p id="recommendation-subtitle">
                                 Encontramos a solução mais alinhada à sua operação.
@@ -390,19 +791,27 @@
 
                         </div>
 
+
                         <!-- =================================================
-       CARD DE RECOMENDAÇÃO
-  ================================================== -->
+                             CARD DE RECOMENDAÇÃO
+                        ================================================== -->
 
-                        <div class="recommendation-card produto" id="recommendation-card">
+                        <div
+                            class="recommendation-card produto"
+                            id="recommendation-card"
+                        >
 
-                            <!-- =========================
-     PRODUTO
-========================== -->
+                            <!-- PRODUTO -->
 
-                            <div class="recommendation-content" id="product-content">
+                            <div
+                                class="recommendation-content"
+                                id="product-content"
+                            >
 
-                                <span class="recommendation-label" id="recommendation-label">
+                                <span
+                                    class="recommendation-label"
+                                    id="recommendation-label"
+                                >
                                     Solução recomendada
                                 </span>
 
@@ -411,30 +820,40 @@
                                 </h4>
 
                                 <p id="recommendation-description">
-                                    Estamos cruzando suas respostas com as soluções disponíveis da Casale.
+                                    Estamos cruzando suas respostas com as soluções
+                                    disponíveis da Casale.
                                 </p>
 
-                                <div class="recommendation-meta" id="recommendation-meta"></div>
+                                <div
+                                    class="recommendation-meta"
+                                    id="recommendation-meta"
+                                ></div>
 
                             </div>
 
 
-                            <!-- =========================
-     IMAGEM DO PRODUTO
-========================== -->
+                            <!-- IMAGEM DO PRODUTO -->
 
-                            <div class="recommendation-image" id="recommendation-image">
+                            <div
+                                class="recommendation-image"
+                                id="recommendation-image"
+                            >
 
-                                <img id="recommendation-product-image" src="https://jorgeprj.github.io/simulador-csl/assets/vertimix.jpg" alt="" />
+                                <img
+                                    id="recommendation-product-image"
+                                    src="https://jorgeprj.github.io/simulador-csl/assets/vertimix.jpg"
+                                    alt="Produto Casale"
+                                />
 
                             </div>
 
 
-                            <!-- =========================
-     CONSULTOR
-========================== -->
+                            <!-- CONSULTOR -->
 
-                            <div class="consultor-content" id="consultor-content">
+                            <div
+                                class="consultor-content"
+                                id="consultor-content"
+                            >
 
                                 <span class="recommendation-label">
                                     Fale com um consultor
@@ -453,28 +872,39 @@
 
                             </div>
 
-
                         </div>
 
+
                         <!-- =================================================
-       AÇÕES
-  ================================================== -->
+                             AÇÕES
+                        ================================================== -->
 
                         <footer class="result-actions">
 
-                            <button type="button" class="whatsapp-button" id="whatsapp-button">
+                            <button
+                                type="button"
+                                class="whatsapp-button"
+                                id="whatsapp-button"
+                            >
 
                                 <span class="button-icon">
 
-                                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        aria-hidden="true"
+                                    >
 
                                         <path
                                             d="M20 11.5C20 16.2 16.2 20 11.5 20C10.2 20 9 19.7 7.9 19.2L4 20L4.8 16.3C4.2 15.1 4 13.8 4 12.5C4 7.8 7.8 4 12.5 4C17.2 4 20 7.8 20 11.5Z"
-                                            stroke="currentColor" stroke-width="2" />
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                        />
 
                                     </svg>
 
                                 </span>
+
 
                                 <span class="button-content">
 
@@ -488,6 +918,7 @@
 
                                 </span>
 
+
                                 <span class="arrow">
                                     →
                                 </span>
@@ -495,9 +926,15 @@
                             </button>
 
 
-                            <button type="button" class="restart-button" id="restart-simulation">
+                            <button
+                                type="button"
+                                class="restart-button"
+                                id="restart-simulation"
+                            >
 
-                                <span>↻</span>
+                                <span>
+                                    ↻
+                                </span>
 
                                 <span id="restart-text">
                                     Refazer simulação
@@ -505,21 +942,32 @@
 
                             </button>
 
-
                         </footer>
 
                     </section>
 
-            </div>
+                </main>
 
-            <!-- =====================================================
+            </div>
+            <!-- /.simulator-card -->
+
+        </section>
+        <!-- /.simulator-area -->
+
+    </div>
+    <!-- /.casale-page -->
+
+
+    <!-- =====================================================
          JAVASCRIPT
     ====================================================== -->
 
-            <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/intlTelInput.min.js"></script>
 
-            <script src="validation.js"></script>
-            <script src="script.js"></script>
+    <script src="validation.js"></script>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
