@@ -754,7 +754,7 @@ async function carregarPerguntasEquipamento() {
   }
 
   try {
-    mostrarLoadingStep3("Carregando perguntas...");
+    mostrarLoadingStep3("Estamos preparando as perguntas para você...");
 
     const config = await carregarJSON(`${DATA_PATH}/${equipmentKey}.json`);
 
@@ -853,27 +853,25 @@ function mostrarLoadingStep3(mensagem) {
   }
 
   section.innerHTML = `
+    <div class="loading-container">
+      
+      <div class="loading-icon">
+        <div class="loading-spinner"></div>
+      </div>
 
-    <div class="step-header">
+      <div class="loading-content">
+        <h3>Aguarde um instante</h3>
 
-      <h3>
-        Aguarde...
-      </h3>
+        <p>
+          ${mensagem}
+        </p>
 
-      <p>
-        ${mensagem}
-      </p>
+        <span class="loading-hint">
+          Isso leva só alguns segundos.
+        </span>
+      </div>
 
     </div>
-
-    <div class="loading-state">
-
-      <span>
-        Carregando
-      </span>
-
-    </div>
-
   `;
 }
 
