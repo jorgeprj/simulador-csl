@@ -1568,10 +1568,44 @@ function renderConsultorResult(section, mensagem) {
 }
 
 function renderProductResult(section, produto) {
-  section.innerHTML = `
+  const descricoes = {
+    cfc_1300: "A Casale CFC-1300 Super é uma colhedora de forragem de área total desenvolvida para atender produtores que buscam alta eficiência no corte e processamento de trato verde e silagem.",
+    cfc_1800: "A Casale CFC-1800 Super eleva a capacidade operacional da linha, sendo um implemento robusto voltado para fazendas que necessitam de maior rendimento e agilidade no gerenciamento de volumoso para o gado.",
+
+    crc_150: "Descrição específica do CRC 150.",
+    crc_180: "Descrição específica do CRC 180.",
+
+    feeder_20sc: "O distribuidor Feeder 20 SC é acionado através do comando duplo do trator. Com ele é possível fazer a distribuição de qualquer produto em pó ou peletizado.",
+    feeder_200sc: "O Feeder 200 SC é a solução ideal para a distribuição de suplementos minerais ou ração concentrada para RIP, TIP ou suplementação a pasto.",
+    feeder: "O Feeder é o distribuidor de ração total que foi desenvolvido para atender o manejo de confinamento e semi-confinamento de larga escala. Trabalha para a otimização da distribuição do trato com qualidade, eliminação de desperdícios, baixo custo de manutenção e redução de paradas indesejadas.",
+
+    h_835: "O Haybuster H-835 é um triturador de cuba compacto e extremamente versátil, projetado principalmente para produtores que buscam processar fibras longas diretamente na fazenda com excelente relação custo-benefício.",
+    h_1000: "O Haybuster H-1000 é um moinho triturador de alta produção desenvolvido para propriedades que demandam um fluxo contínuo de trabalho pesado para processar grandes fardos e resíduos agrícolas densos",
+
+    lec_405: "A LEC-405 é um implemento robusto desenvolvido para otimizar o manejo de adubação orgânica em propriedades agrícolas e pecuárias. Projetado especificamente para a distribuição uniforme de resíduos sólidos",
+    lec_1620: "Com capacidade de até 21m³ e limite de carga de 20 toneladas, a LEC é ideal para otimizar subprodutos da pecuária para maior aproveitamento da adubação de pastagens e lavouras e também a fertilização com o uso de compostos orgânicos.",
+    lec_8511: "A LEC 8511 faz a distribuição do esterco e compostos orgânicos sólidos, ideal para otimizar subprodutos da pecuária para maior aproveitamento da fertilização de pastagens e lavouras. Além disso, pode ser utilizada para cama de frango e compost barn.",
+
+    rotormix: "A Rotormix aceita a utilização de diversos subprodutos, sem ocasionar danos às fibras, como: milho moído ou em flocos, pellets, ingredientes de alta umidade e compostos de até 3 cm de cana-de-açúcar, feno picado e capim verde.",
+
+    rx_techbull: "A RX TechBull, conta com exclusivo sistema de proteção, monitoramento e controle aumentando a agilidade, comodidade e segurança de grandes operações.",
+
+    totalmix: "O misturador de ração Totalmix repica e mistura de forma homogênea qualquer tipo de volumoso, incluindo fardos de feno de até 15Kg e silagem pré-secada associado a rações, minerais e caroço de algodão.",
+
+    vertimix: "Operando com baixo consumo de potência, o misturador de ração Vertimix possui um sistema de mistura com até 2 roscas verticais, de acordo com a necessidade do pecuarista, projetadas para trabalhar com qualquer tipo de volumoso.",
+  };
+
+    const nome = String(produto)
+    .trim()
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[-\s]+/g, "_");
+
+
+   section.innerHTML = `
 
     <div class="step-header">
-
       <h3>
         Recomendação
       </h3>
@@ -1579,7 +1613,6 @@ function renderProductResult(section, produto) {
       <p>
         Encontramos uma solução para sua operação.
       </p>
-
     </div>
 
 
@@ -1596,7 +1629,10 @@ function renderProductResult(section, produto) {
         </h4>
 
         <p>
-          Essa solução foi identificada com base nas respostas fornecidas durante a simulação.
+          ${escapeHTML(
+            descricoes[nome] ||
+            "Essa solução foi identificada com base nas respostas fornecidas durante a simulação."
+          )}
         </p>
 
         <div class="recommendation-meta">
@@ -1634,11 +1670,6 @@ function renderProductResult(section, produto) {
 }
 
 function obterImagemProduto(produto) {
-  console.group("🖼️ DEBUG — obterImagemProduto");
-
-  console.log("1️⃣ Produto recebido:", produto);
-  console.log("   Tipo:", typeof produto);
-
   if (!produto) {
     const fallback = `${BASE_URL}/assets/vertimix.jpg`;
 
@@ -1655,8 +1686,6 @@ function obterImagemProduto(produto) {
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/[-\s]+/g, "_");
-
-  console.log("2️⃣ Nome normalizado:", nome);
 
   const imagens = {
     cfc_1300: "cfc-1300.jpg",
@@ -1676,23 +1705,15 @@ function obterImagemProduto(produto) {
     lec_1620: "lec-1620.jpg",
     lec_8511: "lec-8511.jpg",
 
-    rotormix: "rotormix.jpg",
+    rotormix: "rotormix.png",
 
     rx_techbull: "rx-techbull.jpg",
 
-    totalmix: "totalmix.jpg",
+    totalmix: "totalmix.png",
 
     vertimix: "vertimix.jpg",
   };
-
-  console.log("3️⃣ Chaves disponíveis:");
-  console.log(Object.keys(imagens));
-
-  console.log("4️⃣ Chave procurada:", nome);
-
   const imagem = imagens[nome];
-
-  console.log("5️⃣ Resultado encontrado:", imagem);
 
   if (!imagem) {
     console.error("❌ IMAGEM NÃO ENCONTRADA");
@@ -2046,28 +2067,28 @@ function restaurarStep3Original() {
     <div class="option-list">
 
         ${criarOpcaoEquipamento(
-            "colhedora",
-            "Colhedoras de forragem",
-            "colhedora",
+          "colhedora",
+          "Colhedoras de forragem",
+          "colhedora",
         )}
 
         ${criarOpcaoEquipamento(
-            "distribuidor_esterco",
-            "Distribuidores de esterco",
-            "distribuidor_esterco",
+          "distribuidor_esterco",
+          "Distribuidores de esterco",
+          "distribuidor_esterco",
         )}
 
       
         ${criarOpcaoEquipamento(
-        "distribuidor_racao",
-        "Distribuidores de ração",
-        "distribuidor_racao",
+          "distribuidor_racao",
+          "Distribuidores de ração",
+          "distribuidor_racao",
         )}
 
         ${criarOpcaoEquipamento(
-            "misturador_racao",
-            "Misturadores de ração total",
-            "misturador_racao",
+          "misturador_racao",
+          "Misturadores de ração total",
+          "misturador_racao",
         )}
 
         ${criarOpcaoEquipamento("moedor", "Moedores", "moedor")}
@@ -2241,19 +2262,14 @@ async function carregarEstados() {
     const response = await fetch(CASALE_IBGE_UF_URL);
 
     if (!response.ok) {
-      throw new Error(
-        `Erro HTTP ${response.status} ao carregar estados.`
-      );
+      throw new Error(`Erro HTTP ${response.status} ao carregar estados.`);
     }
 
     casaleEstadosBrasil = await response.json();
 
-    casaleEstadosBrasil.sort((a, b) =>
-      a.nome.localeCompare(b.nome, "pt-BR")
-    );
+    casaleEstadosBrasil.sort((a, b) => a.nome.localeCompare(b.nome, "pt-BR"));
 
     preencherEstados();
-
   } catch (error) {
     console.error("Erro ao carregar estados:", error);
 
@@ -2262,7 +2278,6 @@ async function carregarEstados() {
         Não foi possível carregar os estados
       </option>
     `;
-
   } finally {
     estado.disabled = false;
   }
@@ -2327,9 +2342,7 @@ async function carregarCidades(uf) {
     const response = await fetch(url);
 
     if (!response.ok) {
-      throw new Error(
-        `Erro HTTP ${response.status} ao carregar cidades.`
-      );
+      throw new Error(`Erro HTTP ${response.status} ao carregar cidades.`);
     }
 
     const cidades = await response.json();
@@ -2341,7 +2354,6 @@ async function carregarCidades(uf) {
     casaleCidadesBrasilCache[uf] = nomes;
 
     preencherCidades(nomes);
-
   } catch (error) {
     console.error("Erro ao carregar cidades:", error);
 
@@ -2350,7 +2362,6 @@ async function carregarCidades(uf) {
         Não foi possível carregar as cidades
       </option>
     `;
-
   } finally {
     cidade.disabled = false;
   }

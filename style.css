@@ -1,7 +1,3 @@
-/* ============================================================
-   RESET
-============================================================ */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -137,25 +133,53 @@ select {
   margin-left: auto;
 }
 
+/* ============================================================
+   HERO BADGE
+============================================================ */
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 7px 11px;
+
+  border: 1px solid var(--green-border);
+  border-radius: 999px;
+
+  background: var(--green-light);
+
+  color: var(--green-dark);
+
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+}
+
 .hero-content h1 {
   max-width: 520px;
 
-font-size: clamp(28px, 3vw, 48px);
+  font-size: clamp(34px, 3.2vw, 60px);
 
   line-height: 0.98;
   letter-spacing: -0.045em;
   font-weight: 700;
 
   color: var(--text);
+
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.hero-content h1 span {
+  color: var(--green);
 }
 
 .hero-description {
   max-width: 470px;
 
-  margin-top: 26px;
-
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.55;
+  margin-bottom: 24px;
 
   color: var(--text-secondary);
 }
@@ -166,8 +190,6 @@ font-size: clamp(28px, 3vw, 48px);
   display: flex;
   flex-direction: column;
   gap: 14px;
-
-  margin-top: 36px;
 }
 
 .hero-benefits li {
@@ -175,7 +197,7 @@ font-size: clamp(28px, 3vw, 48px);
   align-items: center;
   gap: 11px;
 
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
 
   color: #4d5851;
@@ -218,6 +240,7 @@ font-size: clamp(28px, 3vw, 48px);
   justify-content: center;
 
   padding: 48px;
+  margin-top: 24px;
 }
 
 .casale-page.simulation-state .simulator-area {
@@ -240,7 +263,9 @@ font-size: clamp(28px, 3vw, 48px);
 
   border-radius: var(--radius-xl);
 
-  box-shadow: var(--shadow-card);
+  box-shadow:
+    var(--shadow-card),
+    0 10px 90px rgba(25, 135, 84, 0.30);
 }
 
 /* ============================================================
@@ -260,27 +285,32 @@ font-size: clamp(28px, 3vw, 48px);
 }
 
 .simulator-icon {
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  flex-shrink: 0;
-
-  border-radius: 10px;
-
+  border-radius: 8px;
   background: var(--green-light);
-  color: var(--green);
+
+  flex-shrink: 0;
+}
+
+.simulator-icon img {
+  width: 40px;
+  height: 40px;
+
+  object-fit: contain;
 }
 
 .simulator-title h2 {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.2;
   font-weight: 700;
 
-  color: var(--text);
+  margin: 0;
 }
 
 .simulator-title span {
@@ -288,8 +318,30 @@ font-size: clamp(28px, 3vw, 48px);
 
   margin-top: 4px;
 
-  font-size: 12px;
+  font-size: 14px;
   color: var(--text-muted);
+}
+
+.lgpd-notice {
+  display: block;
+
+  margin-top: 10px;
+
+  font-size: 11px;
+  line-height: 1.5;
+  text-align: center;
+
+  color: var(--text-muted);
+}
+
+.lgpd-notice a {
+  color: var(--text-muted);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.lgpd-notice a:hover {
+  color: var(--green);
 }
 
 /* ============================================================
@@ -745,7 +797,7 @@ font-size: clamp(28px, 3vw, 48px);
 }
 
 /* ============================================================
-RECOMMENDATION
+   RECOMMENDATION
 ============================================================ */
 
 #step-4 {
@@ -753,59 +805,134 @@ RECOMMENDATION
 }
 
 /* ============================================================
-RECOMMENDATION CARD
+   RECOMMENDATION — IMAGEM EM CIMA + TEXTO EMBAIXO
+   MESMA ESTRUTURA NO DESKTOP E MOBILE
 ============================================================ */
 
 #step-4 .recommendation-card {
   position: relative;
 
-  display: grid;
+  display: flex;
+  flex-direction: column;
 
-  grid-template-columns: minmax(0, 1fr) 45%;
+  width: 100%;
 
-  min-height: 310px;
+  min-height: auto;
 
   overflow: hidden;
 
-  padding: 0;
+  border: 0;
+  border-radius: 0;
 
-  border: 1px solid var(--border);
+  background: transparent;
 
-  border-radius: var(--radius-lg);
-
-  background: #ffffff;
+  box-shadow: none;
 }
 
-/*
-
-* Remove o visual antigo de imagem de fundo
-* e gradiente.
-  */
+/* ============================================================
+   REMOVE ELEMENTOS DECORATIVOS ANTIGOS
+============================================================ */
 
 #step-4 .recommendation-card::before,
 #step-4 .recommendation-card::after {
   display: none;
+  content: none;
 }
 
 /* ============================================================
-PRODUCT CONTENT
+   IMAGEM — HERO
 ============================================================ */
 
-#step-4 .recommendation-content {
+#step-4 .recommendation-image {
   position: relative;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  order: -1;
 
-  padding: 30px;
+  width: 100%;
+
+  min-width: 0;
+  min-height: 0;
+
+  aspect-ratio: 1672 / 941;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: #fff;
 
   z-index: 1;
 }
 
 /* ============================================================
-LABEL
+   IMAGEM
+============================================================ */
+
+#step-4 .recommendation-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ============================================================
+   GRADIENTE — IMAGEM → BRANCO
+============================================================ */
+
+#step-4 .recommendation-image::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 45%,
+    rgba(255, 255, 255, 0.25) 62%,
+    rgba(255, 255, 255, 0.78) 82%,
+    #ffffff 100%
+  );
+
+  z-index: 2;
+}
+
+/* ============================================================
+   CONTEÚDO
+============================================================ */
+
+#step-4 .recommendation-content {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-start;
+
+  align-items: flex-start;
+
+  width: 100%;
+
+  padding: 8px 0 32px;
+
+  min-width: 0;
+
+  background: #fff;
+}
+
+/* ============================================================
+   LABEL
 ============================================================ */
 
 #step-4 .recommendation-label {
@@ -815,7 +942,7 @@ LABEL
 
   gap: 7px;
 
-  margin-bottom: 13px;
+  margin-bottom: 14px;
 
   font-size: 11px;
 
@@ -844,19 +971,21 @@ LABEL
 }
 
 /* ============================================================
-TITLE
+   TÍTULO
 ============================================================ */
 
 #step-4 .recommendation-card h4 {
-  max-width: 390px;
+  width: 100%;
+
+  max-width: 100%;
 
   margin: 0;
 
-  font-size: 26px;
+  font-size: clamp(28px, 3vw, 42px);
 
-  line-height: 1.12;
+  line-height: 1.05;
 
-  letter-spacing: -0.03em;
+  letter-spacing: -0.04em;
 
   font-weight: 700;
 
@@ -864,23 +993,25 @@ TITLE
 }
 
 /* ============================================================
-DESCRIPTION
+   DESCRIÇÃO
 ============================================================ */
 
 #step-4 .recommendation-card p {
-  max-width: 390px;
+  width: 100%;
 
-  margin-top: 12px;
+  max-width: 700px;
 
-  font-size: 13px;
+  margin-top: 16px;
 
-  line-height: 1.55;
+  font-size: 14px;
+
+  line-height: 1.6;
 
   color: var(--text-secondary);
 }
 
 /* ============================================================
-TAGS
+   TAGS
 ============================================================ */
 
 #step-4 .recommendation-meta {
@@ -890,7 +1021,7 @@ TAGS
 
   gap: 7px;
 
-  margin-top: 18px;
+  margin-top: 22px;
 }
 
 #step-4 .recommendation-tag {
@@ -914,51 +1045,12 @@ TAGS
 }
 
 /* ============================================================
-PRODUCT IMAGE
-============================================================ */
-
-#step-4 .recommendation-image {
-  position: relative;
-
-  min-height: 310px;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  overflow: hidden;
-
-  background: #ffffff;
-
-  border-left: 1px solid var(--border);
-
-  z-index: 1;
-}
-
-#step-4 .recommendation-image img {
-  display: block;
-
-  width: 100%;
-
-  height: 100%;
-
-  object-fit: contain;
-}
-
-/* ============================================================
-CONSULTOR
+   CONSULTOR
 ============================================================ */
 
 #step-4 .consultor-content {
   display: none;
 }
-
-/*
-
-* Estado consultor
-  */
 
 #step-4 .recommendation-card.consultor {
   display: block;
@@ -967,7 +1059,12 @@ CONSULTOR
 
   padding: 0;
 
+  border: 0;
+  border-radius: 0;
+
   background: #ffffff;
+
+  box-shadow: none;
 }
 
 #step-4 .recommendation-card.consultor .recommendation-content,
@@ -986,13 +1083,19 @@ CONSULTOR
 
   align-items: flex-start;
 
-  padding: 34px;
+  padding: 34px 0;
 }
 
 #step-4 .recommendation-card.consultor .consultor-content h4 {
   max-width: 500px;
 
   margin: 0;
+
+  font-size: 32px;
+
+  line-height: 1.1;
+
+  letter-spacing: -0.035em;
 }
 
 #step-4 .recommendation-card.consultor .consultor-content p {
@@ -1002,229 +1105,113 @@ CONSULTOR
 }
 
 /* ============================================================
-RESULT ACTIONS
+   REMOVE HEADER "RECOMENDAÇÃO"
 ============================================================ */
 
-#step-4 .result-actions {
-  display: flex;
-
-  flex-direction: column;
-
-  gap: 10px;
-
-  margin-top: 18px;
-}
-
-/* ============================================================
-WHATSAPP
-============================================================ */
-
-#step-4 .whatsapp-button {
-  width: 100%;
-
-  min-height: 62px;
-
-  display: flex;
-
-  align-items: center;
-
-  padding: 0 18px;
-
-  border: 1px solid var(--green);
-
-  border-radius: var(--radius-md);
-
-  background: var(--green);
-
-  color: #ffffff;
-
-  text-align: left;
-
-  box-shadow: none;
-}
-
-#step-4 .whatsapp-button:hover {
-  background: var(--green-dark);
-
-  border-color: var(--green-dark);
-
-  box-shadow: none;
-}
-
-/* ============================================================
-MOBILE — RECOMMENDATION
-============================================================ */
-
-@media (max-width: 600px) {
-  #step-4 .recommendation-card {
-    grid-template-columns: 1fr;
-
-    min-height: auto;
-  }
-
-  #step-4 .recommendation-image {
-    order: -1;
-
-    height: 220px;
-
-    min-height: 220px;
-
-    border-left: 0;
-
-    border-bottom: 1px solid var(--border);
-  }
-
-  #step-4 .recommendation-content {
-    padding: 24px;
-  }
-
-  #step-4 .recommendation-card h4 {
-    font-size: 23px;
-  }
-
-  #step-4 .recommendation-card.consultor {
-    min-height: auto;
-  }
-
-  #step-4 .recommendation-card.consultor .consultor-content {
-    min-height: 240px;
-
-    padding: 24px;
-  }
-
-  #step-4 .recommendation-card.consultor .consultor-content h4 {
-    font-size: 23px;
-  }
+#step-4 > .step-header {
+  display: none;
 }
 
 /* ============================================================
    RESULT ACTIONS
 ============================================================ */
 
+#step-4 .result-actions,
 .result-actions {
   display: flex;
+
   flex-direction: column;
+
   gap: 10px;
 
   margin-top: 20px;
 }
 
-/* ============================================================
-   WHATSAPP BUTTON
-============================================================ */
-
+/* ============================================================ WHATSAPP BUTTON ============================================================ */
+#step-4 .whatsapp-button,
 .whatsapp-button {
   width: 100%;
   min-height: 64px;
-
   display: flex;
   align-items: center;
-
   padding: 0 18px;
-
   border: 1px solid var(--green);
-
   border-radius: var(--radius-md);
-
   background: var(--green);
-
-  color: #fff;
-
+  color: #ffffff;
   text-align: left;
-
   transition:
     background var(--transition),
     transform var(--transition),
     box-shadow var(--transition);
 }
-
+#step-4 .whatsapp-button:hover,
 .whatsapp-button:hover {
   background: var(--green-dark);
-
+  border-color: var(--green-dark);
   box-shadow: 0 7px 18px rgba(25, 135, 84, 0.15);
 }
-
 .whatsapp-button:active {
   transform: translateY(1px);
 }
 
+/* ============================================================ BUTTON ICON ============================================================ */
 .button-icon {
-  width: 32px;
-  height: 32px;
-
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-
   flex-shrink: 0;
-
-  margin-right: 12px;
-
+  margin-right: 14px;
   border-radius: 50%;
-
   background: rgba(255, 255, 255, 0.13);
 }
-
 .button-icon svg {
-  width: 17px;
-  height: 17px;
+  width: 19px;
+  height: 19px;
 }
-
+/* ============================================================ BUTTON CONTENT ============================================================ */
 .button-content {
   display: flex;
   flex-direction: column;
-
   flex: 1;
 }
-
 .button-content strong {
-  font-size: 13px;
+  font-size: 16px; /* aumentado de 13px */
   line-height: 1.3;
 }
-
 .button-content small {
-  margin-top: 2px;
-
-  font-size: 11px;
-
+  margin-top: 3px;
+  font-size: 14px; /* aumentado de 11px */
   color: rgba(255, 255, 255, 0.75);
 }
 
+/* ============================================================ ARROW ============================================================ */
 .arrow {
   margin-left: 12px;
-
-  font-size: 20px;
+  font-size: 22px;
 }
 
-/* ============================================================
-   RESTART
-============================================================ */
-
+/* ============================================================ RESTART ============================================================ */
 .restart-button {
   width: 100%;
-  height: 44px;
-
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 7px;
-
+  gap: 8px;
   border: 0;
-
   background: transparent;
-
   color: #7a847d;
-
-  font-size: 12px;
+  font-size: 14px; /* aumentado de 12px */
   font-weight: 600;
 }
-
 .restart-button:hover {
   color: var(--green);
 }
-
 .restart-button span {
-  font-size: 17px;
+  font-size: 19px;
 }
 
 /* ============================================================
@@ -1297,12 +1284,93 @@ button:disabled {
 }
 
 /* ============================================================
-   MOBILE
+   MOBILE — RECOMMENDATION
 ============================================================ */
 
 @media (max-width: 820px) {
+  #step-4 .recommendation-card {
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: auto;
+
+    overflow: hidden;
+  }
+
+  #step-4 .recommendation-image {
+    order: -1;
+
+    width: 100%;
+
+    aspect-ratio: 1672 / 941;
+
+    min-height: 0;
+
+    height: auto;
+  }
+
+  #step-4 .recommendation-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+  }
+
+  #step-4 .recommendation-image::after {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 45%,
+      rgba(255, 255, 255, 0.25) 62%,
+      rgba(255, 255, 255, 0.78) 82%,
+      #ffffff 100%
+    );
+  }
+
+  #step-4 .recommendation-content {
+    padding: 8px 0 32px;
+  }
+
+  #step-4 .recommendation-card h4 {
+    max-width: 100%;
+
+    font-size: 28px;
+
+    line-height: 1.08;
+  }
+
+  #step-4 .recommendation-card p {
+    max-width: 100%;
+
+    margin-top: 14px;
+
+    font-size: 14px;
+  }
+
+  #step-4 .recommendation-meta {
+    margin-top: 18px;
+  }
+
+  #step-4 .recommendation-card.consultor {
+    min-height: auto;
+  }
+
+  #step-4 .recommendation-card.consultor .consultor-content {
+    min-height: 240px;
+
+    padding: 32px 0;
+  }
+
+  #step-4 .recommendation-card.consultor .consultor-content h4 {
+    font-size: 28px;
+  }
+
   .casale-page.onboarding-state {
     display: flex;
+
     flex-direction: column;
   }
 
@@ -1316,6 +1384,7 @@ button:disabled {
 
   .hero-content {
     max-width: 650px;
+
     margin: 0 auto;
   }
 
@@ -1337,6 +1406,7 @@ button:disabled {
 
   .hero-benefits {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
 
     gap: 12px;
@@ -1348,6 +1418,7 @@ button:disabled {
     align-items: flex-start;
 
     font-size: 12px;
+
     line-height: 1.35;
   }
 
@@ -1409,11 +1480,13 @@ button:disabled {
 
   .hero-description {
     font-size: 15px;
+
     line-height: 1.5;
   }
 
   .hero-benefits {
     display: flex;
+
     gap: 10px;
 
     margin-top: 22px;
@@ -1491,6 +1564,7 @@ button:disabled {
 
   .actions {
     margin-top: 26px;
+
     padding-top: 20px;
   }
 
@@ -1503,31 +1577,50 @@ button:disabled {
     height: 47px;
   }
 
-  .recommendation-card {
-    min-height: 330px;
+  /* ==========================================================
+     RECOMMENDATION
+     ========================================================== */
 
-    padding: 24px;
+  #step-4 .recommendation-image {
+    aspect-ratio: 1672 / 941;
+  }
+
+  #step-4 .recommendation-content {
+    padding: 8px 0 32px;
+  }
+
+  #step-4 .recommendation-card h4 {
+    font-size: 28px;
+  }
+
+  #step-4 .recommendation-card p {
+    font-size: 14px;
+  }
+
+  #step-4 .recommendation-card.consultor .consultor-content {
+    padding: 32px 0;
+  }
+
+  /* ==========================================================
+     GENERAL RECOMMENDATION FALLBACK
+     ========================================================== */
+
+  .recommendation-card {
+    min-height: auto;
+
+    padding: 0;
   }
 
   .recommendation-card h4 {
     font-size: 24px;
   }
 
+  /* ==========================================================
+     REMOVE OLD CARD GRADIENT
+     ========================================================== */
+
   .recommendation-card::after {
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.1) 0%,
-      rgba(255, 255, 255, 0.08) 65%,
-      rgba(255, 255, 255, 0) 100%
-    );
-  }
-  .recommendation-card::after {
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.1) 0%,
-      rgba(255, 255, 255, 0.08) 65%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    display: none;
   }
 }
 
@@ -1546,11 +1639,13 @@ button:disabled {
 
   .simulator-content {
     padding-left: 15px;
+
     padding-right: 15px;
   }
 
   .stepper {
     padding-left: 14px;
+
     padding-right: 14px;
   }
 }
@@ -1575,23 +1670,112 @@ button:disabled {
   margin-top: 7px;
 
   font-size: 11px;
+
   line-height: 1.4;
+
   font-weight: 500;
 
   color: #c0392b;
 }
 
-/* Telefone ocupa toda a largura da coluna */
+/* ============================================================
+   TELEFONE
+============================================================ */
+
 .field:has(#telefone) {
   width: 100%;
 }
 
 .field:has(#telefone) .iti {
   width: 100%;
+
   display: block;
 }
 
 .field:has(#telefone) #telefone {
   width: 100% !important;
+
   box-sizing: border-box;
+}
+
+/* ============================================================
+   ONBOARDING — PRIMEIRA VISUALIZAÇÃO
+============================================================ */
+
+.onboarding-fields {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+/* ============================================================
+   PRIMEIRO BOTÃO — INICIAR SIMULAÇÃO
+============================================================ */
+
+#continue-identification {
+  width: 100%;
+
+  height: 56px;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+#step-1 .actions {
+  display: block;
+
+  margin-top: 30px;
+
+  padding-top: 24px;
+}
+
+/* ============================================================
+   LGPD
+============================================================ */
+
+#step-1 .lgpd-notice {
+  display: block;
+
+  margin-top: 10px;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+
+  text-align: center;
+
+  color: var(--text-muted);
+}
+
+#step-1 .lgpd-notice a {
+  color: var(--text-muted);
+
+  text-decoration: underline;
+
+  text-underline-offset: 2px;
+}
+
+#step-1 .lgpd-notice a:hover {
+  color: var(--green);
+}
+
+/* ============================================================
+   FIELDS — MOBILE
+============================================================ */
+
+@media (max-width: 600px) {
+  .fields-grid {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+  .onboarding-fields {
+    grid-template-columns: 1fr;
+  }
+
+  #continue-identification {
+    height: 54px;
+  }
 }
