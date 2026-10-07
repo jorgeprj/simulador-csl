@@ -6,7 +6,10 @@
 
     <title>Simulador Casale</title>
 
-    <link rel="stylesheet" href="https://jorgeprj.github.io/simulador-csl/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://jorgeprj.github.io/simulador-csl/style.css"
+    />
 
     <link
       rel="stylesheet"
@@ -65,7 +68,11 @@
           <header class="simulator-header">
             <div class="simulator-title">
               <div class="simulator-icon">
-                <img src="https://jorgeprj.github.io/simulador-csl/assets/casale.svg" alt="" aria-hidden="true" />
+                <img
+                  src="https://jorgeprj.github.io/simulador-csl/assets/casale.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
               </div>
 
               <div>
@@ -129,216 +136,183 @@
                          STEP 1 — IDENTIFICAÇÃO
                     ================================================== -->
 
-      <section class="form-step active" id="step-1">
+            <section class="form-step active" id="step-1">
+              <div class="step-header">
+                <h3>Vamos começar?</h3>
 
-    <div class="step-header">
-        <h3>Vamos começar?</h3>
+                <p>
+                  Conte-nos quem você é para personalizarmos sua experiência
+                </p>
+              </div>
 
-        <p>
-            Conte-nos quem você é para personalizarmos sua experiência
-        </p>
-    </div>
+              <!-- PRIMEIRA VISUALIZAÇÃO -->
 
-    <!-- PRIMEIRA VISUALIZAÇÃO -->
+              <!-- PRIMEIRA VISUALIZAÇÃO -->
 
-    <!-- PRIMEIRA VISUALIZAÇÃO -->
+              <div class="fields-grid onboarding-fields">
+                <!-- NOME -->
+                <div class="field">
+                  <label for="nome">Nome</label>
 
-<div class="fields-grid onboarding-fields">
+                  <input
+                    id="nome"
+                    type="text"
+                    autocomplete="name"
+                    placeholder="Digite seu nome"
+                  />
+                </div>
 
-  <!-- NOME -->
-  <div class="field">
-    <label for="nome">Nome</label>
+                <!-- FUNÇÃO -->
+                <div class="field">
+                  <label for="funcao-inicial">Função</label>
 
-    <input
-      id="nome"
-      type="text"
-      autocomplete="name"
-      placeholder="Digite seu nome"
-    />
-  </div>
+                  <input
+                    id="funcao-inicial"
+                    type="text"
+                    autocomplete="organization-title"
+                    placeholder="Ex: Proprietário"
+                  />
+                </div>
 
-  <!-- FUNÇÃO -->
-  <div class="field">
-    <label for="funcao-inicial">Função</label>
+                <!-- TELEFONE -->
+                <div class="field">
+                  <label for="telefone">Telefone</label>
 
-    <input
-      id="funcao-inicial"
-      type="text"
-      autocomplete="organization-title"
-      placeholder="Ex: Proprietário"
-    />
-  </div>
+                  <input
+                    id="telefone"
+                    type="tel"
+                    autocomplete="tel"
+                    placeholder="Digite seu telefone"
+                  />
+                </div>
 
-  <!-- TELEFONE -->
-  <div class="field">
-    <label for="telefone">Telefone</label>
+                <!-- PROPRIEDADE / EMPRESA -->
+                <div class="field">
+                  <label for="propriedade">Propriedade / Empresa</label>
 
-    <input
-      id="telefone"
-      type="tel"
-      autocomplete="tel"
-      placeholder="Digite seu telefone"
-    />
-  </div>
+                  <input
+                    id="propriedade"
+                    type="text"
+                    autocomplete="organization"
+                    placeholder="Nome da propriedade ou empresa"
+                  />
+                </div>
+              </div>
 
-  <!-- PROPRIEDADE / EMPRESA -->
-  <div class="field">
-    <label for="propriedade">Propriedade / Empresa</label>
-
-    <input
-      id="propriedade"
-      type="text"
-      autocomplete="organization"
-      placeholder="Nome da propriedade ou empresa"
-    />
-  </div>
-
-</div>
-
-
-    <!-- =================================================
+              <!-- =================================================
                    CAMPOS COMPLETOS
               ================================================== -->
 
-    <div class="extra-fields" id="extra-fields">
+              <div class="extra-fields" id="extra-fields">
+                <div class="fields-grid">
+                  <!-- PAÍS -->
 
-        <div class="fields-grid">
+                  <div class="field">
+                    <label for="pais">País</label>
 
-            <!-- PAÍS -->
+                    <select id="pais" autocomplete="country-name">
+                      <option value="BR" selected>Brasil</option>
+                      <option value="AR">Argentina</option>
+                      <option value="BO">Bolívia</option>
+                      <option value="CL">Chile</option>
+                      <option value="CO">Colômbia</option>
+                      <option value="PY">Paraguai</option>
+                      <option value="PE">Peru</option>
+                      <option value="UY">Uruguai</option>
+                      <option value="US">Estados Unidos</option>
+                      <option value="PT">Portugal</option>
+                      <option value="ES">Espanha</option>
+                      <option value="FR">França</option>
+                      <option value="DE">Alemanha</option>
+                      <option value="IT">Itália</option>
+                      <option value="GB">Reino Unido</option>
+                      <option value="OTHER">Outro</option>
+                    </select>
+                  </div>
 
-            <div class="field">
-                <label for="pais">País</label>
+                  <!-- ESTADO -->
 
-                <select id="pais" autocomplete="country-name">
+                  <div class="field" id="estado-field">
+                    <label for="estado">Estado</label>
 
-                    <option value="BR" selected>Brasil</option>
-                    <option value="AR">Argentina</option>
-                    <option value="BO">Bolívia</option>
-                    <option value="CL">Chile</option>
-                    <option value="CO">Colômbia</option>
-                    <option value="PY">Paraguai</option>
-                    <option value="PE">Peru</option>
-                    <option value="UY">Uruguai</option>
-                    <option value="US">Estados Unidos</option>
-                    <option value="PT">Portugal</option>
-                    <option value="ES">Espanha</option>
-                    <option value="FR">França</option>
-                    <option value="DE">Alemanha</option>
-                    <option value="IT">Itália</option>
-                    <option value="GB">Reino Unido</option>
-                    <option value="OTHER">Outro</option>
+                    <select id="estado" autocomplete="address-level1">
+                      <option value="">Selecione o estado</option>
+                    </select>
+                  </div>
 
-                </select>
-            </div>
+                  <!-- CIDADE -->
 
+                  <div class="field" id="cidade-field">
+                    <label for="cidade">Cidade</label>
 
-            <!-- ESTADO -->
+                    <input
+                      id="cidade"
+                      type="text"
+                      autocomplete="address-level2"
+                      placeholder="Digite sua cidade"
+                    />
+                  </div>
 
-            <div class="field" id="estado-field">
+                  <!-- EMAIL -->
 
-                <label for="estado">Estado</label>
+                  <div class="field">
+                    <label for="email">Email</label>
 
-                <select
-                    id="estado"
-                    autocomplete="address-level1"
-                >
-                    <option value="">Selecione o estado</option>
-                </select>
+                    <input
+                      id="email"
+                      type="email"
+                      autocomplete="email"
+                      placeholder="seu@email.com"
+                    />
+                  </div>
+                </div>
 
-            </div>
-
-
-            <!-- CIDADE -->
-
-            <div class="field" id="cidade-field">
-
-                <label for="cidade">Cidade</label>
-
-                <input
-                    id="cidade"
-                    type="text"
-                    autocomplete="address-level2"
-                    placeholder="Digite sua cidade"
-                />
-
-            </div>
-
-
-            <!-- EMAIL -->
-
-            <div class="field">
-
-                <label for="email">Email</label>
-
-                <input
-                    id="email"
-                    type="email"
-                    autocomplete="email"
-                    placeholder="seu@email.com"
-                />
-
-            </div>
-
-        </div>
-
-
-        <!-- =================================================
+                <!-- =================================================
                      EQUIPAMENTO CASALE
                 ================================================== -->
 
-        <div class="question-block">
+                <div class="question-block">
+                  <label> Já possui equipamento Casale? </label>
 
-            <label>
-                Já possui equipamento Casale?
-            </label>
+                  <div class="option-grid">
+                    <button
+                      type="button"
+                      class="answer-option"
+                      data-identification-answer="sim"
+                    >
+                      Sim
+                    </button>
 
-            <div class="option-grid">
+                    <button
+                      type="button"
+                      class="answer-option"
+                      data-identification-answer="nao"
+                    >
+                      Não
+                    </button>
+                  </div>
+                </div>
+              </div>
 
+              <!-- AÇÃO -->
+
+              <footer class="actions">
                 <button
-                    type="button"
-                    class="answer-option"
-                    data-identification-answer="sim"
+                  type="button"
+                  class="btn-primary"
+                  id="continue-identification"
                 >
-                    Sim
+                  Iniciar minha simulação
                 </button>
 
-                <button
-                    type="button"
-                    class="answer-option"
-                    data-identification-answer="nao"
-                >
-                    Não
-                </button>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- AÇÃO -->
-
-<footer class="actions">
-
-  <button
-    type="button"
-    class="btn-primary"
-    id="continue-identification"
-  >
-    Iniciar minha simulação
-  </button>
-
-  <span class="lgpd-notice">
-    Seus dados serão tratados conforme nossa
-    <a href="#" target="_blank" rel="noopener">
-      Política de privacidade
-    </a>
-  </span>
-
-</footer>
-
-</section>
+                <span class="lgpd-notice">
+                  Seus dados serão tratados conforme nossa
+                  <a href="#" target="_blank" rel="noopener">
+                    Política de privacidade
+                  </a>
+                </span>
+              </footer>
+            </section>
 
             <!-- =================================================
                          STEP 2 — PRODUÇÃO
