@@ -51,6 +51,13 @@
     {
       "id": "animais_trato_corte",
       "pergunta": "Quantos animais recebem trato diariamente? (Corte)",
+      "condicao": {
+        "campo": "tipo_gado",
+        "valores": ["apenas_gado_corte", "gado_corte_leite"],
+        "quando_nao_atender": {
+          "valor": "nao_se_aplica"
+        }
+      },
       "opcoes": [
         {
           "valor": "nao_se_aplica",
@@ -87,6 +94,13 @@
     {
       "id": "animais_trato_leite",
       "pergunta": "Quantos animais recebem trato diariamente? (Leite)",
+      "condicao": {
+        "campo": "tipo_gado",
+        "valores": ["apenas_gado_leite", "gado_corte_leite"],
+        "quando_nao_atender": {
+          "valor": "nao_se_aplica"
+        }
+      },
       "opcoes": [
         {
           "valor": "nao_se_aplica",
@@ -123,6 +137,13 @@
     {
       "id": "categoria_animal_corte",
       "pergunta": "Qual a categoria animal? (Corte)",
+      "condicao": {
+        "campo": "tipo_gado",
+        "valores": ["apenas_gado_corte", "gado_corte_leite"],
+        "quando_nao_atender": {
+          "valor": "nao_se_aplica"
+        }
+      },
       "opcoes": [
         {
           "valor": "nao_se_aplica",
