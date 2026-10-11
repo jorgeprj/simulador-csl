@@ -274,8 +274,6 @@ select {
 
 .simulator-header {
   padding: 25px 30px;
-
-  border-bottom: 1px solid var(--border);
 }
 
 .simulator-title {
@@ -307,16 +305,14 @@ select {
 
 .simulator-title h2 {
   font-size: 20px;
-  line-height: 1.2;
   font-weight: 700;
-
   margin: 0;
 }
 
 .simulator-title span {
   display: block;
 
-  margin-top: 4px;
+  margin-top: 2px;
 
   font-size: 14px;
   color: var(--text-muted);
@@ -352,9 +348,7 @@ select {
   display: flex;
   align-items: center;
 
-  padding: 22px 30px;
-
-  border-bottom: 1px solid var(--border);
+  padding: 8px 30px;
 
   background: #fcfdfc;
 }
@@ -453,16 +447,17 @@ select {
 }
 
 .step-header h3 {
-  font-size: 25px;
+  font-size: 36px;
   line-height: 1.15;
   letter-spacing: -0.025em;
   font-weight: 700;
+  margin: 0;
 
   color: var(--text);
 }
 
 .step-header p {
-  margin-top: 8px;
+  margin-top: 4px;
 
   font-size: 14px;
   line-height: 1.5;
@@ -496,7 +491,12 @@ select {
   line-height: 1.2;
   font-weight: 600;
 
-  color: #4f5952;
+  color: #2e3430;
+}
+
+.question-counter{
+    font-size: 14px;
+    color: var(--text-muted);
 }
 
 .field input,

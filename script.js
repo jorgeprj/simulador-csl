@@ -1612,7 +1612,6 @@ function renderConsultorResult(section, mensagem) {
 
     </div>
 
-
     <div class="recommendation-card consultor">
 
       <div class="consultor-content">
@@ -1631,8 +1630,17 @@ function renderConsultorResult(section, mensagem) {
 
       </div>
 
-    </div>
+      <div class="recommendation-image">
 
+        <img
+          src="${BASE_URL}/assets/consultor.png"
+          alt="Consultor Casale"
+          onerror="this.style.display='none'"
+        />
+
+      </div>
+
+    </div>
 
     ${criarResultadoAcoes()}
 
@@ -1722,18 +1730,6 @@ function renderProductResult(section, produto) {
           )}
         </p>
 
-        <div class="recommendation-meta">
-
-          <span class="recommendation-tag">
-            Solução Casale
-          </span>
-
-          <span class="recommendation-tag">
-            Recomendação personalizada
-          </span>
-
-        </div>
-
       </div>
 
 
@@ -1792,11 +1788,11 @@ function obterImagemProduto(produto) {
     lec_1620: "lec-1620.jpg",
     lec_8511: "lec-8511.jpg",
 
-    rotormix: "rotormix.png",
+    rotormix: "rotormix.jpg",
 
     rx_techbull: "rx-techbull.jpg",
 
-    totalmix: "totalmix.png",
+    totalmix: "totalmix.jpg",
 
     vertimix: "vertimix.jpg",
   };
