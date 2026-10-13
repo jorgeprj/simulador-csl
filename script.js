@@ -25,8 +25,11 @@ let userAnswers = {
 };
 
 let currentEquipmentQuestions = [];
+let historicoPerguntasEquipamento = [];
 
 let currentEquipmentQuestionIndex = -1;
+
+let respostasAutomaticasNaoAplicaveis = new Set();
 
 let currentEquipmentConfig = null;
 
@@ -578,17 +581,19 @@ function continuarProducao() {
 
 function iniciarEquipamento() {
   userAnswers.equipamento = null;
+  userAnswers.perguntasEquipamento = {};
+  userAnswers.recomendacao = null;
 
   currentEquipmentQuestions = [];
-
+  historicoPerguntasEquipamento = [];
   currentEquipmentQuestionIndex = -1;
 
-  currentEquipmentConfig = null;
+  respostasAutomaticasNaoAplicaveis.clear();
 
+  currentEquipmentConfig = null;
   currentRecommendations = [];
 
   goToStep(3);
-
   renderEquipmentSelection();
 }
 
@@ -732,24 +737,18 @@ function setupDynamicEquipmentSelection() {
 }
 
 async function carregarPerguntasEquipamento() {
-  /*
-   * A key do equipamento será usada
-   * para encontrar o arquivo.
-   *
-   * Exemplo:
-   *
-   * colhedora
-   *
-   * /data/colhedora.json
-   */
+  currentEquipmentQuestionIndex = 0;
+  historicoPerguntasEquipamento = [];
+  respostasAutomaticasNaoAplicaveis.clear();
 
-  const equipmentKey = userAnswers.equipamento.key;
+  userAnswers.perguntasEquipamento = {};
+
+  const equipmentKey = userAnswers.equipamento?.key;
 
   if (!equipmentKey) {
     mostrarErroCarregamento(
       "Não foi possível identificar o equipamento selecionado.",
     );
-
     return;
   }
 
@@ -758,10 +757,6 @@ async function carregarPerguntasEquipamento() {
 
     const config = await carregarJSON(`${DATA_PATH}/${equipmentKey}.json`);
 
-    /*
-     * Validação do JSON.
-     */
-
     if (!config || !Array.isArray(config.perguntas)) {
       throw new Error(
         `O arquivo ${equipmentKey}.json não possui a estrutura esperada.`,
@@ -769,30 +764,18 @@ async function carregarPerguntasEquipamento() {
     }
 
     currentEquipmentConfig = config;
-
     currentEquipmentQuestions = config.perguntas;
 
+    // Garante um objeto de respostas válido para a simulação atual.
     userAnswers.perguntasEquipamento = {};
 
-    currentEquipmentQuestionIndex = 0;
-
-    /*
-     * Processa todas as perguntas que não se aplicam
-     * à produção escolhida.
-     *
-     * Exemplo:
-     *
-     * produção = apenas_gado_leite
-     *
-     * animais_trato_corte -> nao_se_aplica
-     */
-
+    // Calcula os valores automáticos somente para perguntas
+    // que realmente não atendem às condições atuais.
     processarPerguntasNaoAplicaveis();
-    /*
-     * Carrega também as recomendações.
-     */
 
     await carregarRecomendacoes(equipmentKey);
+
+    currentEquipmentQuestionIndex = 0;
 
     renderEquipmentQuestion();
   } catch (error) {
@@ -964,6 +947,7 @@ function mostrarErroCarregamento(mensagem) {
     });
   }
 }
+
 function renderEquipmentQuestion() {
   const section = document.querySelector("#step-3");
 
@@ -971,86 +955,73 @@ function renderEquipmentQuestion() {
     return;
   }
 
-  /*
-   * Procura a próxima pergunta aplicável.
-   *
-   * Se a pergunta atual não atender à condição,
-   * salva automaticamente o valor configurado
-   * e pula para a próxima.
-   */
+  // Atualiza os valores automáticos com base nas respostas atuais.
+  processarPerguntasNaoAplicaveis();
 
+  // Encontra a próxima pergunta aplicável.
   while (currentEquipmentQuestionIndex < currentEquipmentQuestions.length) {
     const question = currentEquipmentQuestions[currentEquipmentQuestionIndex];
 
-    /*
-     * Não existe mais pergunta.
-     */
-
     if (!question) {
       finalizarEquipamento();
-
       return;
     }
 
-    /*
-     * Verifica a condição da pergunta.
-     */
-
-    if (!perguntaAtendeCondicao(question)) {
-      const valor = obterValorQuandoNaoAtender(question);
-
-      userAnswers.perguntasEquipamento[question.id] = valor;
-
-      console.log(
-        `⏭️ Pulando pergunta "${question.id}" — não aplicável.`,
-        `Valor: "${valor}"`,
-      );
-
-      currentEquipmentQuestionIndex++;
-
-      continue;
+    if (perguntaAtendeCondicao(question)) {
+      break;
     }
 
-    /*
-     * A pergunta é aplicável.
-     * Podemos renderizar normalmente.
-     */
-
-    break;
+    // Pergunta não aplicável: avança sem exibi-la.
+    currentEquipmentQuestionIndex++;
   }
 
-  /*
-   * Verifica novamente se chegamos ao final
-   * depois dos saltos.
-   */
-
-  if (currentEquipmentQuestionIndex >= currentEquipmentQuestions.length) {
+  if (
+    currentEquipmentQuestionIndex < 0 ||
+    currentEquipmentQuestionIndex >= currentEquipmentQuestions.length
+  ) {
     finalizarEquipamento();
-
     return;
   }
 
   const question = currentEquipmentQuestions[currentEquipmentQuestionIndex];
 
   /*
-   * Recupera resposta anterior.
+   * HISTÓRICO DE NAVEGAÇÃO
    *
-   * Isso é importante para quando
-   * o usuário clicar em "Voltar".
+   * O histórico registra a sequência visitada.
+   * Ele não determina se a pergunta é aplicável.
    */
+  const indiceHistorico = historicoPerguntasEquipamento.lastIndexOf(
+    question.id,
+  );
 
-  const previousAnswer = userAnswers.perguntasEquipamento[question.id];
+  if (
+    indiceHistorico !== -1 &&
+    indiceHistorico < historicoPerguntasEquipamento.length - 1
+  ) {
+    // Ao retornar a uma pergunta anterior, descarta o caminho futuro.
+    historicoPerguntasEquipamento = historicoPerguntasEquipamento.slice(
+      0,
+      indiceHistorico + 1,
+    );
+  } else if (
+    historicoPerguntasEquipamento[historicoPerguntasEquipamento.length - 1] !==
+    question.id
+  ) {
+    historicoPerguntasEquipamento.push(question.id);
+  }
 
   /*
-   * Conta apenas perguntas aplicáveis.
+   * RECUPERAÇÃO DA RESPOSTA
    *
-   * Isso evita aparecer:
-   * "Pergunta 3 de 10"
-   *
-   * quando na verdade existem apenas
-   * 8 perguntas aplicáveis.
+   * Uma resposta automática nunca pode ser usada como
+   * se tivesse sido selecionada pelo usuário.
    */
+  const previousAnswer = respostasAutomaticasNaoAplicaveis.has(question.id)
+    ? null
+    : (userAnswers.perguntasEquipamento[question.id] ?? null);
 
+  // Calcula o contador usando a mesma regra de aplicabilidade.
   const perguntasAplicaveis = currentEquipmentQuestions.filter((item) =>
     perguntaAtendeCondicao(item),
   );
@@ -1059,39 +1030,22 @@ function renderEquipmentQuestion() {
     perguntasAplicaveis.findIndex((item) => item.id === question.id) + 1;
 
   section.innerHTML = `
-
     <div class="step-header">
-
       <span class="question-counter">
-
-        Pergunta
-        ${numeroPergunta}
-        de
-        ${perguntasAplicaveis.length}
-
+        Pergunta ${numeroPergunta} de ${perguntasAplicaveis.length}
       </span>
 
+      <h3>${escapeHTML(question.pergunta)}</h3>
 
-      <h3>
-        ${escapeHTML(question.pergunta)}
-      </h3>
-
-
-      <p>
-        Selecione uma das opções abaixo.
-      </p>
-
+      <p>Selecione uma das opções abaixo.</p>
     </div>
 
-
     <div class="option-list">
-
-      ${question.opcoes
+      ${(Array.isArray(question.opcoes) ? question.opcoes : [])
         .map((option) => {
           const selected = previousAnswer === option.valor ? "selected" : "";
 
           return `
-
             <button
               type="button"
               class="answer-option dynamic-option ${selected}"
@@ -1099,22 +1053,15 @@ function renderEquipmentQuestion() {
               data-next="${escapeAttribute(option.proxima || "")}"
               data-action="${escapeAttribute(option.acao?.tipo || "")}"
             >
-
               <span class="radio"></span>
-
               ${escapeHTML(option.texto)}
-
             </button>
-
           `;
         })
         .join("")}
-
     </div>
 
-
     <footer class="actions">
-
       <button
         type="button"
         class="btn-secondary"
@@ -1123,7 +1070,6 @@ function renderEquipmentQuestion() {
         Voltar
       </button>
 
-
       <button
         type="button"
         class="btn-primary"
@@ -1131,9 +1077,7 @@ function renderEquipmentQuestion() {
       >
         Continuar
       </button>
-
     </footer>
-
   `;
 
   setupDynamicQuestionEvents();
@@ -1182,40 +1126,73 @@ function setupDynamicQuestionEvents() {
 function salvarRespostaPergunta(selected) {
   const question = currentEquipmentQuestions[currentEquipmentQuestionIndex];
 
-  if (!question) {
+  if (!question?.id || !selected) {
     return;
   }
 
   const value = selected.dataset.value;
+  const respostas = userAnswers.perguntasEquipamento;
+
+  const respostaAnterior = respostas[question.id];
+
+  const respostaMudou = respostaAnterior !== value;
 
   /*
-   * Salva exatamente o "valor"
-   * definido no JSON.
+   * Se a resposta mudou, invalida todas as respostas posteriores
+   * na configuração, incluindo valores automáticos.
    */
+  if (respostaMudou) {
+    for (
+      let i = currentEquipmentQuestionIndex + 1;
+      i < currentEquipmentQuestions.length;
+      i++
+    ) {
+      const perguntaPosterior = currentEquipmentQuestions[i];
 
-  userAnswers.perguntasEquipamento[question.id] = value;
+      if (!perguntaPosterior?.id) {
+        continue;
+      }
 
-  /*
-   * Se a opção tiver:
-   *
-   * "acao": {
-   *   "tipo": "resultado"
-   * }
-   *
-   * encerra o fluxo.
-   */
+      delete respostas[perguntaPosterior.id];
 
+      respostasAutomaticasNaoAplicaveis.delete(perguntaPosterior.id);
+    }
+
+    /*
+     * O histórico representa somente o caminho válido até
+     * a pergunta atual. O restante será construído novamente.
+     */
+    const indiceHistoricoAtual = historicoPerguntasEquipamento.lastIndexOf(
+      question.id,
+    );
+
+    if (indiceHistoricoAtual !== -1) {
+      historicoPerguntasEquipamento = historicoPerguntasEquipamento.slice(
+        0,
+        indiceHistoricoAtual + 1,
+      );
+    }
+  }
+
+  // Registra a escolha real do usuário.
+  respostas[question.id] = value;
+
+  // A resposta atual deixa de ser considerada automática.
+  respostasAutomaticasNaoAplicaveis.delete(question.id);
+
+  // Recalcula as condições após a alteração.
+  processarPerguntasNaoAplicaveis();
+
+  // Opção que encerra o fluxo.
   if (selected.dataset.action === "resultado") {
     finalizarEquipamento();
-
     return;
   }
 
   /*
-   * Próxima pergunta definida
-   * explicitamente pelo JSON.
+   * A navegação segue o JSON.
+   * O histórico não escolhe a próxima pergunta.
    */
-
   const nextId = selected.dataset.next;
 
   if (nextId) {
@@ -1224,78 +1201,75 @@ function salvarRespostaPergunta(selected) {
     );
 
     if (nextIndex === -1) {
-      console.warn(`A pergunta "${nextId}" não foi encontrada no JSON.`);
-
-      /*
-       * Se o ID estiver errado,
-       * tenta continuar pela ordem.
-       */
-
+      console.warn(`Pergunta "${nextId}" não encontrada.`);
       currentEquipmentQuestionIndex++;
     } else {
       currentEquipmentQuestionIndex = nextIndex;
     }
   } else {
-    /*
-     * Caso não exista "proxima",
-     * continua pela ordem.
-     */
-
     currentEquipmentQuestionIndex++;
-  }
-
-  /*
-   * Terminou as perguntas?
-   */
-
-  if (currentEquipmentQuestionIndex >= currentEquipmentQuestions.length) {
-    finalizarEquipamento();
-
-    return;
   }
 
   renderEquipmentQuestion();
 }
 
 function voltarPerguntaEquipamento() {
-  /*
-   * Se estamos na primeira pergunta,
-   * volta para a seleção de equipamento.
-   */
+  const perguntaAtual =
+    currentEquipmentQuestions[currentEquipmentQuestionIndex];
 
-  if (currentEquipmentQuestionIndex <= 0) {
+  if (!perguntaAtual) {
     renderEquipmentSelection();
-
     return;
   }
 
-  /*
-   * Importante:
-   *
-   * O JSON usa "proxima", portanto simplesmente
-   * diminuir o índice pode não funcionar
-   * corretamente em fluxos condicionais.
-   *
-   * Por isso encontramos a pergunta anterior
-   * que aponta para a pergunta atual.
-   */
+  const indiceHistorico = historicoPerguntasEquipamento.lastIndexOf(
+    perguntaAtual.id,
+  );
 
-  const currentQuestion =
-    currentEquipmentQuestions[currentEquipmentQuestionIndex];
+  // Se não existe uma pergunta anterior visitada, volta à seleção.
+  if (indiceHistorico <= 0) {
+    historicoPerguntasEquipamento = [];
+    currentEquipmentQuestionIndex = -1;
 
-  const previousIndex = encontrarPerguntaAnterior(currentQuestion.id);
-
-  if (previousIndex !== -1) {
-    currentEquipmentQuestionIndex = previousIndex;
-  } else {
-    /*
-     * Fallback para JSON linear.
-     */
-
-    currentEquipmentQuestionIndex--;
+    renderEquipmentSelection();
+    return;
   }
 
-  renderEquipmentQuestion();
+  // Procura a pergunta anterior efetivamente visitada.
+  let indiceAnteriorHistorico = indiceHistorico - 1;
+
+  while (indiceAnteriorHistorico >= 0) {
+    const perguntaAnteriorId =
+      historicoPerguntasEquipamento[indiceAnteriorHistorico];
+
+    const indiceAnterior = currentEquipmentQuestions.findIndex(
+      (item) => item.id === perguntaAnteriorId,
+    );
+
+    if (
+      indiceAnterior !== -1 &&
+      perguntaAtendeCondicao(currentEquipmentQuestions[indiceAnterior])
+    ) {
+      // Descarta o trecho posterior do caminho de navegação.
+      historicoPerguntasEquipamento = historicoPerguntasEquipamento.slice(
+        0,
+        indiceAnteriorHistorico + 1,
+      );
+
+      currentEquipmentQuestionIndex = indiceAnterior;
+
+      renderEquipmentQuestion();
+      return;
+    }
+
+    indiceAnteriorHistorico--;
+  }
+
+  // Nenhuma pergunta anterior continua aplicável.
+  historicoPerguntasEquipamento = [];
+  currentEquipmentQuestionIndex = -1;
+
+  renderEquipmentSelection();
 }
 
 function encontrarPerguntaAnterior(currentQuestionId) {
@@ -1324,10 +1298,6 @@ function encontrarPerguntaAnterior(currentQuestionId) {
 }
 
 async function finalizarEquipamento() {
-  console.log("=== FINALIZANDO SIMULAÇÃO ===");
-
-  console.log(userAnswers);
-
   const resultado = buscarRecomendacao();
 
   if (!resultado) {
@@ -1358,22 +1328,13 @@ async function finalizarEquipamento() {
     userAnswers.recomendacao = "Atendimento com consultor";
   }
 
-  /*
-   * Envia o lead completo.
-   */
-
-  await enviarParaRDStation();
-
-  /*
-   * Mostra o resultado na tela.
-   */
-
   mostrarResultado(resultado);
-}
 
-/* ============================================================
-   MOTOR DE RECOMENDAÇÃO
-============================================================ */
+  // O envio do lead ocorre sem bloquear a exibição do resultado
+  enviarParaRDStation().catch((error) => {
+    console.error("Erro ao enviar lead para o RD Station:", error);
+  });
+}
 
 function buscarRecomendacao() {
   if (!userAnswers.equipamento) {
@@ -1397,56 +1358,13 @@ function buscarRecomendacao() {
     equipamento: userAnswers.equipamento.valor,
 
     equipamento_key: userAnswers.equipamento.key,
-
-    /*
-     * Todas as respostas específicas
-     * do equipamento entram automaticamente.
-     *
-     * Exemplo MOEDOR:
-     *
-     * tipo_material_moer
-     * toneladas_feno
-     * toneladas_graos
-     * acionamento
-     *
-     * Exemplo COLHEDORA:
-     *
-     * principal_uso_material
-     * tipo_forragem
-     * altura_material
-     * potencia_tdp
-     * hectares
-     */
     ...respostas,
   };
 
-  /*
-   * Compatibilidade com o campo antigo
-   * usado nas recomendações da colhedora.
-   */
   if (respostas.principal_uso_material) {
     dados.uso_material = respostas.principal_uso_material;
   }
 
-  console.group("CASALE — MOTOR DE RECOMENDAÇÃO");
-
-  console.log("Dados do usuário:");
-
-  console.table(dados);
-
-  console.log("Respostas do equipamento:");
-
-  console.table(respostas);
-
-  console.log("Regras carregadas:");
-
-  console.table(currentRecommendations);
-
-  console.groupEnd();
-
-  /*
-   * Testa todas as recomendações.
-   */
   for (const regra of currentRecommendations) {
     const criterios =
       regra.criterios || regra.criterio || regra.condicoes || {};
@@ -2035,6 +1953,9 @@ function resetSimulation() {
 
   currentRecommendations = [];
 
+  historicoPerguntasEquipamento = [];
+  respostasAutomaticasNaoAplicaveis.clear();
+
   /*
    * Remove seleções das etapas de produção
    * e equipamentos.
@@ -2558,18 +2479,19 @@ function obterValorCondicao(campo) {
 }
 
 function perguntaAtendeCondicao(question) {
-  /*
-   * Se a pergunta não possui condição,
-   * ela sempre pode ser exibida.
-   */
-
+  // Perguntas sem condição são sempre aplicáveis.
   if (!question?.condicao) {
     return true;
   }
 
   const condicao = question.condicao;
-
   const campo = condicao.campo;
+
+  if (!campo) {
+    console.warn(`Pergunta "${question.id}" possui condição sem campo.`);
+
+    return false;
+  }
 
   const valorAtual = obterValorCondicao(campo);
 
@@ -2577,69 +2499,79 @@ function perguntaAtendeCondicao(question) {
     ? condicao.valores
     : [];
 
-  /*
-   * Normaliza tudo para evitar problemas
-   * com maiúsculas, espaços e acentos.
-   */
+  // Sem valor atual, não há condição satisfeita.
+  if (valorAtual === undefined || valorAtual === null || valorAtual === "") {
+    return false;
+  }
 
   const valorNormalizado = normalizarValor(valorAtual);
 
-  const permitido = valoresPermitidos.some(
+  return valoresPermitidos.some(
     (valor) => normalizarValor(valor) === valorNormalizado,
   );
-
-  return permitido;
 }
 
 function obterValorQuandoNaoAtender(question) {
-  /*
-   * Valor padrão caso a condição não seja atendida.
-   */
+  const valorConfigurado = question?.condicao?.quando_nao_atender?.valor;
 
-  return question?.condicao?.quando_nao_atender?.valor || "nao_se_aplica";
+  return valorConfigurado ?? "nao_se_aplica";
 }
 
 function processarPerguntasNaoAplicaveis() {
-  /*
-   * Percorre todas as perguntas e registra
-   * automaticamente o valor definido no JSON
-   * para aquelas que não atendem à condição.
-   */
+  const respostas = userAnswers.perguntasEquipamento;
 
-  currentEquipmentQuestions.forEach((question) => {
+  if (!respostas || typeof respostas !== "object") {
+    userAnswers.perguntasEquipamento = {};
+  }
+
+  const respostasAtuais = userAnswers.perguntasEquipamento;
+
+  for (const question of currentEquipmentQuestions) {
     if (!question?.id) {
-      return;
+      continue;
     }
 
-    /*
-     * Pergunta sem condição:
-     * não fazemos nada.
-     */
+    const id = question.id;
 
+    /*
+     * Se a pergunta não possui condição, qualquer valor automático
+     * antigo precisa ser removido.
+     */
     if (!question.condicao) {
-      return;
+      if (respostasAutomaticasNaoAplicaveis.has(id)) {
+        delete respostasAtuais[id];
+        respostasAutomaticasNaoAplicaveis.delete(id);
+      }
+
+      continue;
+    }
+
+    const aplicavel = perguntaAtendeCondicao(question);
+
+    if (!aplicavel) {
+      /*
+       * A pergunta não se aplica mais.
+       *
+       * Substitui qualquer resposta anterior, inclusive uma
+       * resposta real de uma tentativa anterior do mesmo fluxo.
+       */
+      respostasAtuais[id] = obterValorQuandoNaoAtender(question);
+
+      respostasAutomaticasNaoAplicaveis.add(id);
+
+      continue;
     }
 
     /*
-     * Se atende à condição, a pergunta
-     * continua normalmente.
+     * A pergunta voltou a ser aplicável.
+     *
+     * Se seu valor era automático, remove-o para exigir
+     * uma nova resposta do usuário.
      */
+    if (respostasAutomaticasNaoAplicaveis.has(id)) {
+      delete respostasAtuais[id];
 
-    if (perguntaAtendeCondicao(question)) {
-      return;
+      respostasAutomaticasNaoAplicaveis.delete(id);
     }
-
-    /*
-     * Não atende:
-     * salva automaticamente o valor configurado.
-     */
-
-    const valor = obterValorQuandoNaoAtender(question);
-
-    userAnswers.perguntasEquipamento[question.id] = valor;
-
-    console.log(
-      `ℹ️ Pergunta "${question.id}" não aplicável. Valor automático: "${valor}"`,
-    );
-  });
+  }
 }

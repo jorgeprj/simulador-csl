@@ -185,8 +185,8 @@ select {
 }
 
 .hero-content h4 {
-    font-size: 20px;
-    margin-bottom: 24px;
+  font-size: 20px;
+  margin-bottom: 24px;
 }
 
 .hero-benefits {
@@ -207,7 +207,6 @@ select {
 
   color: #4d5851;
 }
-
 
 .benefit-icon {
   width: 40px;
@@ -230,7 +229,6 @@ select {
   width: 24px;
   height: 24px;
 }
-
 
 /* ============================================================
    HERO HIDDEN AFTER FIRST CONTINUE
@@ -275,7 +273,7 @@ select {
 
   box-shadow:
     var(--shadow-card),
-    0 10px 90px rgba(25, 135, 84, 0.30);
+    0 10px 90px rgba(25, 135, 84, 0.3);
 }
 
 /* ============================================================
@@ -504,9 +502,9 @@ select {
   color: #2e3430;
 }
 
-.question-counter{
-    font-size: 14px;
-    color: var(--text-muted);
+.question-counter {
+  font-size: 14px;
+  color: var(--text-muted);
 }
 
 .field input,
@@ -1340,13 +1338,13 @@ button:disabled {
   #step-4 .recommendation-image::after {
     background: linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0) 45%,
-      rgba(255, 255, 255, 0.25) 62%,
-      rgba(255, 255, 255, 0.78) 82%,
+      rgba(255, 255, 255, 0) 70%,
+      rgba(255, 255, 255, 0.25) 82%,
+      rgba(255, 255, 255, 0.78) 92%,
       #ffffff 100%
     );
   }
-
+  
   #step-4 .recommendation-content {
     padding: 8px 0 32px;
   }
@@ -1518,7 +1516,7 @@ button:disabled {
     height: 20px;
   }
 
-    .benefit-icon svg {
+  .benefit-icon svg {
     width: 14px;
     height: 14px;
   }
@@ -1881,7 +1879,6 @@ button:disabled {
   }
 }
 
-
 /* ============================================================
    RESULTADO FINAL — LAYOUT DESKTOP + MOBILE
 ============================================================ */
@@ -2106,4 +2103,3 @@ button:disabled {
     padding-left: 16px;
   }
 }
-
