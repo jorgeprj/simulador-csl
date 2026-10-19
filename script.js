@@ -1798,21 +1798,14 @@ function abrirWhatsApp() {
   const numero = "551634115000";
 
   const recomendacao = userAnswers?.recomendacao;
+  const equipamento = userAnswers?.equipamento?.valor || "";
 
   let mensagem;
 
   if (recomendacao && recomendacao !== "Atendimento com consultor") {
-    mensagem = `Olá! Fiz uma simulação no site da Casale e gostaria de falar com um consultor.
-
-        A máquina recomendada para minha operação foi: ${recomendacao}
-
-        Gostaria de saber mais detalhes sobre essa solução.`;
+    mensagem = `Olá! Fiz uma simulação no site da Casale e gostaria de falar com um consultor. A máquina recomendada para minha operação foi a ${recomendacao}. Gostaria de saber mais detalhes sobre essa solução.`;
   } else {
-    mensagem = `Olá! Fiz uma simulação no site da Casale e gostaria de falar com um consultor.
-
-        Minha simulação indicou que preciso de um atendimento com consultor.
-
-        Gostaria de conversar sobre a melhor solução para minha operação.`;
+    mensagem = `Olá! Fiz uma simulação no site da Casale e indicou que para a aplicação que selecionei ${equipamento}, um consultor vai me ajudar a encontrar a solução mais adequada. Gostaria de atendimento.`;
   }
 
   window.open(
